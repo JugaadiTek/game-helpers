@@ -1,0 +1,478 @@
+Cards
+Core Set
+CoreSet Bases
+
+Aliens
+
+The Homeworld - breakpoint 23 - VPs: 4 2 1 - After each time a minion is played here, its owner may play an extra minion of power 2 or less.
+The Mothership - breakpoint 20 - VPs: 4 2 1 - After this base scores, the winner may return one of his or her minions of power 3 or less from here to his or her hand.
+Dinosaurs
+
+Jungle Oasis - breakpoint 12 - VPs: 2 0 0 - (no ability)
+Tar Pits - breakpoint 16 - VPs: 4 3 2 - After each time a minion is destroyed here, place it at the bottom of its owner’s deck.
+Ninjas
+
+Ninja Dojo - breakpoint 18 - VPs: 2 3 2 - After this base scores, the winner may destroy any one minion.
+Temple of Goju - breakpoint 18 - VPs: 2 3 2 - After this base scores, place each player’s highest power minion here on the bottom of its owner’s deck.
+Pirates
+
+The Grey Opal - breakpoint 17 - VPs: 3 1 1 - After this base scores, all players other than the winner may move a minion from here to another base instead of the discard pile.
+Tortuga - breakpoint 21 - VPs: 4 3 2 - The runner up may move one of his or her minions to the base that replaces this base.
+Robots
+
+Factory 436-1337 - breakpoint 25 - VPs: 2 2 1 - When this base scores, the winner gains 1 VP for every 5 power that player has here.
+The Central Brain - breakpoint 19 - VPs: 4 2 1 - Each minion here has +1 power.
+Tricksters
+
+Cave of Shinies - breakpoint 23 - VPs: 4 2 1 - After each time a minion is destroyed here, its owner gains 1 VP.
+Mushroom Kingdom - breakpoint 20 - VPs: 5 3 2 - At the start of each player’s turn, that player may move one other player’s minion from any base to here.
+Wizards
+
+School of Wizardry - breakpoint 20 - VPs: 3 2 1 - After this base scores, the winner looks at the top three cards of the base deck, chooses one to replace this base, and returns the others in any order.
+The Great Library - breakpoint 22 - VPs: 4 2 1 - After this base scores, all players with minions here may draw one card.
+Zombies
+
+Evans City Cemetery - breakpoint 20 - VPs: 5 3 2 - After this base scores, the winner discards his or her hand and draws five cards.
+Rhodes Plaza Mall - breakpoint 24 - VPs: 0 0 0 - When this base scores, each player gains 1 VP for each minion that player has here.
+
+Awesome Level 9000
+AwesomeLevel9000 Bases
+Bear Cavalry
+
+Field of Honor - breakpoint 18 - VPs: 3 2 1 - When one or more minions here are destroyed, the player who destroyed them gains 1 VP.
+Tsar’s Palace - breakpoint 22 - VPs: 5 3 2 - Minions of power 2 or less cannot be played here.
+Ghosts
+
+Haunted House - breakpoint 18 - VPs: 4 3 2 - After a player plays a minion here, that player must discard a card.
+The Dread Gazebo - breakpoint 20 - VPs: 4 2 1 - Players cannot play actions on this base.
+Killer Plants
+
+Secret Grove - breakpoint 21 - VPs: 3 2 1 - On your turn, you may play one extra minion of power 2 or less here.
+The Greenhouse - breakpoint 24 - VPs: 4 2 1 - The winner may search his or her deck for a minion and play it on the base that replaces this one.
+Steampunks
+
+Inventor’s Salon - breakpoint 22 - VPs: 4 2 1 - The winner may take an action from his or her discard pile and place it in his or her hand.
+Workshop - breakpoint 20 - VPs: 4 2 1 - When a player plays an action card on this base, that player may play an extra action.
+The Obligatory Cthulhu Set
+TheObligatoryCthulhuSet Bases
+Elder Things
+
+Antarctic Base - breakpoint 24 - VPs: 5 3 2 - Players cannot play more than one minion on this base each turn.
+Plateau of Leng - breakpoint 18 - VPs: 3 2 1 - After the first time a player plays a minion here each turn, they can play an extra minion of the same name here.
+Innsmouth
+
+Innsmouth - breakpoint 23 - VPs: 5 3 2 - After each time a minion is played here, its owner may place one card from any player’s discard pile on the bottom of their deck.
+Ritual Site - breakpoint 20 - VPs: 4 2 2 - After this base scores, all minions on it are shuffled into their owners’ decks instead of their discard piles.
+Minions of Cthulhu
+
+Mountains of Madness - breakpoint 20 - VPs: 6 4 3 - After each time a minion is played here, its owner draws a Madness card.
+R’lyeh - breakpoint 18 - VPs: 4 2 1 - At the start of each player’s turn, that player may destroy one of their minion’s here. If they do, they gain 1 VP.
+Miskatonic University
+
+Asylum - breakpoint 16 - VPs: 3 1 1 - After each time a minion is played here, its owner may return a Madness card from their hand to the Madness deck.
+Miskatonic University - breakpoint 24 - VPs: 3 3 2 - After this base scores, the winner may search their hand and discard pile for any number of Madness cards, and return them to the Madness deck.
+
+Science Fiction Double Feature
+ScienceFictionDoubleFeature Bases
+Cyborg Apes
+
+Monkey Lab - breakpoint 23 - VPs: 4 2 1 - Minions here get +1 power for each action played on them.
+Primate Park - breakpoint 20 - VPs: 3 2 1 - The winner may place his or her actions played on minions here back into his or her hand.
+Shapeshifters
+
+Faceless City - breakpoint 20 - VPs: 4 2 1 - Once per turn, after you play a minion here, search your deck for a copy of that minion, reveal it, and place it into your hand. Shuffle your deck.
+The Vats - breakpoint 15 - VPs: 3 1 1 - You may not play a minion here that has the same name as another minion here.
+Super Spies
+
+ISI’s Swingin’ Pad - breakpoint 21 - VPs: 4 2 1 - The winner may look at the top three cards of his or her deck and return them in any order.
+Secret Volcano Headquarters - breakpoint 18 - VPs: 4 3 2 - Before this base scores, all players reveal the top card of their decks. Play all revealed minions here.
+Time Travelers
+
+Portal Room - breakpoint 22 - VPs: 2 3 1 - The winner takes an extra turn after the current turn ends.
+The Nexus - breakpoint 19 - VPs: 3 3 2 - The winner replaces this base with a base of his or her choice from the base discard pile, if possible.
+The Big Geeky Box
+See The Bigger Geekier Box.
+Monster Smash
+MonsterSmash Bases
+Giant Ants
+
+Egg Chamber - breakpoint 17 - VPs: 3 1 1 - Minions here with +1 power counters cannot be destroyed.
+The Hill - breakpoint 23 - VPs: 4 2 1 - At the start of each player’s turn, that player may move one of his or her minions from any base to here.
+Mad Scientists
+
+Golem Schloß - breakpoint 22 - VPs: 3 3 2 - The winner places a +1 power counter on each of his or her minions.
+Laboratorium - breakpoint 25 - VPs: 5 3 3 - The first minion played here each turn gets a +1 power counter.
+Vampires
+
+Castle Blood - breakpoint 18 - VPs: 3 1 1 - After you play a minion here, if another player has more power here than you do, you may place a +1 power counter on that minion.
+Crypt - breakpoint 20 - VPs: 4 2 2 - When one or more minions here are destroyed the player who destroyed them may place a +1 power counter on one of his or her minions here.
+Werewolves
+
+Moot Site - breakpoint 15 - VPs: 2 1 0 - The first minion played here each turn gains +2 power until the end of the turn.
+Standing Stones - breakpoint 20 - VPs: 4 2 1 - During your turn, one of your minions here can use its Talent twice.
+
+Pretty Pretty Smash Up
+PrettyPrettySmashUp Bases
+Fairies
+
+Enchanted Glen - breakpoint 20 - VPs: 4 2 1 - After you play an action on a minion here, draw a card.
+Fairy Circle - breakpoint 26 - VPs: 4 3 2 - After the first time you play a minion here each turn, you may play an extra minion here or play an extra action.
+Kitty Cats
+
+Cool Cats’ Alley - breakpoint 18 - VPs: 3 2 1 - Once during your turn, you may destroy one of your minions here to draw a card.
+The House of Nine Lives - breakpoint 20 - VPs: 4 2 1 - If a minion at another base would be destroyed, its owner may move it here instead.
+Mythic Horses
+
+Equaria - breakpoint 25 - VPs: 5 3 2 - After you play a minion here, you may move one of your minions from another base to here.
+Pony Land - breakpoint 18 - VPs: 3 2 1 - If you have two or more minions here, your minions here cannot be destroyed.
+Princesses
+
+Beautiful Castle - breakpoint 22 - VPs: 4 2 1 - Minions here with power 5 or greater are not affected by opponents’ cards.
+Ice Castle - breakpoint 15 - VPs: 3 2 2 - Minions cannot be played here.
+Smash Up: Munchkin
+Munchkin Bases
+Clerics
+
+Hotel of Holiness - breakpoint 15 - VPs: 4 3 2 - 2 Monsters - After this base scores, place minions here on top of their owners’ decks, in any order, instead of the discard pile.
+Whack-A-Ghoul - breakpoint 12 - VPs: 3 2 1 - 3 Monsters - After an undead monster is played here, place it on the bottom of the monster deck.
+Dwarves
+
+The Mines - breakpoint 18 - VPs: 4 2 1 - 2 Monsters - Minions here have +1 power for each treasure on them.
+Treasure Bath - breakpoint 12 - VPs: 2 0 0 - 1 Monster - After the first time each turn that you play a minion here, draw a treasure card.
+Elves
+
+Helper’s Hollow - breakpoint 17 - VPs: 3 2 1 - 2 Monsters - During each player’s turn, other players’ minions here have +1 power.
+Treehouse - breakpoint 15 - VPs: 4 2 1 - 2 Monsters - After you play a minion here, choose another player. That player may draw a card.
+Halflings
+
+Birthday Party - breakpoint 20 - VPs: 4 2 1 - 1 Monster - If you do not have a minion here, you cannot play a minion on another base.
+Subterranean Lair - breakpoint 23 - VPs: 5 3 2 - 1 Monster - On your turn, if you have no minions on this base, you may play an extra minion here.
+Mages
+
+Dimension Doors - breakpoint 20 - VPs: 4 2 1 - 1 Monster - Each turn, after the first time you play a minion here, you may discard a card to play an extra minion here.
+Mage’s Tower - breakpoint 18 - VPs: 4 3 2 - 1 Monster - After you play a minion here, you may draw a card.
+Orcs
+
+Garrison - breakpoint 12 - VPs: 3 2 1 - 2 Monsters - When this base scores, if the total of all players’ power here is 22 or more, the players with the top three totals each gain 1 VP.
+The Pits - breakpoint 16 - VPs: 4 2 1 - 2 Monsters - Minions here are not affected by other players’ actions.
+Thieves
+
+The Coffers - breakpoint 18 - VPs: 4 2 1 - 2 Monsters - When this base scores, each player with a minion here draws a treasure card.
+Thieves’ Guild - breakpoint 19 - VPs: 4 3 2 - 1 Monster - After you play a treasure on this base or on a minion here, draw a card.
+Warriors
+
+Bastion - breakpoint 11 - VPs: 3 2 2 - 3 Monsters - After you destroy a monster here, draw a treasure card.
+The Gauntlet - breakpoint 14 - VPs: 5 3 2 - 3 Monsters - After a monster here is destroyed, play a monster here.
+
+It’s Your Fault!
+ItsYourFault Bases
+Dragons
+
+Dragon’s Lair - breakpoint 18 - VPs: 2 2 1 - The winner draws 3 cards.
+Wyrm’s Desolation - breakpoint 20 - VPs: 5 3 2 - Each minion here has -1 power.
+Mythic Greeks
+
+Oracle at Delphi - breakpoint 18 - VPs: 4 2 1 - After you play a minion here, reveal the top card of your deck. If it is an action, draw it; otherwise return it.
+Wooden Horse - breakpoint 21 - VPs: 3 2 1 - After any player plays an action, he or she may give a minion here +2 power until the end of the turn.
+Sharks
+
+Shark Reef - breakpoint 20 - VPs: 4 2 1 - After a minion is destroyed here, the player that destroyed it may place a +1 power counter on one of their minions.
+The Deep - breakpoint 16 - VPs: 3 2 2 - After you play a minion of power 4 or more here, you may destroy a minion with less power here.
+Superheroes
+
+Converted Cave - breakpoint 18 - VPs: 4 3 2 - Minions of power 2 or less cannot be destroyed here except by their controller.
+Crystal Fortress - breakpoint 19 - VPs: 3 1 1 - After you play a minion here, you may place a minion from your discard pile on the bottom of your deck.
+Tornados
+
+Tornado Alley - breakpoint 25 - VPs: 4 3 2 - After the first time you play a minion here each turn, you may move another minion to here from another base.
+Trailer Park - breakpoint 20 - VPs: 4 2 1 - After you move a minion to here, place a +1 power counter on it.
+
+Cease and Desist
+CeaseAndDesist Bases
+Astroknights
+
+Hive of Scum and Villainy - breakpoint 18 - VPs: 4 2 1 - After the first time each turn that you play an action that directly increases the power of one of your minions here, draw a card.
+No-Moon™ - breakpoint 25 - VPs: 5 3 3 - Before this base scores, place a random other base and all cards on it in the discard pile. Replace it with the top card of the base deck.
+Changerbots
+
+Changing Room - breakpoint 22 - VPs: 5 3 2 - After a minion here uses a talent, it gains +1 power until the end of the turn.
+Unicrave - breakpoint 19 - VPs: 0 0 0 - Before this base scores, replace it with the top card of the base deck. Keep all cards on it, discard this card, and keep scoring.
+Ignobles
+
+Spikey Chair Room - breakpoint 20 - VPs: 4 2 1 - At the end of any turn that a player has played at least one minion here, they may destroy a minion they own to draw a card.
+Wintersquashed - breakpoint 16 - VPs: 2 4 1 - After you play a minion here, you may give control of it to another player.
+Star Roamers
+
+Neutral Space - breakpoint 18 - VPs: 3 2 1 - Minions here are not affected by other players’ minions here.
+USS Undertaking - breakpoint 22 - VPs: 4 2 1 - At the start of your turn, you may move one of your minions to here, or from here to another base.
+What Were We Thinking?
+WhatWereWeThinking Bases
+Explorers
+
+Ancient Temple - breakpoint 20 - VPs: 4 2 1 - At the start of your turn, if you have only one minion here, it gains +5 power while it is here until the end of the turn.
+City of Gold - breakpoint 16 - VPs: 3 1 1 - At the start of your turn, if you have a minion here, gain 1VP.
+Grannies
+
+Grandma’s House - breakpoint 25 - VPs: 5 3 2 - After you play a minion here, look at the top card of your deck. Place it on the top or bottom of your deck.
+Retirement Community - breakpoint 20 - VPs: 4 2 1 - After this base scores, each player may place one of their minions here on the top or bottom of their deck instead of the discard pile.
+Rock Stars
+
+Lake Minnetonka - breakpoint 26 - VPs: 5 3 2 - After you play or move a minion to here, it gains +1 power until the end of the turn.
+Palooza - breakpoint 27 - VPs: 6 4 3 - Before this base scores, each player may move one of their minions to here.
+Teddy Bears
+
+Out in the Woods - breakpoint 18 - VPs: 3 2 1 - Before this base scores, each minion here gains +1 power until the end of the turn.
+Under the Bed - breakpoint 22 - VPs: 4 2 1 - On your turn, you may play an extra minion of power 2 or less here if you have played one or more minions at other bases this turn.
+
+All Stars Event Kit
+See The Bigger Geekier Box.
+Big in Japan
+BigInJapan Bases
+Itty Critters
+
+Critter Combat Club - breakpoint 23 - VPs: 4 3 1 - You may play an extra minion of power 2 or less here on your turn. If you control it at the end of the turn, place it on the bottom of your deck.
+Itty City - breakpoint 20 - VPs: 3 1 1 - After the first time you play a minion here each turn, you may shuffle a random minion from your discard pile into your deck.
+Kaiju
+
+Kaiju Island - breakpoint 22 - VPs: 4 2 1 - Titans here do not make other titans leave. Each titan here adds +3 power to its controller’s power here.
+Tokyo - breakpoint 25 - VPs: 5 3 2 - After you play an action on this base, you gain +3 power here until the end of the turn.
+Magical Girls
+
+Akihabara High - breakpoint 20 - VPs: 3 2 1 - After you play a minion here, your other minions here gain +1 power until the end of the turn.
+Q Point - breakpoint 25 - VPs: 5 4 3 - Before this base scores, each player destroys all of their minions and actions on this base but one card total.
+Mega Troopers
+
+Juice Bar - breakpoint 20 - VPs: 3 2 1 - Before this base scores, each player with a minion here gains +2 power here for each special ability they use before scoring.
+Moon Dumpster - breakpoint 24 - VPs: 4 2 2 - After this base is played, each player reveals the top card of their deck. If it is a minion,they may play it here as an extra minion.
+
+Smash Up Sheep Promo
+See 10th Anniversary.
+That ’70s Expansion
+That70sExpansion Bases
+Disco Dancers
+
+Boogie Wonderland - breakpoint 21 - VPs: 4 2 1 - After a player plays a standard action that affects one or more of their minions here, they draw a card.
+Funky Town - breakpoint 23 - VPs: 4 3 2 - Once per turn, when your standard action directly affects one or more of your minions here, you may have it affect another of your minions here the same way.
+Kung Fu Fighters
+
+Ancient Dojo - breakpoint 25 - VPs: 5 4 3 - After you play a minion here, place a +1 power counter on each of your minions here with less power than that minion.
+Tournament Site - breakpoint 19 - VPs: 2 0 0 - When this base scores, the winner gains 1VP for each player with no power here.
+Truckers
+
+The Greasy Spoon - breakpoint 20 - VPs: 4 2 1 - When an action played on this base would go to the discard pile, shuffle it into its owner’s deck instead.
+Truck Stop - breakpoint 18 - VPs: 3 2 1 - At the start of your turn, you may transfer an action played on another base to here, or from here to another base.
+Vigilantes
+
+Hideout - breakpoint 18 - VPs: 3 1 1 - Minions here cannot be affected by other players’ cards.
+The Mean Streets - breakpoint 25 - VPs: 5 3 2 - After a player plays an action that affects a card here, each other player may place a +1 power counter on a minion here.
+The Bigger Geekier Box
+TheBiggerGeekierBox Bases
+Geeks
+
+Previously found in The Big Geeky Box.
+TableTop - breakpoint 20 - VPs: 4 2 1 - The winner draws 3 cards, then discards 2 cards.
+The Con - breakpoint 24 - VPs: 5 3 2 - When a minion is played here, other minions here of that faction gain +1 power until the end of the turn.
+Smash Up All Stars
+
+Previously found in the All Stars Event Kit.
+Locker Room - breakpoint 23 - VPs: 3 2 2 - At the start of your turn, if you have a minion here, draw a card.
+Stadium - breakpoint 17 - VPs: 3 2 1 - After a minion here is destroyed, its controller draws a card.
+
+Oops, You Did It Again
+OopsYouDidItAgain Bases
+Ancient Egyptians
+
+Pyramids - breakpoint 21 - VPs: 4 2 1 - On your turn, you may bury a card from your hand here.
+Star Portal - breakpoint 17 - VPs: 3 1 1 - After a card is buried here or an action is played on this base, its controller draws a card.
+Cowboys
+
+Saloon - breakpoint 20 - VPs: 3 2 1 - After a minion here is destroyed, each player with a minion here may draw a card.
+So-So Corral - breakpoint 19 - VPs: 4 2 1 - After you play a minion here, it may duel another player’s minion here. Destroy the losing minion.
+Samurai
+
+Sakura Garden - breakpoint 18 - VPs: 3 2 1 - Each turn, the first time one of your minions here goes to the discard pile, draw a card.
+Shogun’s Palace - breakpoint 23 - VPs: 4 3 1 - After you play a minion here, it may duel another player’s minion here. The controller of the winning minion draws two cards.
+Vikings
+
+Drakkar - breakpoint 21 - VPs: 4 2 1 - The first time each turn a player plays a minion here, they may reveal the top card of another player’s deck. If it is an action, or a minion of power 3 or less, they may place it into their hand.
+Longhouse - breakpoint 25 - VPs: 5 3 2 - On your turn, you may place a card from your hand on top of your deck to give one of your minions here +2 power until the end of the turn.
+World Tour: International Incident
+Basecards
+Luchadors
+
+Ringside - breakpoint 21 - VPs: 4 2 1 - After you play an action that directly affects another player’s minion here, draw a card.
+The Squared Circle - breakpoint 18 - VPs: 3 1 1 - After the first time you play a minion here each turn, you may place a random action from your discard pile into your hand.
+Mounties
+
+Great White North, Eh? - breakpoint 21 - VPs: 2 3 1 - Before this base scores, each player may move one of their minions from here to another base and give it +1 power until the end of turn.
+Strategic Syrup Reserve - breakpoint 23 - VPs: 4 2 1 - After you play a minion here, you may move another player’s minion to here from a base where you have a minion.
+Musketeers
+
+Bastion Saint-Gervais - breakpoint 25 - VPs: 5 4 3 - Once per turn after you play an action that directly affects one of your minions here, you may play an extra action.
+The Golden Lily - breakpoint 18 - VPs: 3 2 2 - At the end of your turn, if you have a minion here, draw a card.
+Sumo Wrestlers
+
+Heya Training Stable - breakpoint 23 - VPs: 4 2 1 - At the start of your turn, you may discard a card to place a +1 power counter on one of your minions here.
+The Dohyo - breakpoint 17 - VPs: 3 2 1 - After the first time you play a minion here on your turn, you may move another player’s minion from here to another base.
+
+Smash Up Penguins
+PenguinsBases
+Penguins
+
+Ice Floe - breakpoint 20 - VPs: 3 2 1 - At the start of your turn, you may place one of your minions here on the bottom of your deck to play a minion off the top of your deck as an extra minion.
+The Colony - breakpoint 24 - VPs: 4 2 1 - After the first time you play a minion here on your turn, you may play a minion off the top of your deck here as an extra minion.
+World Tour: Culture Shock
+WTCSBases
+Anansi Tales
+
+Anansi’s Web - breakpoint 17 - VPs: 3 2 1 - If you have a minion here, after the first time each turn you play a standard action, you may place it into another player’s hand instead of the discard pile to draw two cards.
+Storyteller’s Hut - breakpoint 24 - VPs: 4 2 1 - On your turn, you may play an extra action to place a counter on this card. This base’s breakpoint is reduced by 2 for each of those counters.
+Ancient Incas
+
+Cuzcu - breakpoint 30 - VPs: 5 3 2 - This base’s breakpoint is reduced by 3 for each action on it.
+Machu Picchu - breakpoint 20 - VPs: 4 2 1 - After you play an action on this base, draw a card.
+Grimms’ Fairy Tales
+
+Gingerbread House - breakpoint 21 - VPs: 4 2 1 - Before this base scores, each player may choose two of their minions here with the same power to gain +2 power until the end of the turn.
+Woodland Cottage - breakpoint 19 - VPs: 3 1 1 - Once per turn, after you play a minion here, search your deck for a minion of power 3 or less and place it into your hand.
+Polynesian Voyagers
+
+Island Chain - breakpoint 17 - VPs: 3 1 1 - After this base scores, replace it with two bases instead of one.
+Island Peak - breakpoint 23 - VPs: 4 2 1 - At the start of your turn, if you have exactly one minion here, place a +1 power counter on it.
+Tropical Paradise - breakpoint 20 - VPs: 3 2 1 - If each player has one or more minions on this base, its starting breakpoint is 0.
+Russian Fairy Tales
+
+Giant Turnip - breakpoint 30 - VPs: 5 3 3 - This base’s breakpoint is reduced by 1 for each minion on it.
+Transformation Spring - breakpoint 19 - VPs: 4 2 1 - Once during your turn, after you play a minion here, you may place it on the bottom of its owner's deck to play a minion off the top of your deck here as an extra minion.
+
+Dead Reckoning Promo
+See 10th Anniversary.
+Smash Up: Marvel
+Bases
+Avengers
+
+Avengers Tower - breakpoint 22 - VPs: 4 2 1 - Characters here of power 5 or more are not affected by other players' actions.
+Stark’s Lab - breakpoint 18 - VPs: 3 2 1 - After you play a character here, you may place a character from your discard pile on the bottom of your deck.
+Hydra
+
+Hydra Lab - breakpoint 23 - VPs: 4 2 1 - After one or more of your characters here is destroyed, draw a card.
+Ichor Base - breakpoint 25 - VPs: 5 3 2 - After the first time each turn you play a character of power 2 or less here, you may play an extra character of power 2 or less here.
+Kree
+
+Hala - breakpoint 22 - VPs: 4 2 1 - On your turn, if you have a character here, you may play an extra action.
+Kree-Lar - breakpoint 17 - VPs: 3 1 1 - After the first time you play a character here each turn, draw a card.
+Masters of Evil
+
+Castle Zemo - breakpoint 20 - VPs: 4 2 1 - Before this base scores, each player may move one of their characters here to another base to gain 1 VP.
+Symkaria - breakpoint 21 - VPs: 4 0 0 - When this base scores, players other than the winner gain 1 VP for each character they have here.
+S.H.I.E.L.D.
+
+Helicarrier - breakpoint 24 - VPs: 5 3 2 - On your turn, if you have a character here, you may move one of your other characters from another base to here.
+S.H.I.E.L.D. Base - breakpoint 22 - VPs: 4 2 1 - On your turn, you may play a character of power 2 or less here as an extra character.
+Sinister Six
+
+Downtown - breakpoint 18 - VPs: 3 1 1 - After you play a base modifier here, draw a card.
+New York Landmark - breakpoint 23 - VPs: 4 2 1 - This base’s breakpoint is reduced by 1 for each base modifier on it.
+Spider-Verse
+
+Manhattan - breakpoint 20 - VPs: 4 3 2 - After this base scores, each player with a character here may place a card with a Special ability from their discard pile on top of their deck.
+The Daily Bugle - breakpoint 18 - VPs: 4 2 1 - After you play a character here, you may look at the top card of your deck and place it on the top or bottom of your deck.
+Ultimates
+
+Exo-Space - breakpoint 20 - VPs: 4 2 1 - After you move a character to here, it gains +2 power until the end of the turn.
+The Triskelion - breakpoint 23 - VPs: 4 3 1 - After you play a character here, you may move one of your characters from another base to here.
+
+Smash Up Goblins
+Goblins Bases
+Goblins
+
+Goblin Caves - breakpoint 17 - VPs: 3 1 1 - After this base scores, each player with a minion here may flip a coin. If heads, they gain 1 VP. If tails, they discard two cards.
+Goblin Town - breakpoint 21 - VPs: 4 2 1 - After you play a minion here, flip a coin. If heads, place a +1 power counter on that minion.
+Smash Up Knights of the Round Table
+Knights Bases
+Knights of the Round Table
+
+Camelot - breakpoint 22 - VPs: 5 3 2 - Minions here of power 4 or more cannot be affected by other players’ cards. On your turn, you may move one of your minions from here to another base.
+Round Table - breakpoint 21 - VPs: 4 2 1 - Each of your minions here with the same printed power as another one of your minions here has +1 power.
+Smash Up: Disney Edition
+Smash Up Disney Bases
+Aladdin
+
+Agrabah Bazaar - breakpoint 22 - VPs: 4 2 1 - On your turn, you may discard an action card to place up to two +1 power counters total on your characters here.
+Sultan’s Palace - breakpoint 18 - VPs: 3 2 1 - After the first time you play a character here each turn, draw a card.
+Beauty and the Beast
+
+Enchanted Castle - breakpoint 23 - VPs: 4 3 2 - After the first time you discard a card from your hand during your turn, place a +1 power counter on one of your characters here.
+Gaston’s Tavern - breakpoint 26 - VPs: 5 3 2 - On your turn, you may discard a card to play an extra character of power 3 or less here.
+Big Hero 6
+
+Krei Tech - breakpoint 20 - VPs: 3 1 1 - On your turn, you may move one of your characters with power counters to or from here.
+SFIT Robotics Lab - breakpoint 24 - VPs: 4 2 1 - Characters here with power counters have an additional +1 power.
+Frozen
+
+Arendelle - breakpoint 20 - VPs: 3 2 1 - After you play a character here, you may look at the top two cards of your deck, draw one, and place the other in your discard pile.
+Ice Palace - breakpoint 22 - VPs: 4 2 1 - Characters here cannot be destroyed or moved by other players’ cards.
+Mulan
+
+Forbidden City - breakpoint 19 - VPs: 3 3 2 - After the first time you play a character here each turn, you may play an extra action.
+Training Camp - breakpoint 25 - VPs: 5 3 2 - At the start of your turn, you may place a +1 power counter on one of your characters here.
+The Lion King
+
+Jungle Paradise - breakpoint 22 - VPs: 4 3 1 - Once per turn, after you play a character here, you may place a +1 power counter on it if you have a character of power 4 or more in your discard pile.
+Pride Rock - breakpoint 19 - VPs: 3 2 1 - After this base scores, the winner may place one of their characters from here or from their discard pile into their hand.
+The Nightmare Before Christmas
+
+Halloween Town - breakpoint 25 - VPs: 5 3 2 - After this base scores, each player may shuffle any number of their modifiers on characters here into their owner’s decks.
+Spiral Hill - breakpoint 23 - VPs: 4 2 1 - After this base scores, each player with a character here may return a character modifier from here or their discard pile to their hand.
+Wreck-It Ralph
+
+The Dump - breakpoint 20 - VPs: 4 2 2 - When a base modifier on another base goes to the discard pile, move it to here instead. After this base scores, each player may return one of their base modifiers here to its owner’s hand.
+The Power Strip - breakpoint 22 - VPs: 4 2 1 - On your turn, you may move one of your characters to or from this base.
+
+10th Anniversary
+10th Anniversary Bases
+Dead Reckoning Promo
+
+Deepreef Crag - breakpoint 18 - VPs: 3 1 1 - When this base scores, if the total power here equals this base's breakpoint, the winner gains 1 additional VP. (errata'd by 10th Anniversary)
+Mermaids
+
+Mermaid Pool - breakpoint 23 - VPs: 4 2 1 - On your turn, if you have a minion here, you may move another player’s minion to here.
+Mermaid Reef - breakpoint 17 - VPs: 3 1 1 - During your turn, other players’ minions here add 1 less power to their controller’s total.
+Sheep
+
+Previously found in Smash Up Sheep Promo.
+Sheep Shrine - breakpoint 19 - VPs: 4 2 1 - After this is played, each player may move one of their minions to here. If played during setup, replace it and shuffle it into the deck.
+The Pasture - breakpoint 25 - VPs: 5 3 2 - After the first time you move a minion to this base each turn, move another minion from there to here.
+Skeletons
+
+Boneyard - breakpoint 22 - VPs: 4 2 1 - Once during your turn, after a minion you own of power 3 or less goes to the discard pile from another base, you may bury it here.
+Ossuary - breakpoint 20 - VPs: 3 2 1 - On your turn, you may bury a minion of power 3 or less from your discard pile here.
+World Champs
+
+Arena - breakpoint 23 - VPs: 4 3 1 - After the first time you play a minion here during your turn, you may play an extra action or draw a card.
+Hall of Fame - breakpoint 20 - VPs: 4 2 1 - The first minion you play here during your turn gains +2 power until the end of the turn.
+
+Excellent Movies, Dudes!
+Excellent Movies Dudes bases
+Action Heroes
+
+Building Rooftop - breakpoint 20 - VPs: 3 1 1 - At the start of your turn, if you have exactly one minion here, you may reduce the breakpoint of this base by that minion's power until the end of the turn. When this base scores, each player with exactly one minion here gains 1 VP.
+Jungle Camp - breakpoint 20 - VPs: 3 2 1 - The winner may return one of their minions here to their hand.
+Backtimers
+
+Alternate Present - breakpoint 20 - VPs: 4 2 2 - After the first time you play a minion here each turn, you may place two stasis counters on a card from your hand.
+Time-Traveling Car - breakpoint 22 - VPs: 3 2 1 - The winner may place two stasis counters on one of their cards here.
+Extramorphs
+
+Ancient Crashed Ship - breakpoint 21 - VPs: 4 2 1 - After you play a minion here from anywhere except your hand, place a +1 power counter on it.
+Brood Hive - breakpoint 22 - VPs: 4 2 1 - Before this base scores, starting with the player to the current player's left, each player with a minion here may play an extra minion off the top of their deck here.
+Wraithrustlers
+
+Rooftop Portal - breakpoint 22 - VPs: 5 3 2 - Once per turn, after you destroy a card here, draw a card.
+Wraithrustlers HQ - breakpoint 20 - VPs: 4 2 1 - The winner may play an extra action or an extra minion on their next turn.
+Smash Up Teens
+Teens bases
+Teens
+
+Cabin in the Woods - breakpoint 24 - VPs: 4 3 1 - If you have at least two minions here, your minions here each have +2 power.
+Montridge High - breakpoint 20 - VPs: 4 2 1 - After you play a minion here, place a +1 counter on one of your minions with a different name here.

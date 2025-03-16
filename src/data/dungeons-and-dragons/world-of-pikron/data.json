@@ -1,0 +1,83 @@
+{
+    "updates": [
+        {
+            "type": "session start",    "date": "2025-03-07",   "time": "19:50",
+            "players": [ "george", "me", "papri" ],
+            "start_description": "still on big boys back, arms incased in wood."
+        },
+        {
+            "type": "update",   "time": "20:10",
+            "notes": "acid falls from the ceiling and burns off a little wood on my left arm, i notice the small freedom and my fellow adventurers notice the change."
+        },
+        {
+            "type": "update",   "time": "20:20",
+            "notes": "george prays to his god to free me from big boy, and fails, spectacularly, causing my arms to disconect at the elbows."
+        },
+        {
+            "type": "update",   "time": "20:30",
+            "hp_change": {
+                "value": -8,
+                "notes": "eldritch blast, half damage, big boy takes 17",
+                "damage_to_others": [  [ "ariel", -17 ], [ "big boy", -17 ]  ]
+            },
+            "notes": "george in frustration eldritch blasts me and rolls nat 20, and big boy in the chest that we are holding, blasting our arms to smithereens and the booty with it."
+        },
+        {
+            "type": "update",   "time": "20:40",
+            "notes": [
+                "rude bitch throws, lasso at me and rolls shit, hooks my arm stump", 
+                "i fall off the side of areil (the rat) and dangle while my adventuring mates are arguing", 
+                "rude bitch threatens to drop me off the side of the rat."
+            ]
+        },
+        {
+            "type": "update",   "time": "20:50",
+            "hp_change": {
+                "value": 6,
+                "notes": "george heals me",
+                "others_hp_change": [ [ "ariel", 6 ], [ "big boi", 6] ]
+            },
+            "notes": [ 
+                "george denounces his god throwing his amulet into the ground which happens to be ariel", 
+                "and george pulls me up to heal me."
+            ]
+        },
+        {
+            "type": "update",   "time": "21:00",
+            "notes": [ 
+                "ariel indipendently decides to start walking down a hallway and goes to a puzzle room, no acid on the floor.",
+                "I curl up on ariel seeking comfort in her breathing and cry myself to sleep"
+            ]
+        },
+        {
+            "type": "update", "time": "21:05",
+            "notes": [ 
+                "ariel goes into second room, and the room twists 90 degrees",
+                "rb throws dart at wall",
+                "room twists clockwise, anticlockwise, clockwise"
+            ]
+        },
+        {
+            "type": "update", "time": "21:10",
+            "notes": [ 
+                "ariel starts rising, chain elevator",
+                "the arm pieces roll off ariel and are lost forever",
+                "I ask gergy what happened to the arms", 
+                "he describes that they were beyond repair and left behind", 
+                "(misrepresenting the situation where big boys arms were intact mostly, mine were not)"
+            ]
+        },
+        {
+            "type": "update", "time": "21:35",
+            "notes": [ 
+                "ariel leaves dungeon",
+                "we are outside of the ruins",
+                "merfolk are invading",
+                "people are screaming in the distance",
+                "there is a village north",
+                "ocean and merfolk east",
+                "we all get off ariel to go find a place to hide from those dirty merfolk"
+            ]
+        }
+    ]
+}
