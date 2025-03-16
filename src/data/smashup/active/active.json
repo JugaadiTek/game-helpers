@@ -1,0 +1,26 @@
+{
+    "date": "2025-03-04",
+    "players": [
+        { "name": "William",    "factions": ["Innsmouth", "Robots"] },
+        { "name": "Papri",      "factions": ["Aliens", "Ghosts"] },
+        { "name": "Asis",    "factions": ["Elves", "Kitty Cats"] },
+        { "name": "Aditya",     "factions": ["Kaiju", "Big Hero 6"] }
+    ],
+    "gamedata": {
+        "mechanics": {
+            "madness": true,
+            "monsters": true,
+            "treasures": true,
+            "titans": true
+        },
+        "bases": [],
+        "active_bases": [ "Haunted House", "The Dread Gazebo", "The Homeworld", "Kaiju Island", "Tokyo" ]
+    },
+    "score": {
+        "current": [4,4,7,1],
+        "log": [
+            { "type": "score", "base": "Base 1", "bp": 23,  "power": [2,8,13,7],  "vps": [0,2,4,1],  "notes": "" },
+            { "type": "score", "base": "Base 2", "bp": 21,  "power": [15,2,8,0],  "vps": [4,2,3,0],  "notes": "" }
+        ]
+    }
+}

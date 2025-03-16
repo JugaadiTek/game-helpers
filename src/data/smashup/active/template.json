@@ -1,0 +1,26 @@
+{
+    "date": "2025-03-04",
+    "players": [
+        { "name": "William",    "factions": ["",""] },
+        { "name": "Papri",      "factions": ["",""] },
+        { "name": "Chetana",    "factions": ["",""] },
+        { "name": "Nikhil",     "factions": ["",""] }
+    ],
+    "gamedata": {
+        "mechanics": {
+            "madness": false,
+            "monsters": false,
+            "treasures": false,
+            "titans": false
+        },
+        "bases": [],
+        "active_bases": []
+    },
+    "score": {
+        "current": [0,0,0,0],
+        "log": [
+            { "type": "turn", "round": 0, "turn": 0, "new_bases": [], "notes": "" },
+            { "type": "score", "base": "Base 1",   "points": [0,0,0,0],   "vps": [0,0,0,0],  "notes": "" }
+        ]
+    }
+}
