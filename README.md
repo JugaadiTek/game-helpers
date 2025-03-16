@@ -1,6 +1,7 @@
 # game-helpers _(readme and repo wip)_
-
+_(WIP)_
 ## About This Repo
+_(WIP)_
 
 ## What's Included
 - Smashup
@@ -9,7 +10,7 @@
 - Betrayal at Baldurs Gate (WIP)
 - Various D&D helpers
 
-## Getting Started
+## Getting Started (WIP)
 1. Clone the repository:
 ```bash
 git clone <your-repo-url>
