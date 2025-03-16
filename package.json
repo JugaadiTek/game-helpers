@@ -1,4 +1,13 @@
 {
+  "name": "game-helpers",
+  "version": "0.0.3",
+  "scripts": {
+    "dev": "astro dev --host",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
   "dependencies": {
     "astro": "^5.5.2"
   }
