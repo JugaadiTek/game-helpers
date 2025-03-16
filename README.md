@@ -11,6 +11,11 @@ _(WIP)_
 - Various D&D helpers
 
 ## Getting Started (WIP)
+### Dependencies 
+- https://nodejs.org/en
+- https://astro.build/
+
+### Setup
 1. Clone the repository:
 ```bash
 git clone <your-repo-url>
