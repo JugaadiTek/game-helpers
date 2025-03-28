@@ -1,0 +1,909 @@
+[
+    {
+      "authority": "PEGI",
+      "rating": [
+        {
+          "desc": "PEGI 7",
+          "name": "PEGI_7",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/pegi/7.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/pegi/7.png"
+          }
+        },
+        {
+          "desc": "PEGI 12",
+          "name": "PEGI_12",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/pegi/12.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/pegi/12.png"
+          }
+        },
+        {
+          "desc": "PEGI 16",
+          "name": "PEGI_16",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/pegi/16.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/pegi/16.png"
+          }
+        },
+        {
+          "desc": "PEGI 16+",
+          "name": "PEGI_16",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/pegi/16.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/pegi/16.png"
+          }
+        },
+        {
+          "desc": "PEGI 3",
+          "name": "PEGI_3",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/pegi/3.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/pegi/3.png"
+          }
+        },
+        {
+          "desc": "PEGI 18",
+          "name": "PEGI_18",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/pegi/18.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/pegi/18.png"
+          }
+        },
+        {
+          "desc": "PEGI 7+",
+          "name": "PEGI_7",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/pegi/7.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/pegi/7.png"
+          }
+        },
+        {
+          "desc": "PEGI 3+",
+          "name": "PEGI_3",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/pegi/3.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/pegi/3.png"
+          }
+        },
+        {
+          "desc": "PEGI 18+",
+          "name": "PEGI_18",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/pegi/18.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/pegi/18.png"
+          }
+        },
+        {
+          "desc": "PEGI 12+",
+          "name": "PEGI_12",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/pegi/12.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/pegi/12.png"
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "PEGI_FEAR",
+          "description": "Fear",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/descriptors/hd/pegi/fear.png",
+            "4k": "https://image.api.playstation.com/grc/images/descriptors/4k/pegi/fear.png"
+          }
+        },
+        {
+          "name": "PEGI_VIOLENCE",
+          "description": "Violence",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/descriptors/hd/pegi/violence.png",
+            "4k": "https://image.api.playstation.com/grc/images/descriptors/4k/pegi/violence.png"
+          }
+        },
+        {
+          "name": "PEGI_LANGUAGE",
+          "description": "Language",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/descriptors/hd/pegi/language.png",
+            "4k": "https://image.api.playstation.com/grc/images/descriptors/4k/pegi/language.png"
+          }
+        },
+        {
+          "name": "PEGI_DRUGS",
+          "description": "Drugs",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/descriptors/hd/pegi/drugs.png",
+            "4k": "https://image.api.playstation.com/grc/images/descriptors/4k/pegi/drugs.png"
+          }
+        },
+        {
+          "name": "PEGI_ONLINE",
+          "description": "Online",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/descriptors/hd/pegi/online.png",
+            "4k": "https://image.api.playstation.com/grc/images/descriptors/4k/pegi/online.png"
+          }
+        },
+        {
+          "name": "PEGI_IN_GAME_PURCHASES",
+          "description": "In-Game Purchases",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/descriptors/hd/pegi/ingamepurchases.png",
+            "4k": "https://image.api.playstation.com/grc/images/descriptors/4k/pegi/ingamepurchases.png"
+          }
+        },
+        {
+          "name": "PEGI_SEXUAL_CONTENT",
+          "description": "Sexual Content",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/descriptors/hd/pegi/sex.png",
+            "4k": "https://image.api.playstation.com/grc/images/descriptors/4k/pegi/sex.png"
+          }
+        },
+        {
+          "name": "PEGI_EXTREME_VIOLENCE",
+          "description": "Extreme Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "PEGI_GAMBLING",
+          "description": "Gambling",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/descriptors/hd/pegi/gambling.png",
+            "4k": "https://image.api.playstation.com/grc/images/descriptors/4k/pegi/gambling.png"
+          }
+        },
+        {
+          "name": "PEGI_IN_GAME_PURCHASES_INCLUDES_RANDOM_ITEMS",
+          "description": "In-Game Purchases (Includes Random Items)",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "PEGI_MILD_VIOLENCE",
+          "description": "Mild Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "PEGI_MODERATE_VIOLENCE",
+          "description": "Moderate Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "PEGI_HORROR",
+          "description": "Horror",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/descriptors/hd/pegi/horror.png",
+            "4k": "https://image.api.playstation.com/grc/images/descriptors/4k/pegi/horror.png"
+          }
+        },
+        {
+          "name": "PEGI_SEXUAL_INNUENDO",
+          "description": "Sexual Innuendo",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "PEGI_MILD_SWEARING",
+          "description": "Mild Swearing",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "PEGI_NO_DESCRIPTORS",
+          "description": "No Descriptors",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "PEGI_IMPLIED_VIOLENCE",
+          "description": "Implied Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "PEGI_STRONG_LANGUAGE",
+          "description": "Strong Language",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "PEGI_STRONG_VIOLENCE",
+          "description": "Strong Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "PEGI_USE_OF_ALCOHOL_TOBACCO",
+          "description": "Use of Alcohol/Tobacco",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "PEGI_DISCRIMINATORY_LANGUAGE",
+          "description": "Discriminatory Language",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "PEGI_NUDITY",
+          "description": "Nudity",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "PEGI_SIMULATED_GAMBLING",
+          "description": "Simulated Gambling",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        }
+      ],
+      "interactive": [
+        {
+          "description": "Users Interact",
+          "name": "PEGI_USERS_INTERACT"
+        },
+        {
+          "description": "In-Game Purchases",
+          "name": "PEGI_IN_GAME_PURCHASES"
+        }
+      ]
+    },
+    {
+      "authority": "Generic",
+      "rating": [
+        {
+          "desc": "IARC 16+",
+          "name": "GENERIC_16",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/generic/iarc_16.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/generic/iarc_16.png"
+          }
+        },
+        {
+          "desc": "IARC 7+",
+          "name": "GENERIC_7",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/generic/iarc_7.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/generic/iarc_7.png"
+          }
+        },
+        {
+          "desc": "IARC 12+",
+          "name": "GENERIC_12",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/generic/iarc_12.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/generic/iarc_12.png"
+          }
+        },
+        {
+          "desc": "IARC 3+",
+          "name": "GENERIC_3",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/generic/iarc_3.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/generic/iarc_3.png"
+          }
+        },
+        {
+          "desc": "IARC 18+",
+          "name": "GENERIC_18",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/generic/iarc_18.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/generic/iarc_18.png"
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "GENERIC_USE_OF_ALCOHOL_TOBACCO",
+          "description": "Use of Alcohol/Tobacco",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_MILD_VIOLENCE",
+          "description": "Mild Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_STRONG_LANGUAGE",
+          "description": "Strong Language",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_FEAR",
+          "description": "Fear",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_MILD_SWEARING",
+          "description": "Mild Swearing",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_MODERATE_VIOLENCE",
+          "description": "Moderate Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_SEXUAL_INNUENDO",
+          "description": "Sexual Innuendo",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_STRONG_VIOLENCE",
+          "description": "Strong Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_HORROR",
+          "description": "Horror",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_IMPLIED_VIOLENCE",
+          "description": "Implied Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_EXTREME_VIOLENCE",
+          "description": "Extreme Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_DRUGS",
+          "description": "Drugs",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_LANGUAGE",
+          "description": "Language",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_SIMULATED_GAMBLING",
+          "description": "Simulated Gambling",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_DISCRIMINATORY_LANGUAGE",
+          "description": "Discriminatory Language",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_NUDITY",
+          "description": "Nudity",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_VIOLENCE",
+          "description": "Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "GENERIC_GAMBLING",
+          "description": "Gambling",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        }
+      ],
+      "interactive": [
+        {
+          "description": "In-Game Purchases",
+          "name": "GENERIC_IN_GAME_PURCHASES"
+        },
+        {
+          "description": "Users Interact",
+          "name": "GENERIC_USERS_INTERACT"
+        },
+        {
+          "description": "In-Game Purchases (Includes Random Items)",
+          "name": "GENERIC_IN_GAME_PURCHASES_RANDOM"
+        }
+      ]
+    },
+    {
+      "authority": "ESRB",
+      "rating": [
+        {
+          "desc": "ESRB Teen",
+          "name": "ESRB_TEEN",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/esrb/t.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/esrb/t.png"
+          }
+        },
+        {
+          "desc": "ESRB Everyone",
+          "name": "ESRB_EVERYONE",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/esrb/e.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/esrb/e.png"
+          }
+        },
+        {
+          "desc": "ESRB Everyone 10+",
+          "name": "ESRB_EVERYONE_10",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/esrb/e10.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/esrb/e10.png"
+          }
+        },
+        {
+          "desc": "ESRB Mature",
+          "name": "ESRB_MATURE",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/esrb/m.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/esrb/m.png"
+          }
+        },
+        {
+          "desc": "ESRB Mature 17+",
+          "name": "ESRB_MATURE_17",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/esrb/m17.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/esrb/m17.png"
+          }
+        },
+        {
+          "desc": "ESRB E10-T",
+          "name": "ESRB_E_10_T",
+          "img": {
+            "hd": "https://image.api.playstation.com/grc/images/ratings/hd/esrb/e10-t.png",
+            "4k": "https://image.api.playstation.com/grc/images/ratings/4k/esrb/e10-t.png"
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "ESRB_BLOOD",
+          "description": "Blood",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_FANTASY_VIOLENCE",
+          "description": "Fantasy Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_LANGUAGE",
+          "description": "Language",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_USE_OF_TOBACCO",
+          "description": "Use of Tobacco",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_ALCOHOL_REFERENCE",
+          "description": "Alcohol Reference",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_CARTOON_VIOLENCE",
+          "description": "Cartoon Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_COMIC_MISCHIEF",
+          "description": "Comic Mischief",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_MILD_BLOOD",
+          "description": "Mild Blood",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_PARTIAL_NUDITY",
+          "description": "Partial Nudity",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_MILD_LANGUAGE",
+          "description": "Mild Language",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_SUGGESTIVE_THEMES",
+          "description": "Suggestive Themes",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_MILD_FANTASY_VIOLENCE",
+          "description": "Mild Fantasy Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_BLOOD_AND_GORE",
+          "description": "Blood and Gore",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_GAME_EXPERIENCE_MAY_CHANGE_DURING_ONLINE_PLAY",
+          "description": "Game Experience May Change During Online Play",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_VIOLENCE",
+          "description": "Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_CRUDE_HUMOR",
+          "description": "Crude Humor",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_DRUG_REFERENCE",
+          "description": "Drug Reference",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_USE_OF_ALCOHOL_AND_TOBACCO",
+          "description": "Use of Alcohol and Tobacco",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_STRONG_LANGUAGE",
+          "description": "Strong Language",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_MILD_LYRICS",
+          "description": "Mild Lyrics",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_LYRICS",
+          "description": "Lyrics",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_NO_DESCRIPTORS",
+          "description": "No Descriptors",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_INTENSE_VIOLENCE",
+          "description": "Intense Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_USE_OF_ALCOHOL",
+          "description": "Use of Alcohol",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_MILD_CARTOON_VIOLENCE",
+          "description": "Mild Cartoon Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_ANIMATED_BLOOD",
+          "description": "Animated Blood",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_MILD_VIOLENCE",
+          "description": "Mild Violence",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_VISIT_WWWESRBORG_FOR_RATING_INFORMATION",
+          "description": "Visit www.esrb.org for rating information",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_MILD_SEXUAL_THEMES",
+          "description": "Mild Sexual Themes",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_VIOLENT_REFERENCES",
+          "description": "Violent References",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_SEXUAL_THEMES",
+          "description": "Sexual Themes",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_MILD_SUGGESTIVETHEMES",
+          "description": "Mild Suggestive Themes",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_NUDITY",
+          "description": "Nudity",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_USE_OF_DRUGS",
+          "description": "Use of Drugs",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_SIMULATED_GAMBLING",
+          "description": "Simulated Gambling",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_DRUG_AND_ALCOHOL_REFERENCE",
+          "description": "Drug and Alcohol Reference",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_MATURE_HUMOR",
+          "description": "Mature Humor",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_STRONG_SEXUAL_CONTENT",
+          "description": "Strong Sexual Content",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_USE_OF_DRUGS_AND_ALCOHOL",
+          "description": "Use of Drugs and Alcohol",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_MUSIC_DOWNLOADS_NOT_RATED_BY_THE_ESRB",
+          "description": "Online Music Not Rated by the ESRB",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_SEXUAL_CONTENT",
+          "description": "Sexual Content",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_ALCOHOL_AND_TOBACCO_REFERENCE",
+          "description": "Alcohol and Tobacco Reference",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        },
+        {
+          "name": "ESRB_TOBACCO_REFERENCE",
+          "description": "Tobacco Reference",
+          "img": {
+            "hd": null,
+            "4k": null
+          }
+        }
+      ],
+      "interactive": [
+        {
+          "description": "Users Interact",
+          "name": "ESRB_USERS_INTERACT"
+        },
+        {
+          "description": "In-Game Purchases",
+          "name": "ESRB_IN_GAME_PURCHASES"
+        },
+        {
+          "description": "In-Game Purchases (Includes Random Items)",
+          "name": "ESRB_IN_GAME_PURCHASES_RANDOM"
+        },
+        {
+          "description": "Digital Purchases",
+          "name": "ESRB_DIGITAL_PURCHASES"
+        },
+        {
+          "description": "Shares Info",
+          "name": "ESRB_SHARES_INFO"
+        }
+      ]
+    }
+  ]

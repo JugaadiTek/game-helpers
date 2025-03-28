@@ -1,0 +1,230 @@
+[
+    {
+      "id": "0",
+      "name": "ADVENTURE",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.929-04:00",
+        "last": "2025-03-27T22:45:14.929-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "1",
+      "name": "ACTION",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.932-04:00",
+        "last": "2025-03-27T22:45:14.932-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "FAMILY",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.933-04:00",
+        "last": "2025-03-27T22:45:14.933-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "ROLE_PLAYING_GAMES",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.935-04:00",
+        "last": "2025-03-27T22:45:14.935-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "STRATEGY",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.936-04:00",
+        "last": "2025-03-27T22:45:14.936-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "SHOOTER",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.937-04:00",
+        "last": "2025-03-27T22:45:14.937-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "HORROR",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.938-04:00",
+        "last": "2025-03-27T22:45:14.939-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "SPORTS",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.940-04:00",
+        "last": "2025-03-27T22:45:14.940-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "SIMULATION",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.941-04:00",
+        "last": "2025-03-27T22:45:14.941-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "ARCADE",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.942-04:00",
+        "last": "2025-03-27T22:45:14.942-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "RACING",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.944-04:00",
+        "last": "2025-03-27T22:45:14.944-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "PUZZLE",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.945-04:00",
+        "last": "2025-03-27T22:45:14.946-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "CASUAL",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.947-04:00",
+        "last": "2025-03-27T22:45:14.948-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "UNIQUE",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.949-04:00",
+        "last": "2025-03-27T22:45:14.950-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "14",
+      "name": "FIGHTING",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.951-04:00",
+        "last": "2025-03-27T22:45:14.951-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "15",
+      "name": "EDUCATIONAL",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.952-04:00",
+        "last": "2025-03-27T22:45:14.952-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "16",
+      "name": "SIMULATOR",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.954-04:00",
+        "last": "2025-03-27T22:45:14.954-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "17",
+      "name": "PARTY",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.955-04:00",
+        "last": "2025-03-27T22:45:14.955-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    },
+    {
+      "id": "18",
+      "name": "MUSIC/RHYTHM",
+      "jtmeta": {
+        "active": true,
+        "first": "2025-03-27T22:45:14.957-04:00",
+        "last": "2025-03-27T22:45:14.957-04:00"
+      },
+      "source": [
+        "PSN"
+      ]
+    }
+  ]
