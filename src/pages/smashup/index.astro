@@ -33,18 +33,22 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
         <table class="score-card">
             <thead>
                 <tr>
-                    <th>Player</th>
+                    <th class="r">R</th>
+                    <th class="t">T</th>
+                    <th class="p">Player</th>
                     {data.players.map(player => (
                         <th>{player.name}</th>
                     ))}
                 </tr>
                 <tr class="factions">
+                    <th></th><th></th>
                     <th>Factions</th>
                         {data.players.map(player => (
-                        <th>{player.factions[0]} | {player.factions[1]}</th>
+                        <th>{player.factions[0]} <br/><hr/> {player.factions[1]}</th>
                     ))}
                 </tr>
                 <tr class="vps">
+                    <th></th><th></th>
                     <th>VPs</th>
                     {data.score.current.map(score => (
                         <th>{score}</th>
@@ -52,10 +56,15 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
                 </tr>
             </thead>
             <tbody>
-                {data.score.log.map((score, index) => (
+                {data.score.log.map((x, index) => (
                     <tr>
-                        <th>{score.base}</th>
+                        {score.type === "x" ? 
+                            <th></th><th></th><th class="x-fail">x</th>: 
+                            <td class="r">{score.r}</td><td class="t">{score.t}</td>
+                            <th>{score.base}</th>
+                        }
                         {score.vps.map(vp => (
+                            // if vp is null, set class to fail, else set class to b
                             <td class={vp === 0 ? 'fail' : 'b'}>{vp === 0 ? '' : vp}</td>
                         ))}
                     </tr>
@@ -106,7 +115,7 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
     th {
         background-color: #442400;
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     tbody td.fail {
         background:#000;
@@ -121,17 +130,18 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
         background-color: #230000;
     }
   h1 {
-    color: orange;
+    color: #cfcf00;
   }
   body > div {
     border: 1px solid black;
   }
   body {
     display:grid;
-    grid-template-columns: 200px 1fr 500px;
+    /* grid-template-columns: 32px 1fr 500px; */
+    grid-template-columns: 1fr 700px; 
     gap: 1rem;
     padding: 1rem;
-    background: #241000;
+    background: #221000;
     color: #ddd;
     font-family: sans-serif;
   }
@@ -189,4 +199,24 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
     margin:0;
     padding: 0;
   }
+  td.fail {
+    padding:1px;
+    border-bottom:1px solid #555;
+  }
+.turns{
+    display:none;
+}
+.active-bases{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+tr th.x-fail {
+    font-size:1px;
+}
+th hr {
+    border: 1px dashed #555;
+    width: 100%;
+    margin: 0.1rem 0;
+}
 </style>

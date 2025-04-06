@@ -1,26 +1,50 @@
 {
-    "date": "2025-03-04",
+    "date": "2025-04-06",
     "players": [
-        { "name": "William",    "factions": ["Innsmouth", "Robots"] },
-        { "name": "Papri",      "factions": ["Aliens", "Ghosts"] },
-        { "name": "Asis",    "factions": ["Elves", "Kitty Cats"] },
-        { "name": "Aditya",     "factions": ["Kaiju", "Big Hero 6"] }
+        { "name": "S!nn",    "factions": [  "Cyborg Apes",  "Princesses"   ] },
+        { "name": "Aditya",  "factions": [  "Ghosts",       "Tricksters"   ] },
+        { "name": "Karthik", "factions": [  "Zombies",      "Star Roamers" ] },
+        { "name": "Kaushik", "factions": [  "Dinosaurs",    "Ninjas"       ] }
     ],
     "gamedata": {
-        "mechanics": {
-            "madness": true,
-            "monsters": true,
-            "treasures": true,
-            "titans": true
-        },
+        "mechanics": { "madness": false, "monsters": false, "treasures": false, "titans": false },
         "bases": [],
-        "active_bases": [ "Haunted House", "The Dread Gazebo", "The Homeworld", "Kaiju Island", "Tokyo" ]
-    },
-    "score": {
-        "current": [4,4,7,1],
-        "log": [
-            { "type": "score", "base": "Base 1", "bp": 23,  "power": [2,8,13,7],  "vps": [0,2,4,1],  "notes": "" },
-            { "type": "score", "base": "Base 2", "bp": 21,  "power": [15,2,8,0],  "vps": [4,2,3,0],  "notes": "" }
+        "active_bases": [
+            "The Dread Gazebo",
+            "Cave of Shinies",
+            "Tar Pits",
+            "Haunted House",
+            "Monkey Lab" 
+        ],
+        "discarded_bases": [
+            "Primate Park"
         ]
-    }
+    },
+    "score": {  "current": [3,2,0,1],   "log": [
+        [ {"t":"x"},{"t":"x"},{"t":"x"},{"t":"x"} ],
+        [ {"t":"x"},{"t":"x"},{"t":"x"},{"t":"x"} ],
+        [ {"t":"x"},{"t":"x"},{"t":"x"},{"t":"x"} ],
+        [ {"t":"x"},{"t":"x"},{"t":"x"},{"t":"x"} ],
+        [ {"t":"score","base":"Primate Park","bp":20,"power":[10,4,0,7],"vps":[3,1,0,2],"notes":""},    {"t":"x"},  {"t":"x"},  {"t":"x"} ],
+        [ {"t":"x"},{"t":"x"},{"t":"x"},{"t":"x"} ]            
+    ] },
+    "storage": [
+        { "round":0, "turn":0, "type": "score", "base": "Base 1", "bp": 23,  "power": [2,8,13,7],  "vps": [0,2,4,1],  "notes": "" },
+        { "round":0, "turn":1, "type": "score", "base": "Base 2", "bp": 21,  "power": [15,2,8,0],  "vps": [4,2,3,0],  "notes": "" },
+        [
+            { "r": 0, "t": [ { "t": 0, "type": "x" }, { "t": 1, "type": "x" }, { "t": 2, "type": "x" }, { "t": 3, "type": "x" } ] },
+            { "r": 1, "t": [ { "t": 0, "type": "x" }, { "t": 1, "type": "x" }, { "t": 2, "type": "x" }, { "t": 3, "type": "x" } ] },
+            { "r": 2, "t": [ { "t": 0, "type": "x" }, { "t": 1, "type": "x" }, { "t": 2, "type": "x" }, { "t": 3, "type": "x" } ] },
+            { "r": 3, "t": [ { "t": 0, "type": "x" }, { "t": 1, "type": "x" }, { "t": 2, "type": "x" }, { "t": 3, "type": "x" } ] },
+            { "r": 4, "t": [ 
+                { "t": 0, "type": "score", "base": "Primate Park", "bp": 20, "power": [10,4,0,7], "vps": [3,1,0,2], "notes": "" },  { "t": 1, "type": "x" }, { "t": 2, "type": "x" }, { "t": 3, "type": "x" } ] },
+            { "r": 5, "t": [ { "t": 0, "type": "x" }, { "t": 1, "type": "x" }, { "t": 2, "type": "x" }, { "t": 3, "type": "x" } ] }
+        ],
+        { "r":1, "t":0, "type": "x", "vps":[0,0,0,0] }, {"round":1, "turn":1, "type": "x", "vps":[0,0,0,0] }, {"round":1, "turn":2, "type": "x", "vps":[0,0,0,0] }, {"round":1, "turn":3, "type": "x", "vps":[0,0,0,0] },
+        { "r":2, "t":0, "type": "x", "vps":[0,0,0,0] }, {"round":2, "turn":1, "type": "x", "vps":[0,0,0,0] }, {"round":2, "turn":2, "type": "x", "vps":[0,0,0,0] }, {"round":2, "turn":3, "type": "x", "vps":[0,0,0,0] },
+        { "r":3, "t":0, "type": "x", "vps":[0,0,0,0] }, {"round":3, "turn":1, "type": "x", "vps":[0,0,0,0] }, {"round":3, "turn":2, "type": "x", "vps":[0,0,0,0] }, {"round":3, "turn":3, "type": "x", "vps":[0,0,0,0] },
+        { "r":4, "t":0, "type": "score", "base":"Primate Park","bp":"20", "power":[10,4,0,7],"vps":[3,1,0,2], "notes":""},
+        { "r":4, "t":1, "type": "x", "vps":[0,0,0,0] }, {"round":4, "turn":2, "type": "x", "vps":[0,0,0,0] }, {"round":4, "turn":3, "type": "x", "vps":[0,0,0,0] },
+        { "r":5, "t":0, "type": "x", "vps":[0,0,0,0] }, {"round":5, "turn":1, "type": "x", "vps":[0,0,0,0] }, {"round":5, "turn":2, "type": "x", "vps":[0,0,0,0] }, {"round":5, "turn":3, "type": "x", "vps":[0,0,0,0] } 
+    ]
 }

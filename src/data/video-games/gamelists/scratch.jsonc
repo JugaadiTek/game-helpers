@@ -1,0 +1,151 @@
+{
+    "enums": {
+      "reviews": {
+        "overall": [
+          { "icon": "👍🏼", "name": "good",       "desc": { "short": "💯 I want to play this.",           "long": "Use this sparingly, these are games that evoke a positive emotional response in you. You become excited or passionate when the game is brought up in conversation. You would actively push a group of people to play this game with you. This is what you would advocate for in a list of options." } },
+          { "icon": "🫳🏼", "name": "fine",       "desc": { "short": "🤷🏼‍♀️ I can play this",                "long": "You have a neutral emotional response to the game. It is fine, fun to play with friends. This should be the bulk of ratings, You will play these games if that is what the group wants to play, but you will not recommend them over other options." } },
+          { "icon": "👎🏼", "name": "bad",        "desc": { "short": "😕 I'd prefer not to play this.",   "long": "You would be disappointed if the group chose one these games, you might even sit out the rounds and watch if this is what was being played." } },
+          { "icon": "💀", "name": "Fuck This",  "desc": { "short": "🖕 you CAN NOT make me play this.", "long": "use this sparingly, it indicates a negatively charged emotional response... You will never subject yourself to this crap & you do not understand why this game would ever be chosen. You judge people who would ever consider playing this. It is reserved for titles that provoke a 'why the fuck would anyone subject themselves to this torture' emotional response from you. the game should be broken, or otherwise so unfun/poorly polished that it frequently leads to shitty experiences. you might even heckle people while they play, try to manipulate the group to move onto the next title, or strait up walk out of the room." } }
+        ]
+      }
+    },
+    "tags": [
+      { "tag": "tutorials",                         "desc": ""                      },
+      { "tag": "art",                         "desc": ""                      },
+      { "tag": "dlc-ads:spammy",                        "desc": ""                     },
+      { "tag": "input-feedback",                        "desc": ""                     },
+      { "tag": "kill-cam",                        "desc": ""                     },
+      { "tag": "balance",                         "desc": ""                      },
+      { "tag": "learning-curve",                        "desc": ""                     },
+      { "tag": "configurability",                         "desc": ""                      },
+      { "tag": "campaign",                        "desc": ""                     },
+      { "tag": "dlc:ui-bugs",                         "desc": ""                      },
+      { "tag": "character-tracking",                        "desc": ""                     },
+      { "tag": "friendly-fire",                         "desc": ""                      },
+      { "tag": "feature-blocking",                        "desc": "",                        "mods": [
+          "soft",
+          "mid",
+          "hard"
+        ]
+      },
+      { "tag": "difficulty-selector",                         "desc": ""                      },
+      { "tag": "enemy-variety",                         "desc": ""                      }
+    ],
+    "notes": [
+      [
+        "need keyword for surprise reveal of cool hidden features, maybe"
+      ]
+    ],
+    "games": [
+      {
+        "id": 0,
+        "name": "Towerfall Ascension",
+        "platform": "PS5",
+        "review_date": "2023-10-01",
+        "play-this!": "versus",
+        "🔥": [
+          "tutorials",
+          "art"
+        ], // match duration good, points to win configuration bad
+        "💩": [
+          "dlc-ads:spammy"
+        ], // dlc:bad aka buy dlc to have worse game.
+        "modes": [
+          {   "name": "versus",
+            "players": [
+              2,
+              3,
+              4
+            ],
+            "overall": "👍🏼",
+            "🔥": [
+              "input-feedback",
+              "kill-cam",
+              "balance",
+              "learning-curve",
+              "configurability"
+            ],
+            "💩": [
+              "dlc:ui-bugs",
+              "character-tracking"
+            ]
+            // "💀": "BUYING DLC FUCKS GAME"
+          },
+          {   "name": "co-op",
+            "players": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "overall": "👎🏼",
+            "🔥": [
+              "friendly-fire"
+            ],
+            "💩": [
+              "feature-blocking:soft"
+            ]
+          },
+          {   "name": "co-op/aditya",
+            "players": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "overall": "🫳🏼",
+            "🔥": [
+              "difficulty-selector",
+              "enemy-variety"
+            ],
+            "💩": [
+              "feature-blocking:hard"
+            ]
+          },
+        ],
+        "notes": [
+          "Towerfall Ascension branding is a bit of a miss",
+          "the name of the game is a bit of a misnomer"
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Untitled Goose Game",
+        "platform": "PS5",
+        "review_date": "2023-10-01",
+        "🔥": [
+          [
+            "tutorial:non-blocking"
+          ],
+          [
+            "tutorial",
+            "hidden objectives"
+          ]
+        ],
+        "💩": [
+          [
+            "quest-display:interupts",
+            "no-goose-ongoose-combat",
+            "controller-diagram"
+          ],
+          []
+        ],
+        "modes": [
+          {   "name": "2-player",
+            "players": [
+              2
+            ],
+            "overall": [
+              "👎🏼",
+              "👎🏼"
+            ], // 
+          }
+        ],
+              "notes": [
+          "max-zoom is not far enough out for interesting gameplay",
+          "player 2 overides player 1's camera controls if conflicting",
+          "aditya feeling went from 👍🏼->🫳🏼->👎🏼"
+        ]
+      }
+    ]
+  }
