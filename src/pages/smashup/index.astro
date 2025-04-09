@@ -218,6 +218,26 @@ tbody tr:last-child th {
     /* border-bottom: 1px solid #777;*/
     font-size: 1rem;
 }
+span.vp, span.vp-mods {
+    font-family: monospace;
+    font-size: 1.25em;
+    font-weight: 400;
+}
+.vps {
+    position: relative;
+}
+span.vp-mods{
+    color: #ee6;
+    font-size: 1em;
+    font-weight: 400;
+
+}
+span.vp-mods::before {
+    content: "+";
+    font-size: 1.25em;
+    margin-right: 0.25em;
+    color: #cc9;
+}
 /* 
     table {
         border-collapse: collapse;
