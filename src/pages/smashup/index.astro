@@ -40,8 +40,7 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
             <table class="score-card">
                 <thead>
                     <tr>
-                        <th rowspan="3" class="r">Round</th>
-                        <th rowspan="3" class="t">Turn</th>
+                        <th rowspan="3" class="rt">#</th>
                         <th rowspan="2" class="p">Player</th>
                         {data.players.map(player => (
                             <th>{player.name}</th>
@@ -66,8 +65,7 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
                                 turn.scoring? turn.scoring.map((score, scoreIndex) => (         /* if turn.scoring exists, output a row with the scoring data */
                                     <tr class="turn scoring">
                                         {scoreIndex == 0 ?                                      /* create tds for round & turn that cover all rows, only once */
-                                            <th rowspan={turn.scoring.length}><span>{roundIndex}</span></th>
-                                            <th rowspan={turn.scoring.length}><span>{turnIndex}</span></th>
+                                            <th class="rt-num" rowspan={turn.scoring.length}><span>{roundIndex} - {turnIndex}</span></th>
                                         : null }
                                         <td class="base">{score.base}</td>
                                         {score.vps[1].length == 0 ? 
@@ -85,7 +83,7 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
                                     </tr>
                                 )) : null
                             ))
-                        ) : <tr class="round noscore"><td colspan="8">Round {roundIndex}</td></tr> 
+                        ) : <tr class="round noscore"><th class= "rt-num blank"></th><td colspan="5">Round {roundIndex}</td></tr> 
                     ))} 
                 </tbody>
             </table>
@@ -171,13 +169,39 @@ thead tr.total-scores td {
     padding: 0;
     margin:0;
 }
-th.r, th.t {
-    padding: 0;
+th.rt {
+    width: 32px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #442400;
+    color: #ddd;
+}
+th.rt-num {
+    border-right: 1px solid #777;
+    border-left: 1px solid #777;
+}
+tbody tr:last-child th {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #444;
+} 
+.scoring th.rt-num {
+    padding:0;
     margin:0;
-    max-width:2px;
-    transform:rotate(-60deg);
-    border:1px solid yellow;
+    /* font-family: monospace; */
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #442400;
+    color: #aaa;
     
+}
+.scoring th.rt-num {
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+}
+.noscore th.rt-num {
+    border-color: #111;
+    background-color: #181200;
 }
 /* 
     table {
