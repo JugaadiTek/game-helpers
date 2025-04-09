@@ -4,7 +4,7 @@ _(WIP)_
 _(WIP)_
 
 ## What's Included
-- Smashup
+- [Smashup](/src/smashup) | [Data](/src/data/smashup)
 - Arkham Horror (WIP)
 - Loop Hero - PC
 - Betrayal at Baldurs Gate (WIP)
