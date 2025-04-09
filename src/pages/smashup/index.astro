@@ -63,7 +63,7 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
                         round.some(r => Object.keys(r).length > 0) ? (                          /* if the 'round' array has objects with keys, output them */
                             round.map((turn, turnIndex) => (                                    /* iterate through the turns of the round */
                                 turn.scoring? turn.scoring.map((score, scoreIndex) => (         /* if turn.scoring exists, output a row with the scoring data */
-                                    <tr class="turn scoring">
+                                    <tr data-r={roundIndex} data-t={turnIndex} class="turn scoring">
                                         {scoreIndex == 0 ?                                      /* create tds for round & turn that cover all rows, only once */
                                             <th class="rt-num" rowspan={turn.scoring.length}><span>{roundIndex} - {turnIndex}</span></th>
                                         : null }
@@ -83,7 +83,7 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
                                     </tr>
                                 )) : null
                             ))
-                        ) : <tr class="round noscore"><th class= "rt-num blank"></th><td colspan="5">Round {roundIndex}</td></tr> 
+                        ) : <tr data-r={roundIndex} class="round noscore"><th class= "rt-num blank"></th><td colspan="5">Round {roundIndex}</td></tr> 
                     ))} 
                 </tbody>
             </table>
