@@ -63,7 +63,7 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
                         ))}
                     </tr>
                     <tr class="total-scores">
-                        <th>Victory Points!</th>
+                        <th class="vps-title">Victory Points!</th>
                         {data.score.current.map(score => (
                             <td class="player-total">{score}</td>
                         ))}
@@ -85,7 +85,7 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
                                                     <span class="vp">{vp}</span>
                                                 </td>
                                             )) : score.vps[0].map((vp, vpIndex) => (            /* if scores have modifiers, output both as text */
-                                                <td class={'vps score-' + vp + score.vps[1][vpIndex] } data-vp={vp + score.vps[1][vpIndex]}>
+                                                <td class="vps" data-vp={vp + score.vps[1][vpIndex]}>
                                                     <span class="vp">{vp}</span>
                                                     {score.vps[1][vpIndex] != 0 ? <span class="vp-mods">{score.vps[1][vpIndex]}</span> : null}
                                                 </td>
@@ -162,7 +162,13 @@ thead tr.total-scores td {
     border-top: 2px solid #555;
     background-color: #221400;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    background: #000;
+    color: white;
+    border-bottom: 1px solid white;
+}
+thead tr.total-scores .vps-title {
+    font-size: 1.25rem;
 }
 thead tr.total-scores th {
     border-left: 1px solid #777;
@@ -223,7 +229,7 @@ span.vp, span.vp-mods {
     font-size: 1.25em;
     font-weight: 400;
 }
-td.vps.score-00, td.vps.score-0 {
+td.vps[data-vp="0"] {
     background: #000;
     color: #333;
     text-align: center;
