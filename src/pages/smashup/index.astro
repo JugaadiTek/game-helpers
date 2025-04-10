@@ -13,6 +13,7 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
 ---
 <!-- Smashup Cheatsheet and Score Card -->
 <html>
+  
   <body>
     <main>
         <div class="quickRef">
@@ -39,10 +40,14 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
             <hr/>
             <div class="baselist">
                 <h2>Deck of Bases</h2>
-                <ul>
-                    {basedeck.map(base => (
-                        <li><span>{base.faction}</span><span>{base.base}</span></li>
-                    ))}
+                <ul class="base-deck">
+                    {basedeck.map(base => ( 
+                        data.gamedata.active_bases.includes(base.base)
+                            ? <li class="active-base"><span>{base.faction}</span><span>{base.base}</span></li>
+                            : data.gamedata.discarded_bases.includes(base.base) 
+                            ? <li class="discarded-base"><span>{base.faction}</span><span>{base.base}</span></li>
+                        : <li class="base"><span>{base.faction}</span><span>{base.base}</span></li>
+                    ))} 
                 </ul>
             </div>
         </div>
@@ -78,7 +83,7 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
                                         {scoreIndex == 0 ?                                      /* create tds for round & turn that cover all rows, only once */
                                             <th class="rt-num" rowspan={turn.scoring.length}><span>{roundIndex} - {turnIndex}</span></th>
                                         : null }
-                                        <td class="base">{score.base}</td>
+                                        <td class="base-name">{score.base}</td>
                                         {score.vps[1].length == 0 ? 
                                             score.vps[0].map((vp, vpIndex) => (                 /* if scores do not have modifiers, output only first array */
                                                 <td class="vps" data-vp={vp}>
@@ -265,6 +270,39 @@ ul.vps li {
     padding: 0rem 0.5rem;
     display: inline-block;
     color: #ddd;
+}
+ul.base-deck {
+
+}
+ul.base-deck li {
+    /* glassmorphism */
+    background: rgba(40, 40, 40, 0.8);
+    color: #999 !important;
+    box-shadow: 0 0 24px 3px rgba( 0, 0, 0, 0.37 ) inset;
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    margin: 8px 0;
+    padding: 4px 8px !important;
+}
+ul.base-deck li.active-base {
+    background: rgba(0, 140, 0, 0.4);
+    box-shadow: 0 0 8px 1px rgba( 0, 0, 0, 1 );
+    border: 1px solid #999;
+    color:white !important;
+}
+ul.base-deck li.active-base::before {
+    content: "✅";
+    display: inline-block;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: -24px;
+}
+ul.base-deck li.discarded-base {
+    background: rgba(60, 0, 0, 0.7);
+    box-shadow: 0 0 16px 1px rgba( 0, 0, 0, 0.4 ) inset;
+    color: #777 !important;
+    text-decoration: line-through;
 }
 /* 
     table {
