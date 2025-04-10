@@ -24,8 +24,24 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
     <meta name="theme-color" content="#221000" />
+    <link rel="canonical" href="https://ttg-helpers.jugaadlabs.com/smashup" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="JugaadiTech's Smashup Game Tracker" />
+    <meta property="og:description" content="Smashup Game Tracker and Quick Reference Cheat sheet." />
+    <meta property="og:image" content="/public/img/favicon/smashup.png" />
+    <meta property="og:url" content="https://ttg-helpers.jugaadlabs.com/smashup" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="JugaadiTech" />
+    <!-- Twitter Card -->
+    <meta name="twitter:title" content="JugaadiTech's Smashup Game Tracker" />
+    <meta name="twitter:description" content="Smashup Game Tracker and Quick Reference Cheat sheet." />
+    <meta name="twitter:image" content="/public/img/favicon/smashup.png" />
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:site" content="@jugaadlabs" />
+    <meta name="twitter:creator" content="@jugaadlabs" />
     <title>🎴 Match ➡️ {data.players.map(player=>player.nick).join('⚔️')}</title>
-    <!-- For all browsers -->
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" sizes="256x256" href="/public/img/favicon/smashup.ico">
   </head>
   <body>
