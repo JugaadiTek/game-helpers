@@ -85,9 +85,9 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
                                                     <span class="vp">{vp}</span>
                                                 </td>
                                             )) : score.vps[0].map((vp, vpIndex) => (            /* if scores have modifiers, output both as text */
-                                                <td class="vps" data-vp={vp + score.vps[1][vpIndex]}>
+                                                <td class={'vps score-' + vp + score.vps[1][vpIndex] } data-vp={vp + score.vps[1][vpIndex]}>
                                                     <span class="vp">{vp}</span>
-                                                    <span class="vp-mods">{score.vps[1][vpIndex]}</span>
+                                                    {score.vps[1][vpIndex] != 0 ? <span class="vp-mods">{score.vps[1][vpIndex]}</span> : null}
                                                 </td>
                                             ))
                                         }
@@ -223,6 +223,14 @@ span.vp, span.vp-mods {
     font-size: 1.25em;
     font-weight: 400;
 }
+td.vps.score-00, td.vps.score-0 {
+    background: #000;
+    color: #333;
+    text-align: center;
+    padding: 1px;
+    font-size:12px;
+    border-bottom: 1px solid #333;
+}
 .vps {
     position: relative;
 }
@@ -242,7 +250,6 @@ ul.vps {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
     margin: 0;
     padding: 0;
 }
