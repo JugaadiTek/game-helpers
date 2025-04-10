@@ -11,15 +11,22 @@ const basedeck = baselist.filter(base => factions.includes(base.faction));
 const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(base.base));
 
 ---
-<!-- Smashup Cheatsheet and Score Card -->
-<html>
+<!DOCTYPE html>
+<!-- This is a cheat sheet for Smashup, a card game. It shows the phases of a turn, the deck of bases, and the standings of the players. -->
+<html lang="en" class="dark">
   <head>
+    {/* Emoji Paste: ▶️⏮️⏩🃏🏆🎮🕹️ */}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smashup Tracker</title>
+    <meta name="description" content="Smashup Game Tracker and Quick Reference Cheat sheet." />
+    <meta name="author" content="JugaadiTech" />
+    <meta name="keywords" content="Smashup, Card Game, Tracker, Cheat Sheet, Quick Reference, TTG Tool, CCG Tool" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="theme-color" content="#221000" />
+    <title>🎴 Match ➡️ {data.players.map(player=>player.nick).join('⚔️')}</title>
     <!-- For all browsers -->
-    <link rel="icon" type="image/png" sizes="256x256" href="/public/img/favicon/smashup.ico">
-
+    <link rel="icon" type="image/x-icon" sizes="256x256" href="/public/img/favicon/smashup.ico">
   </head>
   <body>
     <main>

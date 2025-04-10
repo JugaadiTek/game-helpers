@@ -1,10 +1,10 @@
 {
     "date": "2025-04-06",
     "players": [
-        { "id":0, "name": "S!nn",    "factions": [  "Cyborg Apes",  "Princesses"   ] },
-        { "id":1, "name": "Aditya",  "factions": [  "Ghosts",       "Tricksters"   ] },
-        { "id":2, "name": "Karthik", "factions": [  "Zombies",      "Star Roamers" ] },
-        { "id":3, "name": "Kaushik", "factions": [  "Dinosaurs",    "Ninjas"       ] }
+        { "id":0, "nick": "S!nn",   "name": "Papri",   "factions": [  "Cyborg Apes",  "Princesses"   ] },
+        { "id":1, "nick": "Adu",    "name": "Aditya",  "factions": [  "Ghosts",       "Tricksters"   ] },
+        { "id":2, "nick": "K1",     "name": "Karthik", "factions": [  "Zombies",      "Star Roamers" ] },
+        { "id":3, "nick": "K2",     "name": "Kowsik",  "factions": [  "Dinosaurs",    "Ninjas"       ] }
     ],
     "gamedata": { 
         "mechanics": { "madness": false, "monsters": false, "treasures": false, "titans": false },
