@@ -70,8 +70,9 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
             <hr/>
             <div class="baselist">
                 <h2>Deck of Bases</h2>
+                <!-- <Code code={JSON.stringify(activebases, null, 2)} lang="json"/> -->
                 <ul class="base-deck">
-                    {basedeck.map(base => ( 
+                    {basedeck.map(base => (
                         data.gamedata.active_bases.includes(base.base)
                             ? <li class="active-base"><span>{base.faction}</span><span>{base.base}</span></li>
                             : data.gamedata.discarded_bases.includes(base.base) 

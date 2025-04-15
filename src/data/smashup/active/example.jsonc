@@ -41,23 +41,23 @@
                     "base": "Haunted House",    // base name
                     "bp": 18,                   // breakpoint value
                     "pow": [
-                        [8,2,15,3],             // power values for each player, before the base scores
-                        [10,0,12,0]             // power values for each player, after the base scores
+                        [  8, 2, 15, 3 ],       // power values for each player, before the base scores
+                        [ 10, 0, 12, 0 ]        // power values for each player, after the base scores
                     ], 
                     "vps": [
-                        [2,0,3,0],              // victory points given to each player
-                        [0,0,1,0]               // victory point modifiers/bonuses for each player
+                        [ 2, 0, 3, 0 ],         // victory points given to each player
+                        [ 0, 0, 1, 0 ]          // victory point modifiers/bonuses for each player
                     ]
                 }
             ]},
         {},{}],
         [{},{},{},
-            { "scoring": [                      // this is an array, so multiple bases can score in a single turn
+            { "scoring": [                      // array allows for multiple scoring bases in a turn
                 { "base": "Primate Park",  "bp": 20, "pow": [[10,4,0,7], [13,2, 0,5]], "vps": [[3,1,0,2],[]]},
                 { "base": "Cave of Shinies", "bp": 23, "pow":[[13,1,0,2], [14,7,0,5]], "vps": [[3,2,0,2],[]]}
             ] }
         ],
-        [{},{},                                 // this is a round with 2 scoring turns
+        [{},{},                                 // example round with 2 turns scoring.
             {"scoring": [
                 { "base": "Tar Pits", "bp": 20, "pow":[[10,4,0,7],[13,2,0,5]], "vps": [[3,1,0,2],[]]}
             ]},

@@ -1,0 +1,10 @@
+{
+    "players": [
+        { "name": "Aditya", "wp":10, "skills": [ "","","" ], "goals": [ "", "", "" ] },
+        { "name": "Kowsik", "wp":10, "skills": [ "","","" ], "goals": [ "", "", "" ] }, 
+        { "name": "Piyush", "wp":10, "skills": [ "","","" ], "goals": [ "", "", "" ] }, 
+        { "name": "Jem",    "wp":10, "skills": [ "","","" ], "goals": [ "", "", "" ] }, 
+        { "name": "Odita",  "wp":10, "skills": [ "","","" ], "goals": [ "", "", "" ] }, 
+        { "name": "Ethel",  "wp":10, "skills": [ "","","" ], "goals": [ "", "", "" ] } 
+    ]
+}
