@@ -1,0 +1,1252 @@
+{
+    "shorthand": {
+        "conditions": [
+            { "key": "After each time a minion is played here", "value": "⬇️🧌" },
+            { "key": "After this base scores", "value": "💯"},
+            { "key": "After each time a minion is destroyed here", "value": "💥" }
+        ],
+        "target": [
+            { "key": "owner", "value": "🫵🏽" },
+            { "key": "the winner", "value": "🏆" },
+            { "key": "all players", "value": "👥" }
+        ],
+        "actions": [
+            { "key": "its owner may play an extra minion of power 'x' or 'more/less'", "value": "🧌'</>x'" },
+            { "key": "the winner may return one of his or her minions of power 'x' or 'more/less'", "value": "👋🏽🧌'</>x'"}
+        ]
+    },
+    "data": [
+        {
+            "set": "Core",              "faction": "Aliens",            "base": "The Homeworld",
+            "bp": 23,                   "vps": [ 4, 2, 1 ],
+            "ability": "After each time a minion is played here, its owner may play an extra minion of power 2 or less.",
+            "short_abl": {
+                "condition": "🧌->⬇️",
+                "target": "🫵🏽",
+                "action": "+🧌<=2 -> ⬇️"
+            }
+        },
+        {
+            "set": "Core",              "faction": "Aliens",            "base": "The Mothership",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "After this base scores, the winner may return one of his or her minions of power 3 or less from here to his or her hand.",
+            "short_abl": {
+                "condition": "💯",
+                "target": "🏆",
+                "action": "🧌<=3 -> 👋🏽"
+            }
+        },
+        {
+            "set": "Core",              "faction": "Dinosaurs",         "base": "Jungle Oasis",
+            "bp": 12,                   "vps": [ 2, 0, 0 ],
+            "ability": "(no ability)",
+            "short_abl": []
+        },
+        {
+            "set": "Core",              "faction": "Dinosaurs",         "base": "Tar Pits",
+            "bp": 16,                   "vps": [ 4, 3, 2 ],
+            "ability": "After each time a minion is destroyed here, place it at the bottom of its owner’s deck.",
+            "short_abl": {
+                "condition": "🧌->💥",
+                "target": "🫵🏽",
+                "action": "🧌->⤵️🎴"
+            }
+        },
+        {
+            "set": "Core",              "faction": "Ninjas",            "base": "Ninja Dojo",
+            "bp": 18,                   "vps": [ 2, 3, 2 ],
+            "ability": "After this base scores, the winner may destroy any one minion.",
+            "short_abl": {
+                "condition": "💯",
+                "target": "🏆",
+                "action": "🧌->💥"
+            }
+        },
+        {
+            "set": "Core",              "faction": "Ninjas",            "base": "Temple of Goju",
+            "bp": 18,                   "vps": [ 2, 3, 2 ],
+            "ability": "After this base scores, place each player’s highest power minion here on the bottom of its owner’s deck.",
+            "short_abl": {
+                "condition": "💯",
+                "target": "👥",
+                "action": "🧌⭐->⤵️🎴"
+            }
+        },
+        {
+            "set": "Core",              "faction": "Pirates",           "base": "The Grey Opal",
+            "bp": 17,                   "vps": [ 3, 1, 1 ],
+            "ability": "After this base scores, all players other than the winner may move a minion from here to another base instead of the discard pile.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Core",              "faction": "Pirates",           "base": "Tortuga",
+            "bp": 21,                   "vps": [ 4, 3, 2 ],
+            "ability": "The runner up may move one of his or her minions to the base that replaces this base.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Core",              "faction": "Robots",            "base": "Factory 436-1337",
+            "bp": 25,                   "vps": [ 2, 2, 1 ],
+            "ability": "When this base scores, the winner gains 1 VP for every 5 power that player has here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Core",              "faction": "Robots",            "base": "The Central Brain",
+            "bp": 19,                   "vps": [ 4, 2, 1 ],
+            "ability": "Each minion here has +1 power.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Core",              "faction": "Tricksters",            "base": "Cave of Shinies",
+            "bp": 23,                   "vps": [ 4, 2, 1 ],
+            "ability": "After each time a minion is destroyed here, its owner gains 1 VP.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Core",              "faction": "Tricksters",            "base": "Mushroom Kingdom",
+            "bp": 20,                   "vps": [ 5, 3, 2 ],
+            "ability": "At the start of each player’s turn, that player may move one other player’s minion from any base to here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Core",              "faction": "Wizards",           "base": "School of Wizardry",
+            "bp": 20,                   "vps": [ 3, 2, 1 ],
+            "ability": "After this base scores, the winner looks at the top three cards of the base deck, chooses one to replace this base, aneturns the others in any order.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Core",              "faction": "Wizards",           "base": "The Great Library",
+            "bp": 22,                   "vps": [ 4, 2, 1 ],
+            "ability": "After this base scores, all players with minions here may draw one card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Core",              "faction": "Zombies",           "base": "Evans City Cemetery",
+            "bp": 20,                   "vps": [ 5, 3, 2 ],
+            "ability": "After this base scores, the winner discards his or her hand and draws five cards.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Core",              "faction": "Zombies",           "base": "Rhodes Plaza Mall",
+            "bp": 24,                   "vps": [ 0, 0, 0 ],
+            "ability": "When this base scores, each player gains 1 VP for each minion that player has here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Awesome Level 9000",                "faction": "Bear Cavalry",          "base": "Field of Honor",
+            "bp": 18,                   "vps": [ 3, 2, 1 ],
+            "ability": "When one or more minions here are destroyed, the player who destroyed them gains 1 VP.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Awesome Level 9000",                "faction": "Bear Cavalry",          "base": "Tsar’s Palace",
+            "bp": 22,                   "vps": [ 5, 3, 2 ],
+            "ability": "Minions of power 2 or less cannot be played here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Awesome Level 9000",                "faction": "Ghosts",            "base": "Haunted House",
+            "bp": 18,                   "vps": [ 4, 3, 2 ],
+            "ability": "After a player plays a minion here, that player must discard a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Awesome Level 9000",                "faction": "Ghosts",            "base": "The Dread Gazebo",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "Players cannot play actions on this base.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Awesome Level 9000",                "faction": "Killer Plants",         "base": "Secret Grove",
+            "bp": 21,                   "vps": [ 3, 2, 1 ],
+            "ability": "On your turn, you may play one extra minion of power 2 or less here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Awesome Level 9000",                "faction": "Killer Plants",         "base": "The Greenhouse",
+            "bp": 24,                   "vps": [ 4, 2, 1 ],
+            "ability": "The winner may search his or her deck for a minion and play it on the base that replaces this one.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Awesome Level 9000",                "faction": "Steampunks",            "base": "Inventor’s Salon",
+            "bp": 22,                   "vps": [ 4, 2, 1 ],
+            "ability": "The winner may take an action from his or her discard pile and place it in his or her hand.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Awesome Level 9000",                "faction": "Steampunks",            "base": "Workshop",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "When a player plays an action card on this base, that player may play an extra action.",
+            "short_abl": [] 
+        },
+        {
+            "set": "The Obligatory Cthulhu Set",                "faction": "Elder Things",          "base": "Antarctic Base",
+            "bp": 24,                   "vps": [ 5, 3, 2 ],
+            "ability": "Players cannot play more than one minion on this base each turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "The Obligatory Cthulhu Set",                "faction": "Elder Things",          "base": "Plateau of Leng",
+            "bp": 18,                   "vps": [ 3, 2, 1 ],
+            "ability": "After the first time a player plays a minion here each turn, they can play an extra minion of the same name here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "The Obligatory Cthulhu Set",                "faction": "Innsmouth",         "base": "Innsmouth",
+            "bp": 23,                   "vps": [ 5, 3, 2 ],
+            "ability": "After each time a minion is played here, its owner may place one card from any player’s discard pile on the bottom of their deck.",
+            "short_abl": [] 
+        },
+        {
+            "set": "The Obligatory Cthulhu Set",                "faction": "Innsmouth",         "base": "Ritual Site",
+            "bp": 20,                   "vps": [ 4, 2, 2 ],
+            "ability": "After this base scores, all minions on it are shuffled into their owners’ decks instead of their discard piles.",
+            "short_abl": [] 
+        },
+        {
+            "set": "The Obligatory Cthulhu Set",                "faction": "Minions of Cthulhu",            "base": "Mountains of Madness",
+            "bp": 20,                   "vps": [ 6, 4, 3 ],
+            "ability": "After each time a minion is played here, its owner draws a Madness card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "The Obligatory Cthulhu Set",                "faction": "Minions of Cthulhu",            "base": "R’lyeh",
+            "bp": 18,                   "vps": [ 4, 2, 1 ],
+            "ability": "At the start of each player’s turn, that player may destroy one of their minion’s here. If they do, they gain 1 VP.",
+            "short_abl": [] 
+        },
+        {
+            "set": "The Obligatory Cthulhu Set",                "faction": "Miskatonic University",         "base": "Asylum",
+            "bp": 16,                   "vps": [ 3, 1, 1 ],
+            "ability": "After each time a minion is played here, its owner may return a Madness card from their hand to the Madness deck.",
+            "short_abl": [] 
+        },
+        {
+            "set": "The Obligatory Cthulhu Set",                "faction": "Miskatonic University",         "base": "Miskatonic University",
+            "bp": 24,                   "vps": [ 3, 3, 2 ],
+            "ability": "After this base scores, the winner may search their hand and discard pile for any number of Madness cards, and return them to the Madness deck.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Science Fiction Double Feature",                "faction": "Cyborg Apes",           "base": "Monkey Lab",
+            "bp": 23,                   "vps": [ 4, 2, 1 ],
+            "ability": "Minions here get +1 power for each action played on them.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Science Fiction Double Feature",                "faction": "Cyborg Apes",           "base": "Primate Park",
+            "bp": 20,                   "vps": [ 3, 2, 1 ],
+            "ability": "The winner may place his or her actions played on minions here back into his or her hand.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Science Fiction Double Feature",                "faction": "Shapeshifters",         "base": "Faceless City",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "Once per turn, after you play a minion here, search your deck for a copy of that minion, reveal it, and place it into your hand. Shuffle your deck.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Science Fiction Double Feature",                "faction": "Shapeshifters",         "base": "The Vats",
+            "bp": 15,                   "vps": [ 3, 1, 1 ],
+            "ability": "You may not play a minion here that has the same name as another minion here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Science Fiction Double Feature",                "faction": "Super Spies",           "base": "ISI’s Swingin’ Pad",
+            "bp": 21,                   "vps": [ 4, 2, 1 ],
+            "ability": "The winner may look at the top three cards of his or her deck and return them in any order.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Science Fiction Double Feature",                "faction": "Super Spies",           "base": "Secret Volcano Headquarters",
+            "bp": 18,                   "vps": [ 4, 3, 2 ],
+            "ability": "Before this base scores, all players reveal the top card of their decks. Play all revealed minions here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Science Fiction Double Feature",                "faction": "Time Travelers",            "base": "Portal Room",
+            "bp": 22,                   "vps": [ 2, 3, 1 ],
+            "ability": "The winner takes an extra turn after the current turn ends.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Science Fiction Double Feature",                "faction": "Time Travelers",            "base": "The Nexus",
+            "bp": 19,                   "vps": [ 3, 3, 2 ],
+            "ability": "The winner replaces this base with a base of his or her choice from the base discard pile, if possible.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Monster Smash",             "faction": "Giant Ants",            "base": "Egg Chamber",
+            "bp": 17,                   "vps": [ 3, 1, 1 ],
+            "ability": "Minions here with +1 power counters cannot be destroyed.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Monster Smash",             "faction": "Giant Ants",            "base": "The Hill",
+            "bp": 23,                   "vps": [ 4, 2, 1 ],
+            "ability": "At the start of each player’s turn, that player may move one of his or her minions from any base to here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Monster Smash",             "faction": "Mad Scientists",            "base": "Golem Schloß",
+            "bp": 22,                   "vps": [ 3, 3, 2 ],
+            "ability": "The winner places a +1 power counter on each of his or her minions.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Monster Smash",             "faction": "Mad Scientists",            "base": "Laboratorium",
+            "bp": 25,                   "vps": [ 5, 3, 3 ],
+            "ability": "The first minion played here each turn gets a +1 power counter.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Monster Smash",             "faction": "Vampires",          "base": "Castle Blood",
+            "bp": 18,                   "vps": [ 3, 1, 1 ],
+            "ability": "After you play a minion here, if another player has more power here than you do, you may place a +1 power counter on that minion.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Monster Smash",             "faction": "Vampires",          "base": "Crypt",
+            "bp": 20,                   "vps": [ 4, 2, 2 ],
+            "ability": "When one or more minions here are destroyed the player who destroyed them may place a +1 power counter on one of his or her minions here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Monster Smash",             "faction": "Werewolves",            "base": "Moot Site",
+            "bp": 15,                   "vps": [ 2, 1, 0 ],
+            "ability": "The first minion played here each turn gains +2 power until the end of the turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Monster Smash",             "faction": "Werewolves",            "base": "Standing Stones",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "During your turn, one of your minions here can use its Talent twice.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Pretty Pretty Smash Up",                "faction": "Fairies",           "base": "Enchanted Glen",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "After you play an action on a minion here, draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Pretty Pretty Smash Up",                "faction": "Fairies",           "base": "Fairy Circle",
+            "bp": 26,                   "vps": [ 4, 3, 2 ],
+            "ability": "After the first time you play a minion here each turn, you may play an extra minion here or play an extra action.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Pretty Pretty Smash Up",                "faction": "Kitty Cats",            "base": "Cool Cats’ Alley",
+            "bp": 18,                   "vps": [ 3, 2, 1 ],
+            "ability": "Once during your turn, you may destroy one of your minions here to draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Pretty Pretty Smash Up",                "faction": "Kitty Cats",            "base": "The House of Nine Lives",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "If a minion at another base would be destroyed, its owner may move it here instead.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Pretty Pretty Smash Up",                "faction": "Mythic Horses",         "base": "Equaria",
+            "bp": 25,                   "vps": [ 5, 3, 2 ],
+            "ability": "After you play a minion here, you may move one of your minions from another base to here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Pretty Pretty Smash Up",                "faction": "Mythic Horses",         "base": "Pony Land",
+            "bp": 18,                   "vps": [ 3, 2, 1 ],
+            "ability": "If you have two or more minions here, your minions here cannot be destroyed.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Pretty Pretty Smash Up",                "faction": "Princesses",            "base": "Beautiful Castle",
+            "bp": 22,                   "vps": [ 4, 2, 1 ],
+            "ability": "Minions here with power 5 or greater are not affected by opponents’ cards.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Pretty Pretty Smash Up",                "faction": "Princesses",            "base": "Ice Castle",
+            "bp": 15,                   "vps": [ 3, 2, 2 ],
+            "ability": "Minions cannot be played here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Munchkin",                "faction": "Clerics",           "base": "Hotel of Holiness",
+            "bp": 15,                   "vps": [ 4, 3, 2 ],
+            "ability": "2 Monsters - After this base scores, place minions here on top of their owners’ decks, in any order, instead of the discard pile.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Munchkin",                "faction": "Clerics",           "base": "Whack-A-Ghoul",
+            "bp": 12,                   "vps": [ 3, 2, 1 ],
+            "ability": "3 Monsters - After an undead monster is played here, place it on the bottom of the monster deck.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Munchkin",                "faction": "Dwarves",           "base": "The Mines",
+            "bp": 18,                   "vps": [ 4, 2, 1 ],
+            "ability": "2 Monsters - Minions here have +1 power for each treasure on them.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Munchkin",                "faction": "Dwarves",           "base": "Treasure Bath",
+            "bp": 12,                   "vps": [ 2, 0, 0 ],
+            "ability": "1 Monster - After the first time each turn that you play a minion here, draw a treasure card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Munchkin",                "faction": "Elves",         "base": "Helper’s Hollow",
+            "bp": 17,                   "vps": [ 3, 2, 1 ],
+            "ability": "2 Monsters - During each player’s turn, other players’ minions here have +1 power.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Munchkin",                "faction": "Elves",         "base": "Treehouse",
+            "bp": 15,                   "vps": [ 4, 2, 1 ],
+            "ability": "2 Monsters - After you play a minion here, choose another player. That player may draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Munchkin",                "faction": "Halflings",         "base": "Birthday Party",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "1 Monster - If you do not have a minion here, you cannot play a minion on another base.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Munchkin",                "faction": "Halflings",         "base": "Subterranean Lair",
+            "bp": 23,                   "vps": [ 5, 3, 2 ],
+            "ability": "1 Monster - On your turn, if you have no minions on this base, you may play an extra minion here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Munchkin",                "faction": "Mages",         "base": "Dimension Doors",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "1 Monster - Each turn, after the first time you play a minion here, you may discard a card to play an extra minion here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Munchkin",                "faction": "Mages",         "base": "Mage’s Tower",
+            "bp": 18,                   "vps": [ 4, 3, 2 ],
+            "ability": "1 Monster - After you play a minion here, you may draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Munchkin",                "faction": "Orcs",          "base": "Garrison",
+            "bp": 12,                   "vps": [ 3, 2, 1 ],
+            "ability": "2 Monsters - When this base scores, if the total of all players’ power here is 22 or more, the players with the top three totals each gain 1 VP.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Munchkin",                "faction": "Orcs",          "base": "The Pits",
+            "bp": 16,                   "vps": [ 4, 2, 1 ],
+            "ability": "2 Monsters - Minions here are not affected by other players’ actions.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Munchkin",                "faction": "Thieves",           "base": "The Coffers",
+            "bp": 18,                   "vps": [ 4, 2, 1 ],
+            "ability": "2 Monsters - When this base scores, each player with a minion here draws a treasure card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Munchkin",                "faction": "Thieves",           "base": "Thieves’ Guild",
+            "bp": 19,                   "vps": [ 4, 3, 2 ],
+            "ability": "1 Monster - After you play a treasure on this base or on a minion here, draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Munchkin",                "faction": "Warriors",          "base": "Bastion",
+            "bp": 11,                   "vps": [ 3, 2, 2 ],
+            "ability": "3 Monsters - After you destroy a monster here, draw a treasure card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Munchkin",                "faction": "Warriors",          "base": "The Gauntlet",
+            "bp": 14,                   "vps": [ 5, 3, 2 ],
+            "ability": "3 Monsters - After a monster here is destroyed, play a monster here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "It’s Your Fault!",              "faction": "Dragons",           "base": "Dragon’s Lair",
+            "bp": 18,                   "vps": [ 2, 2, 1 ],
+            "ability": "The winner draws 3 cards.",
+            "short_abl": [] 
+        },
+        {
+            "set": "It’s Your Fault!",              "faction": "Dragons",           "base": "Wyrm’s Desolation",
+            "bp": 20,                   "vps": [ 5, 3, 2 ],
+            "ability": "Each minion here has -1 power.",
+            "short_abl": [] 
+        },
+        {
+            "set": "It’s Your Fault!",              "faction": "Mythic Greeks",         "base": "Oracle at Delphi",
+            "bp": 18,                   "vps": [ 4, 2, 1 ],
+            "ability": "After you play a minion here, reveal the top card of your deck. If it is an action, draw it; otherwise return it.",
+            "short_abl": [] 
+        },
+        {
+            "set": "It’s Your Fault!",              "faction": "Mythic Greeks",         "base": "Wooden Horse",
+            "bp": 21,                   "vps": [ 3, 2, 1 ],
+            "ability": "After any player plays an action, he or she may give a minion here +2 power until the end of the turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "It’s Your Fault!",              "faction": "Sharks",            "base": "Shark Reef",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "After a minion is destroyed here, the player that destroyed it may place a +1 power counter on one of their minions.",
+            "short_abl": [] 
+        },
+        {
+            "set": "It’s Your Fault!",              "faction": "Sharks",            "base": "The Deep",
+            "bp": 16,                   "vps": [ 3, 2, 2 ],
+            "ability": "After you play a minion of power 4 or more here, you may destroy a minion with less power here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "It’s Your Fault!",              "faction": "Superheroes",           "base": "Converted Cave",
+            "bp": 18,                   "vps": [ 4, 3, 2 ],
+            "ability": "Minions of power 2 or less cannot be destroyed here except by their controller.",
+            "short_abl": [] 
+        },
+        {
+            "set": "It’s Your Fault!",              "faction": "Superheroes",           "base": "Crystal Fortress",
+            "bp": 19,                   "vps": [ 3, 1, 1 ],
+            "ability": "After you play a minion here, you may place a minion from your discard pile on the bottom of your deck.",
+            "short_abl": [] 
+        },
+        {
+            "set": "It’s Your Fault!",              "faction": "Tornados",          "base": "Tornado Alley",
+            "bp": 25,                   "vps": [ 4, 3, 2 ],
+            "ability": "After the first time you play a minion here each turn, you may move another minion to here from another base.",
+            "short_abl": [] 
+        },
+        {
+            "set": "It’s Your Fault!",              "faction": "Tornados",          "base": "Trailer Park",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "After you move a minion to here, place a +1 power counter on it.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Cease and Desist",              "faction": "Astroknights",          "base": "Hive of Scum and Villainy",
+            "bp": 18,                   "vps": [ 4, 2, 1 ],
+            "ability": "After the first time each turn that you play an action that directly increases the power of one of your minions here, draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Cease and Desist",              "faction": "Astroknights",          "base": "No-Moon™",
+            "bp": 25,                   "vps": [ 5, 3, 3 ],
+            "ability": "Before this base scores, place a random other base and all cards on it in the discard pile. Replace it with the top card of the base deck.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Cease and Desist",              "faction": "Changerbots",           "base": "Changing Room",
+            "bp": 22,                   "vps": [ 5, 3, 2 ],
+            "ability": "After a minion here uses a talent, it gains +1 power until the end of the turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Cease and Desist",              "faction": "Changerbots",           "base": "Unicrave",
+            "bp": 19,                   "vps": [ 0, 0, 0 ],
+            "ability": "Before this base scores, replace it with the top card of the base deck. Keep all cards on it, discard this card, and keep scoring.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Cease and Desist",              "faction": "Ignobles",          "base": "Spikey Chair Room",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "At the end of any turn that a player has played at least one minion here, they may destroy a minion they own to draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Cease and Desist",              "faction": "Ignobles",          "base": "Wintersquashed",
+            "bp": 16,                   "vps": [ 2, 4, 1 ],
+            "ability": "After you play a minion here, you may give control of it to another player.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Cease and Desist",              "faction": "Star Roamers",          "base": "Neutral Space",
+            "bp": 18,                   "vps": [ 3, 2, 1 ],
+            "ability": "Minions here are not affected by other players’ minions here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Cease and Desist",              "faction": "Star Roamers",          "base": "USS Undertaking",
+            "bp": 22,                   "vps": [ 4, 2, 1 ],
+            "ability": "At the start of your turn, you may move one of your minions to here, or from here to another base.",
+            "short_abl": [] 
+        },
+        {
+            "set": "What Were We Thinking?",                "faction": "Explorers",         "base": "Ancient Temple",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "At the start of your turn, if you have only one minion here, it gains +5 power while it is here until the end of the turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "What Were We Thinking?",                "faction": "Explorers",         "base": "City of Gold",
+            "bp": 16,                   "vps": [ 3, 1, 1 ],
+            "ability": "At the start of your turn, if you have a minion here, gain 1VP.",
+            "short_abl": [] 
+        },
+        {
+            "set": "What Were We Thinking?",                "faction": "Grannies",          "base": "Grandma’s House",
+            "bp": 25,                   "vps": [ 5, 3, 2 ],
+            "ability": "After you play a minion here, look at the top card of your deck. Place it on the top or bottom of your deck.",
+            "short_abl": [] 
+        },
+        {
+            "set": "What Were We Thinking?",                "faction": "Grannies",          "base": "Retirement Community",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "After this base scores, each player may place one of their minions here on the top or bottom of their deck instead of the discard pile.",
+            "short_abl": [] 
+        },
+        {
+            "set": "What Were We Thinking?",                "faction": "Rock Stars",            "base": "Lake Minnetonka",
+            "bp": 26,                   "vps": [ 5, 3, 2 ],
+            "ability": "After you play or move a minion to here, it gains +1 power until the end of the turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "What Were We Thinking?",                "faction": "Rock Stars",            "base": "Palooza",
+            "bp": 27,                   "vps": [ 6, 4, 3 ],
+            "ability": "Before this base scores, each player may move one of their minions to here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "What Were We Thinking?",                "faction": "Teddy Bears",           "base": "Out in the Woods",
+            "bp": 18,                   "vps": [ 3, 2, 1 ],
+            "ability": "Before this base scores, each minion here gains +1 power until the end of the turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "What Were We Thinking?",                "faction": "Teddy Bears",           "base": "Under the Bed",
+            "bp": 22,                   "vps": [ 4, 2, 1 ],
+            "ability": "On your turn, you may play an extra minion of power 2 or less here if you have played one or more minions at other bases this turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Big in Japan",              "faction": "Itty Critters",         "base": "Critter Combat Club",
+            "bp": 23,                   "vps": [ 4, 3, 1 ],
+            "ability": "You may play an extra minion of power 2 or less here on your turn. If you control it at the end of the turn, place it on the bottom of your deck.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Big in Japan",              "faction": "Itty Critters",         "base": "Itty City",
+            "bp": 20,                   "vps": [ 3, 1, 1 ],
+            "ability": "After the first time you play a minion here each turn, you may shuffle a random minion from your discard pile into your deck.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Big in Japan",              "faction": "Kaiju",         "base": "Kaiju Island",
+            "bp": 22,                   "vps": [ 4, 2, 1 ],
+            "ability": "Titans here do not make other titans leave. Each titan here adds +3 power to its controller’s power here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Big in Japan",              "faction": "Kaiju",         "base": "Tokyo",
+            "bp": 25,                   "vps": [ 5, 3, 2 ],
+            "ability": "After you play an action on this base, you gain +3 power here until the end of the turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Big in Japan",              "faction": "Magical Girls",         "base": "Akihabara High",
+            "bp": 20,                   "vps": [ 3, 2, 1 ],
+            "ability": "After you play a minion here, your other minions here gain +1 power until the end of the turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Big in Japan",              "faction": "Magical Girls",         "base": "Q Point",
+            "bp": 25,                   "vps": [ 5, 4, 3 ],
+            "ability": "Before this base scores, each player destroys all of their minions and actions on this base but one card total.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Big in Japan",              "faction": "Mega Troopers",         "base": "Juice Bar",
+            "bp": 20,                   "vps": [ 3, 2, 1 ],
+            "ability": "Before this base scores, each player with a minion here gains +2 power here for each special ability they use before scoring.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Big in Japan",              "faction": "Mega Troopers",         "base": "Moon Dumpster",
+            "bp": 24,                   "vps": [ 4, 2, 2 ],
+            "ability": "After this base is played, each player reveals the top card of their deck. If it is a minion,they may play it here as an extra minion.",
+            "short_abl": [] 
+        },
+        {
+            "set": "That ’70s Expansion",               "faction": "Disco Dancers",         "base": "Boogie Wonderland",
+            "bp": 21,                   "vps": [ 4, 2, 1 ],
+            "ability": "After a player plays a standard action that affects one or more of their minions here, they draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "That ’70s Expansion",               "faction": "Disco Dancers",         "base": "Funky Town",
+            "bp": 23,                   "vps": [ 4, 3, 2 ],
+            "ability": "Once per turn, when your standard action directly affects one or more of your minions here, you may have it affect another of your minions here the same way.",
+            "short_abl": [] 
+        },
+        {
+            "set": "That ’70s Expansion",               "faction": "Kung Fu Fighters",          "base": "Ancient Dojo",
+            "bp": 25,                   "vps": [ 5, 4, 3 ],
+            "ability": "After you play a minion here, place a +1 power counter on each of your minions here with less power than that minion.",
+            "short_abl": [] 
+        },
+        {
+            "set": "That ’70s Expansion",               "faction": "Kung Fu Fighters",          "base": "Tournament Site",
+            "bp": 19,                   "vps": [ 2, 0, 0 ],
+            "ability": "When this base scores, the winner gains 1VP for each player with no power here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "That ’70s Expansion",               "faction": "Truckers",          "base": "The Greasy Spoon",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "When an action played on this base would go to the discard pile, shuffle it into its owner’s deck instead.",
+            "short_abl": [] 
+        },
+        {
+            "set": "That ’70s Expansion",               "faction": "Truckers",          "base": "Truck Stop",
+            "bp": 18,                   "vps": [ 3, 2, 1 ],
+            "ability": "At the start of your turn, you may transfer an action played on another base to here, or from here to another base.",
+            "short_abl": [] 
+        },
+        {
+            "set": "That ’70s Expansion",               "faction": "Vigilantes",            "base": "Hideout",
+            "bp": 18,                   "vps": [ 3, 1, 1 ],
+            "ability": "Minions here cannot be affected by other players’ cards.",
+            "short_abl": [] 
+        },
+        {
+            "set": "That ’70s Expansion",               "faction": "Vigilantes",            "base": "The Mean Streets",
+            "bp": 25,                   "vps": [ 5, 3, 2 ],
+            "ability": "After a player plays an action that affects a card here, each other player may place a +1 power counter on a minion here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "The Bigger Geekier Box",                "faction": "Geeks",         "base": "TableTop",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "The winner draws 3 cards, then discards 2 cards.",
+            "short_abl": [] 
+        },
+        {
+            "set": "The Bigger Geekier Box",                "faction": "Geeks",         "base": "The Con",
+            "bp": 24,                   "vps": [ 5, 3, 2 ],
+            "ability": "When a minion is played here, other minions here of that faction gain +1 power until the end of the turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "The Bigger Geekier Box",                "faction": "Smash Up All Stars",            "base": "Locker Room",
+            "bp": 23,                   "vps": [ 3, 2, 2 ],
+            "ability": "At the start of your turn, if you have a minion here, draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "The Bigger Geekier Box",                "faction": "Smash Up All Stars",            "base": "Stadium",
+            "bp": 17,                   "vps": [ 3, 2, 1 ],
+            "ability": "After a minion here is destroyed, its controller draws a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Oops, You Did It Again",                "faction": "Ancient Egyptians",         "base": "Pyramids",
+            "bp": 21,                   "vps": [ 4, 2, 1 ],
+            "ability": "On your turn, you may bury a card from your hand here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Oops, You Did It Again",                "faction": "Ancient Egyptians",         "base": "Star Portal",
+            "bp": 17,                   "vps": [ 3, 1, 1 ],
+            "ability": "After a card is buried here or an action is played on this base, its controller draws a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Oops, You Did It Again",                "faction": "Cowboys",           "base": "Saloon",
+            "bp": 20,                   "vps": [ 3, 2, 1 ],
+            "ability": "After a minion here is destroyed, each player with a minion here may draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Oops, You Did It Again",                "faction": "Cowboys",           "base": "So-So Corral",
+            "bp": 19,                   "vps": [ 4, 2, 1 ],
+            "ability": "After you play a minion here, it may duel another player’s minion here. Destroy the losing minion.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Oops, You Did It Again",                "faction": "Samurai",           "base": "Sakura Garden",
+            "bp": 18,                   "vps": [ 3, 2, 1 ],
+            "ability": "Each turn, the first time one of your minions here goes to the discard pile, draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Oops, You Did It Again",                "faction": "Samurai",           "base": "Shogun’s Palace",
+            "bp": 23,                   "vps": [ 4, 3, 1 ],
+            "ability": "After you play a minion here, it may duel another player’s minion here. The controller of the winning minion draws two cards.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Oops, You Did It Again",                "faction": "Vikings",           "base": "Drakkar",
+            "bp": 21,                   "vps": [ 4, 2, 1 ],
+            "ability": "The first time each turn a player plays a minion here, they may reveal the top card of another player’s deck. If it is an action, or a minion of power 3 or less, they may place it into their hand.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Oops, You Did It Again",                "faction": "Vikings",           "base": "Longhouse",
+            "bp": 25,                   "vps": [ 5, 3, 2 ],
+            "ability": "On your turn, you may place a card from your hand on top of your deck to give one of your minions here +2 power until the end of the turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: International Incident",                "faction": "Luchadors",         "base": "Ringside",
+            "bp": 21,                   "vps": [ 4, 2, 1 ],
+            "ability": "After you play an action that directly affects another player’s minion here, draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: International Incident",                "faction": "Luchadors",         "base": "The Squared Circle",
+            "bp": 18,                   "vps": [ 3, 1, 1 ],
+            "ability": "After the first time you play a minion here each turn, you may place a random action from your discard pile into your hand.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: International Incident",                "faction": "Mounties",          "base": "Great White North, Eh?",
+            "bp": 21,                   "vps": [ 2, 3, 1 ],
+            "ability": "Before this base scores, each player may move one of their minions from here to another base and give it +1 power until the end of turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: International Incident",                "faction": "Mounties",          "base": "Strategic Syrup Reserve",
+            "bp": 23,                   "vps": [ 4, 2, 1 ],
+            "ability": "After you play a minion here, you may move another player’s minion to here from a base where you have a minion.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: International Incident",                "faction": "Musketeers",            "base": "Bastion Saint-Gervais",
+            "bp": 25,                   "vps": [ 5, 4, 3 ],
+            "ability": "Once per turn after you play an action that directly affects one of your minions here, you may play an extra action.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: International Incident",                "faction": "Musketeers",            "base": "The Golden Lily",
+            "bp": 18,                   "vps": [ 3, 2, 2 ],
+            "ability": "At the end of your turn, if you have a minion here, draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: International Incident",                "faction": "Sumo Wrestlers",            "base": "Heya Training Stable",
+            "bp": 23,                   "vps": [ 4, 2, 1 ],
+            "ability": "At the start of your turn, you may discard a card to place a +1 power counter on one of your minions here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: International Incident",                "faction": "Sumo Wrestlers",            "base": "The Dohyo",
+            "bp": 17,                   "vps": [ 3, 2, 1 ],
+            "ability": "After the first time you play a minion here on your turn, you may move another player’s minion from here to another base.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up Penguins",             "faction": "Penguins",          "base": "Ice Floe",
+            "bp": 20,                   "vps": [ 3, 2, 1 ],
+            "ability": "At the start of your turn, you may place one of your minions here on the bottom of your deck to play a minion off the top of your deck as an extra minion.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up Penguins",             "faction": "Penguins",          "base": "The Colony",
+            "bp": 24,                   "vps": [ 4, 2, 1 ],
+            "ability": "After the first time you play a minion here on your turn, you may play a minion off the top of your deck here as an extra minion.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: Culture Shock",             "faction": "Anansi Tales",          "base": "Anansi’s Web",
+            "bp": 17,                   "vps": [ 3, 2, 1 ],
+            "ability": "If you have a minion here, after the first time each turn you play a standard action, you may place it into another player’s hand instead of the discard pile to draw two cards.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: Culture Shock",             "faction": "Anansi Tales",          "base": "Storyteller’s Hut",
+            "bp": 24,                   "vps": [ 4, 2, 1 ],
+            "ability": "On your turn, you may play an extra action to place a counter on this card. This base’s breakpoint is reduced by 2 for each of those counters.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: Culture Shock",             "faction": "Ancient Incas",         "base": "Cuzcu",
+            "bp": 30,                   "vps": [ 5, 3, 2 ],
+            "ability": "This base’s breakpoint is reduced by 3 for each action on it.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: Culture Shock",             "faction": "Ancient Incas",         "base": "Machu Picchu",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "After you play an action on this base, draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: Culture Shock",             "faction": "Grimms’ Fairy Tales",           "base": "Gingerbread House",
+            "bp": 21,                   "vps": [ 4, 2, 1 ],
+            "ability": "Before this base scores, each player may choose two of their minions here with the same power to gain +2 power until the end of the turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: Culture Shock",             "faction": "Grimms’ Fairy Tales",           "base": "Woodland Cottage",
+            "bp": 19,                   "vps": [ 3, 1, 1 ],
+            "ability": "Once per turn, after you play a minion here, search your deck for a minion of power 3 or less and place it into your hand.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: Culture Shock",             "faction": "Polynesian Voyagers",           "base": "Island Chain",
+            "bp": 17,                   "vps": [ 3, 1, 1 ],
+            "ability": "After this base scores, replace it with two bases instead of one.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: Culture Shock",             "faction": "Polynesian Voyagers",           "base": "Island Peak",
+            "bp": 23,                   "vps": [ 4, 2, 1 ],
+            "ability": "At the start of your turn, if you have exactly one minion here, place a +1 power counter on it.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: Culture Shock",             "faction": "Polynesian Voyagers",           "base": "Tropical Paradise",
+            "bp": 20,                   "vps": [ 3, 2, 1 ],
+            "ability": "If each player has one or more minions on this base, its starting breakpoint is 0.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: Culture Shock",             "faction": "Russian Fairy Tales",           "base": "Giant Turnip",
+            "bp": 30,                   "vps": [ 5, 3, 3 ],
+            "ability": "This base’s breakpoint is reduced by 1 for each minion on it.",
+            "short_abl": [] 
+        },
+        {
+            "set": "World Tour: Culture Shock",             "faction": "Russian Fairy Tales",           "base": "Transformation Spring",
+            "bp": 19,                   "vps": [ 4, 2, 1 ],
+            "ability": "Once during your turn, after you play a minion here, you may place it on the bottom of its owner's deck to play a minion off the top of your deck here as an extra minion.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Marvel",              "faction": "Avengers",          "base": "Avengers Tower",
+            "bp": 22,                   "vps": [ 4, 2, 1 ],
+            "ability": "Characters here of power 5 or more are not affected by other players' actions.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Marvel",              "faction": "Avengers",          "base": "Stark’s Lab",
+            "bp": 18,                   "vps": [ 3, 2, 1 ],
+            "ability": "After you play a character here, you may place a character from your discard pile on the bottom of your deck.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Marvel",              "faction": "Hydra",         "base": "Hydra Lab",
+            "bp": 23,                   "vps": [ 4, 2, 1 ],
+            "ability": "After one or more of your characters here is destroyed, draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Marvel",              "faction": "Hydra",         "base": "Ichor Base",
+            "bp": 25,                   "vps": [ 5, 3, 2 ],
+            "ability": "After the first time each turn you play a character of power 2 or less here, you may play an extra character of power 2 or less here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Marvel",              "faction": "Kree",          "base": "Hala",
+            "bp": 22,                   "vps": [ 4, 2, 1 ],
+            "ability": "On your turn, if you have a character here, you may play an extra action.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Marvel",              "faction": "Kree",          "base": "Kree-Lar",
+            "bp": 17,                   "vps": [ 3, 1, 1 ],
+            "ability": "After the first time you play a character here each turn, draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Marvel",              "faction": "Masters of Evil",           "base": "Castle Zemo",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "Before this base scores, each player may move one of their characters here to another base to gain 1 VP.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Marvel",              "faction": "Masters of Evil",           "base": "Symkaria",
+            "bp": 21,                   "vps": [ 4, 0, 0 ],
+            "ability": "When this base scores, players other than the winner gain 1 VP for each character they have here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Marvel",              "faction": "S.H.I.E.L.D.",          "base": "Helicarrier",
+            "bp": 24,                   "vps": [ 5, 3, 2 ],
+            "ability": "On your turn, if you have a character here, you may move one of your other characters from another base to here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Marvel",              "faction": "S.H.I.E.L.D.",          "base": "S.H.I.E.L.D. Base",
+            "bp": 22,                   "vps": [ 4, 2, 1 ],
+            "ability": "On your turn, you may play a character of power 2 or less here as an extra character.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Marvel",              "faction": "Sinister Six",          "base": "Downtown",
+            "bp": 18,                   "vps": [ 3, 1, 1 ],
+            "ability": "After you play a base modifier here, draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Marvel",              "faction": "Sinister Six",          "base": "New York Landmark",
+            "bp": 23,                   "vps": [ 4, 2, 1 ],
+            "ability": "This base’s breakpoint is reduced by 1 for each base modifier on it.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Marvel",              "faction": "Spider-Verse",          "base": "Manhattan",
+            "bp": 20,                   "vps": [ 4, 3, 2 ],
+            "ability": "After this base scores, each player with a character here may place a card with a Special ability from their discard pile on top of their deck.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Marvel",              "faction": "Spider-Verse",          "base": "The Daily Bugle",
+            "bp": 18,                   "vps": [ 4, 2, 1 ],
+            "ability": "After you play a character here, you may look at the top card of your deck and place it on the top or bottom of your deck.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Marvel",              "faction": "Ultimates",         "base": "Exo-Space",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "After you move a character to here, it gains +2 power until the end of the turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Marvel",              "faction": "Ultimates",         "base": "The Triskelion",
+            "bp": 23,                   "vps": [ 4, 3, 1 ],
+            "ability": "After you play a character here, you may move one of your characters from another base to here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up Goblins",              "faction": "Goblins",           "base": "Goblin Caves",
+            "bp": 17,                   "vps": [ 3, 1, 1 ],
+            "ability": "After this base scores, each player with a minion here may flip a coin. If heads, they gain 1 VP. If tails, they discard two cards.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up Goblins",              "faction": "Goblins",           "base": "Goblin Town",
+            "bp": 21,                   "vps": [ 4, 2, 1 ],
+            "ability": "After you play a minion here, flip a coin. If heads, place a +1 power counter on that minion.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up Knights of the Round Table",               "faction": "Knights of the Round Table",            "base": "Camelot",
+            "bp": 22,                   "vps": [ 5, 3, 2 ],
+            "ability": "Minions here of power 4 or more cannot be affected by other players’ cards. On your turn, you may move one of your minions from here to another base.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up Knights of the Round Table",               "faction": "Knights of the Round Table",            "base": "Round Table",
+            "bp": 21,                   "vps": [ 4, 2, 1 ],
+            "ability": "Each of your minions here with the same printed power as another one of your minions here has +1 power.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Disney Edition",              "faction": "Aladdin",           "base": "Agrabah Bazaar",
+            "bp": 22,                   "vps": [ 4, 2, 1 ],
+            "ability": "On your turn, you may discard an action card to place up to two +1 power counters total on your characters here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Disney Edition",              "faction": "Aladdin",           "base": "Sultan’s Palace",
+            "bp": 18,                   "vps": [ 3, 2, 1 ],
+            "ability": "After the first time you play a character here each turn, draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Disney Edition",              "faction": "Beauty and the Beast",          "base": "Enchanted Castle",
+            "bp": 23,                   "vps": [ 4, 3, 2 ],
+            "ability": "After the first time you discard a card from your hand during your turn, place a +1 power counter on one of your characters here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Disney Edition",              "faction": "Beauty and the Beast",          "base": "Gaston’s Tavern",
+            "bp": 26,                   "vps": [ 5, 3, 2 ],
+            "ability": "On your turn, you may discard a card to play an extra character of power 3 or less here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Disney Edition",              "faction": "Big Hero 6",            "base": "Krei Tech",
+            "bp": 20,                   "vps": [ 3, 1, 1 ],
+            "ability": "On your turn, you may move one of your characters with power counters to or from here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Disney Edition",              "faction": "Big Hero 6",            "base": "SFIT Robotics Lab",
+            "bp": 24,                   "vps": [ 4, 2, 1 ],
+            "ability": "Characters here with power counters have an additional +1 power.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Disney Edition",              "faction": "Frozen",            "base": "Arendelle",
+            "bp": 20,                   "vps": [ 3, 2, 1 ],
+            "ability": "After you play a character here, you may look at the top two cards of your deck, draw one, and place the other in your discard pile.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Disney Edition",              "faction": "Frozen",            "base": "Ice Palace",
+            "bp": 22,                   "vps": [ 4, 2, 1 ],
+            "ability": "Characters here cannot be destroyed or moved by other players’ cards.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Disney Edition",              "faction": "Mulan",         "base": "Forbidden City",
+            "bp": 19,                   "vps": [ 3, 3, 2 ],
+            "ability": "After the first time you play a character here each turn, you may play an extra action.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Disney Edition",              "faction": "Mulan",         "base": "Training Camp",
+            "bp": 25,                   "vps": [ 5, 3, 2 ],
+            "ability": "At the start of your turn, you may place a +1 power counter on one of your characters here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Disney Edition",              "faction": "The Lion King",         "base": "Jungle Paradise",
+            "bp": 22,                   "vps": [ 4, 3, 1 ],
+            "ability": "Once per turn, after you play a character here, you may place a +1 power counter on it if you have a character of power 4 or more in your discard pile.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Disney Edition",              "faction": "The Lion King",         "base": "Pride Rock",
+            "bp": 19,                   "vps": [ 3, 2, 1 ],
+            "ability": "After this base scores, the winner may place one of their characters from here or from their discard pile into their hand.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Disney Edition",              "faction": "The Nightmare Before Christmas",            "base": "Halloween Town",
+            "bp": 25,                   "vps": [ 5, 3, 2 ],
+            "ability": "After this base scores, each player may shuffle any number of their modifiers on characters here into their owner’s decks.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Disney Edition",              "faction": "The Nightmare Before Christmas",            "base": "Spiral Hill",
+            "bp": 23,                   "vps": [ 4, 2, 1 ],
+            "ability": "After this base scores, each player with a character here may return a character modifier from here or their discard pile to their hand.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Disney Edition",              "faction": "Wreck-It Ralph",            "base": "The Dump",
+            "bp": 20,                   "vps": [ 4, 2, 2 ],
+            "ability": "When a base modifier on another base goes to the discard pile, move it to here instead. After this base scores, each player may return one of their base modifiers here to its owner’s hand.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up: Disney Edition",              "faction": "Wreck-It Ralph",            "base": "The Power Strip",
+            "bp": 22,                   "vps": [ 4, 2, 1 ],
+            "ability": "On your turn, you may move one of your characters to or from this base.",
+            "short_abl": [] 
+        },
+        {
+            "set": "10th Anniversary",              "faction": "Dead Reckoning Promo",          "base": "Deepreef Crag",
+            "bp": 18,                   "vps": [ 3, 1, 1 ],
+            "ability": "When this base scores, if the total power here equals this base's breakpoint, the winner gains 1 additional VP. (errata'd by 10th Anniversary)",
+            "short_abl": [] 
+        },
+        {
+            "set": "10th Anniversary",              "faction": "Mermaids",          "base": "Mermaid Pool",
+            "bp": 23,                   "vps": [ 4, 2, 1 ],
+            "ability": "On your turn, if you have a minion here, you may move another player’s minion to here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "10th Anniversary",              "faction": "Mermaids",          "base": "Mermaid Reef",
+            "bp": 17,                   "vps": [ 3, 1, 1 ],
+            "ability": "During your turn, other players’ minions here add 1 less power to their controller’s total.",
+            "short_abl": [] 
+        },
+        {
+            "set": "10th Anniversary",              "faction": "Sheep",         "base": "Sheep Shrine",
+            "bp": 19,                   "vps": [ 4, 2, 1 ],
+            "ability": "After this is played, each player may move one of their minions to here. If played during setup, replace it and shuffle it into the deck.",
+            "short_abl": [] 
+        },
+        {
+            "set": "10th Anniversary",              "faction": "Sheep",         "base": "The Pasture",
+            "bp": 25,                   "vps": [ 5, 3, 2 ],
+            "ability": "After the first time you move a minion to this base each turn, move another minion from there to here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "10th Anniversary",              "faction": "Skeletons",         "base": "Boneyard",
+            "bp": 22,                   "vps": [ 4, 2, 1 ],
+            "ability": "Once during your turn, after a minion you own of power 3 or less goes to the discard pile from another base, you may bury it here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "10th Anniversary",              "faction": "Skeletons",         "base": "Ossuary",
+            "bp": 20,                   "vps": [ 3, 2, 1 ],
+            "ability": "On your turn, you may bury a minion of power 3 or less from your discard pile here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "10th Anniversary",              "faction": "World Champs",          "base": "Arena",
+            "bp": 23,                   "vps": [ 4, 3, 1 ],
+            "ability": "After the first time you play a minion here during your turn, you may play an extra action or draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "10th Anniversary",              "faction": "World Champs",          "base": "Hall of Fame",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "The first minion you play here during your turn gains +2 power until the end of the turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Excellent Movies, Dudes!",              "faction": "Action Heroes",         "base": "Building Rooftop",
+            "bp": 20,                   "vps": [ 3, 1, 1 ],
+            "ability": "At the start of your turn, if you have exactly one minion here, you may reduce the breakpoint of this base by that minion's power until the end of the turn. When this base scores, each player with exactly one minion here gains 1 VP.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Excellent Movies, Dudes!",              "faction": "Action Heroes",         "base": "Jungle Camp",
+            "bp": 20,                   "vps": [ 3, 2, 1 ],
+            "ability": "The winner may return one of their minions here to their hand.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Excellent Movies, Dudes!",              "faction": "Backtimers",            "base": "Alternate Present",
+            "bp": 20,                   "vps": [ 4, 2, 2 ],
+            "ability": "After the first time you play a minion here each turn, you may place two stasis counters on a card from your hand.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Excellent Movies, Dudes!",              "faction": "Backtimers",            "base": "Time-Traveling Car",
+            "bp": 22,                   "vps": [ 3, 2, 1 ],
+            "ability": "The winner may place two stasis counters on one of their cards here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Excellent Movies, Dudes!",              "faction": "Extramorphs",           "base": "Ancient Crashed Ship",
+            "bp": 21,                   "vps": [ 4, 2, 1 ],
+            "ability": "After you play a minion here from anywhere except your hand, place a +1 power counter on it.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Excellent Movies, Dudes!",              "faction": "Extramorphs",           "base": "Brood Hive",
+            "bp": 22,                   "vps": [ 4, 2, 1 ],
+            "ability": "Before this base scores, starting with the player to the current player's left, each player with a minion here may play an extra minion off the top of their deck here.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Excellent Movies, Dudes!",              "faction": "Wraithrustlers",            "base": "Rooftop Portal",
+            "bp": 22,                   "vps": [ 5, 3, 2 ],
+            "ability": "Once per turn, after you destroy a card here, draw a card.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Excellent Movies, Dudes!",              "faction": "Wraithrustlers",            "base": "Wraithrustlers HQ",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "The winner may play an extra action or an extra minion on their next turn.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up Teens",                "faction": "Teens",         "base": "Cabin in the Woods",
+            "bp": 24,                   "vps": [ 4, 3, 1 ],
+            "ability": "If you have at least two minions here, your minions here each have +2 power.",
+            "short_abl": [] 
+        },
+        {
+            "set": "Smash Up Teens",                "faction": "Teens",         "base": "Montridge High",
+            "bp": 20,                   "vps": [ 4, 2, 1 ],
+            "ability": "After you play a minion here, place a +1 counter on one of your minions with a different name here.",
+            "short_abl": [] 
+        }
+    ]
+}

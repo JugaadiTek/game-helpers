@@ -1,5 +1,5 @@
 ---
-import bases from '@data/smashup/bases.json';
+import bases from '@data/smashup/raw/bases.json';
 import { Code } from 'astro:components';
 let baselist = bases.data;
 const keyphrases = [
@@ -26,6 +26,10 @@ const keyphrases = [
     {
         "keyphrase": "owner",
         "class": "owner"
+    },
+    {
+        "keyphrase": "power\s\d+\s(or\s(less|more))",
+        "class": "power_slide"
     },
     {
         "keyphrase": "power",
@@ -76,6 +80,9 @@ for (let i = 0; i < newBaselist.length; i++) {
                     </div>
                     <div class="card_body">
                         <p set:html={base.ability}/>
+                        <div class="shorthand">
+                            <span class="base_shorthand" set:html={base.short_abl.condition}/>
+                        </div>
                     </div>
                     <div class="card_bottom">
                         <span class="base_set">{base.set}</span>
