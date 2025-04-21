@@ -47,6 +47,20 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
   <body>
     <main>
         <div class="quickRef">
+            <div class="baselist">
+                <h2>Deck of Bases</h2>
+                <!-- <Code code={JSON.stringify(activebases, null, 2)} lang="json"/> -->
+                <ul class="base-deck">
+                    {basedeck.map(base => (
+                        data.gamedata.active_bases.includes(base.base)
+                            ? <li class="active-base"><span>{base.faction}</span><span>{base.base}</span></li>
+                            : data.gamedata.discarded_bases.includes(base.base) 
+                            ? <li class="discarded-base"><span>{base.faction}</span><span>{base.base}</span></li>
+                        : <li class="base"><span>{base.faction}</span><span>{base.base}</span></li>
+                    ))} 
+                </ul>
+            </div>
+            <hr style="margin:32px 0px"/>
             <div class="turns">
                 <h2>Phases of a Turn</h2>
                 <div class="phases"><h3>1: Start Turn</h3></div>
@@ -68,19 +82,7 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
                 <div class="phases"><h3>5: End Turn</h3></div>
             </div>
             <hr/>
-            <div class="baselist">
-                <h2>Deck of Bases</h2>
-                <!-- <Code code={JSON.stringify(activebases, null, 2)} lang="json"/> -->
-                <ul class="base-deck">
-                    {basedeck.map(base => (
-                        data.gamedata.active_bases.includes(base.base)
-                            ? <li class="active-base"><span>{base.faction}</span><span>{base.base}</span></li>
-                            : data.gamedata.discarded_bases.includes(base.base) 
-                            ? <li class="discarded-base"><span>{base.faction}</span><span>{base.base}</span></li>
-                        : <li class="base"><span>{base.faction}</span><span>{base.base}</span></li>
-                    ))} 
-                </ul>
-            </div>
+            
         </div>
         <div class="standings">
             <h1>Standings</h1>
@@ -90,12 +92,12 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
                         <th rowspan="3" class="rt">#</th>
                         <th rowspan="2" class="p">Player</th>
                         {data.players.map(player => (
-                            <th>{player.name}</th>
+                            <th class="player">{player.name}</th>
                         ))}
                     </tr>
                     <tr class="factions">
                         {data.players.map(player => (
-                            <th>{player.factions[0]} <br/><hr/> {player.factions[1]}</th>
+                            <th><span>{player.factions[0]}</span> <br/><span>{player.factions[1]}</span></th>
                         ))}
                     </tr>
                     <tr class="total-scores">
@@ -140,12 +142,14 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
             <div>
                 {activebases.map(base => (
                     <div class="card">
-                        <h2><span class="bp">{base.bp}</span> | {base.base}</h2>
-                        <ul class="vps">
-                            {base.vps.map(vp => (
-                                <li>{vp}</li>
-                            ))}
-                        </ul>
+                        <div class="card_top">
+                            <h2 class="bp-head"><span class="bp">{base.bp}</span> | {base.base}</h2>
+                            <ul class="vps">
+                                {base.vps.map(vp => (
+                                    <li>{vp}</li>
+                                ))}
+                            </ul>
+                        </div>
                         <p class="ability">{base.ability}</p>
                     </div>
                 ))}
@@ -156,58 +160,134 @@ const activebases = basedeck.filter(base => data.gamedata.active_bases.includes(
   </body>
 </html>
 <style>
+    .active-bases {
+        
+        padding: 0 1rem;
+    }
+    .card {
+        display:flex;
+        flex-direction:column;
+        font-size: 1.25em;
+        /* glassmorphism */
+        background: rgba(80, 20, 150, 0.8);
+        color: #ddd !important;
+        box-shadow: 0 0 24px 3px rgba( 0, 0, 0, 0.37 ) inset;
+        backdrop-filter: blur(10px);
+        border-radius: 0.5rem;
+        margin: 1.5rem 0;
+        /* padding: 0.5rem 1rem; */
+    }
+    .card_top {
+        padding: 4px 16px;
+    }
+    .card p {
+        padding: 4px 16px 4px 32px;
+    }
+    .card_top {
+        background: rgba(50, 0, 30, 0.4);
+        box-shadow: 0 0 24px 3px rgba( 0, 0, 0, 0.37 ) inset;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin:0;
+        /* padding:0; */
+    }
+    .card p {
+        margin:8px 0px;
+        font-size:1.25em;
+        line-height: 1em;
+        color: #eee;
+        font-weight:100;
+        font-family: sans-serif;
+    }
+    .card_top h2 {
+        line-height: 1em;
+        margin: 0;
+        padding: 0;
+    }
+    .bp-head {
+        display:inline-block;
+    }
+    .card ul.vps {
+        display:inline-flex;
+        margin-right:0px;
+        font: monospace;
+        font-size: 1.25em;
+    }
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5em;
+}
 body {
-    background: #221000;
+    background: #090018;
     color: #ddd;
     font-family: sans-serif;
+    padding:0px;
+    margin:0px;
 }
 main {
     display: grid;
-    grid-template-columns: 300px 1fr 500px; 
+    grid-template-columns: 500px 1fr 700px; 
     gap: 1rem;
-    padding: 1rem;
 }
 table {
+    /* background: #240039; */
     border-collapse: collapse;
     width: 100%;
     text-align: center;
+    /* box-shadow: 0 0 5px 1px #210308; */
+}
+.standings {
+    padding:8px 32px;
+    
 }
 thead th, td {
     padding: 0.5rem;
 }
 tr.noscore td{
-    padding:2px;
+    padding:4px;
     color:#aaa;
     font-weight: bold;
     font-size:12px;
-    border: 1px solid #262626;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px 2px #000 inset;
+    /* border: 1px solid #262626; */
+    /* border-radius: 0.5rem; */
+    /* box-shadow: 0 0 10px 2px #000 inset; */
 }
 thead {
-    border: 1px solid #777;
-    background-color: #442400;
+    /* border: 1px solid #777; */
+    /* border-bottom: 1px solid #555; */
+    background-color: #292222;
     color: #ddd;
 }
 thead th {
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    /* border-left:4px solid #444; */
+}
+thead tr th.player {
+    font-size:1.5em;
+    text-transform: uppercase;
+    padding-bottom:unset;
+    background:#121212;
 }
 thead tr.total-scores th,
 thead tr.total-scores td {
-    border-top: 2px solid #555;
-    background-color: #221400;
+    /* border-top: 2px solid #555; */
+    background-color: #310031;
     font-weight: bold;
     font-size: 2rem;
     background: #000;
     color: white;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
 }
 thead tr.total-scores .vps-title {
     font-size: 1.25rem;
 }
 thead tr.total-scores th {
-    border-left: 1px solid #777;
+    /* border-left: 1px solid #777; */
 }
 thead tr.total-scores td {
     font-family: monospace;
@@ -215,38 +295,44 @@ thead tr.total-scores td {
     margin:0;
 }
 th.rt {
-    width: 32px;
+    /* width: 32px; */
     font-size: 1.5rem;
     font-weight: bold;
-    background-color: #442400;
+    background-color: #000010;
     color: #ddd;
 }
 th.rt-num {
-    border-right: 1px solid #777;
-    border-left: 1px solid #777;
+    /* border-right: 1px solid #777; */
+    /* border-left: 1px solid #777; */
 }
 tbody tr:last-child th {
-    border-bottom-width: 1px;
+    /* border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: #444;
-} 
+    border-bottom-color: #444; */
+}
+tbody tr:first-of-type{
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #444;
+}
 .scoring th.rt-num {
     padding:0;
     margin:0;
     /* font-family: monospace; */
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
-    background-color: #442400;
+    background-color: #242434;
     color: #aaa;
     
 }
 .scoring th.rt-num {
-    border-top: 1px solid #777;
-    border-bottom: 1px solid #777;
+    /* border-top: 1px solid #777; */
+    /* border-bottom: 1px solid #777; */
 }
 .noscore th.rt-num {
-    border-color: #111;
-    background-color: #181200;
+    border:unset !important;
+    /* border-color: #111; */
+    /* background-color: #181200; */
 }
 .baselist ul {
     list-style-type: none;
@@ -266,12 +352,18 @@ span.vp, span.vp-mods {
     font-weight: 400;
 }
 td.vps[data-vp="0"] {
-    background: #000;
-    color: #333;
+    background: #000000aa;
+    color: #000000;
+    box-shadow: 0 0 12px 1px #00005590 inset;
     text-align: center;
     padding: 1px;
-    font-size:12px;
-    border-bottom: 1px solid #333;
+    font-size:0px;
+    /* border-bottom: 1px solid #333; */
+}
+tr.factions th span {
+    color: #999 !important;
+    font-size:0.75em;
+    line-height: 1.25em;
 }
 .vps {
     position: relative;
@@ -305,35 +397,66 @@ ul.vps li {
 ul.base-deck {
 
 }
+.turn.scoring {
+    background:#c7a700;
+    color:black;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+}
+.scoring td.base-name {
+    background:#004777;
+    border-right:8px solid #000020;
+    color:white;
+}
+.turn.scoring + .turn.scoring {
+    /* border:1px solid pink; */
+    border-top:4px solid #000020;
+}
+.turn.scoring td {
+    padding:4px;
+}
+.round {
+    /* background:#000020; */
+}
+.round td {
+    /* border:1px dashed rgba(30,80,255,0.18) !important; */
+    border:unset !important;
+    border-radius:0px !important;
+    padding: 0 !important;
+}
 ul.base-deck li {
     /* glassmorphism */
     background: rgba(40, 40, 40, 0.8);
     color: #999 !important;
-    box-shadow: 0 0 24px 3px rgba( 0, 0, 0, 0.37 ) inset;
+    /* box-shadow: 0 0 24px 3px rgba( 0, 0, 0, 0.37 ) inset; */
     backdrop-filter: blur(10px);
     border-radius: 0.5rem;
-    margin: 8px 0;
-    padding: 4px 8px !important;
+    margin: 4px 0;
+    padding: 2px 8px !important;
 }
 ul.base-deck li.active-base {
     background: rgba(0, 140, 0, 0.4);
-    box-shadow: 0 0 8px 1px rgba( 0, 0, 0, 1 );
+    /* box-shadow: 0 0 8px 1px rgba( 0, 0, 0, 1 ); */
     border: 1px solid #999;
     color:white !important;
 }
 ul.base-deck li.active-base::before {
-    content: "✅";
+    /* content: "✅"; */
     display: inline-block;
     position: absolute;
     top: auto;
     bottom: auto;
-    left: -24px;
+    left: -28px;
 }
 ul.base-deck li.discarded-base {
     background: rgba(60, 0, 0, 0.7);
-    box-shadow: 0 0 16px 1px rgba( 0, 0, 0, 0.4 ) inset;
+    /* box-shadow: 0 0 16px 1px rgba( 0, 0, 0, 0.4 ) inset; */
     color: #777 !important;
     text-decoration: line-through;
+}
+.quickRef {
+    background: #230333;
+    padding:8px 32px;
 }
 /* 
     table {
