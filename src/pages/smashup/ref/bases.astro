@@ -1,0 +1,183 @@
+---
+import bases from '@data/smashup/bases.json';
+import { Code } from 'astro:components';
+let baselist = bases.data;
+const keyphrases = [
+    {
+        "keyphrase": "after this base scores",
+        "class": "base_score"
+    },
+    {
+        "keyphrase": "base",
+        "class": "base"
+    },
+    {
+        "keyphrase": "minion",
+        "class": "minion"
+    },
+    {
+        "keyphrase": "character",
+        "class": "character"
+    },
+    {
+        "keyphrase": "action",
+        "class": "action"
+    },
+    {
+        "keyphrase": "owner",
+        "class": "owner"
+    },
+    {
+        "keyphrase": "power",
+        "class": "power"
+    },
+    {
+        "keyphrase": "each player",
+        "class": "each_player"
+    }
+]
+// reset newBaselist to baselist
+let newBaselist = baselist.map((base) => {
+    return {
+        ...base,
+        ability: base.ability
+    };
+});
+// Loop through each base and wrap the keyphrases in a span with the class name. Case insensitive. each word can only be wrapped once.
+for (let i = 0; i < newBaselist.length; i++) {
+    for (let j = 0; j < keyphrases.length; j++) {
+        let regex = new RegExp(`\\b${keyphrases[j].keyphrase}\\b`, 'gi');
+        newBaselist[i].ability = newBaselist[i].ability.replace(regex, `<span class="highlight ${keyphrases[j].class}">${keyphrases[j].keyphrase}</span>`);
+    }
+}
+
+---
+
+<html lang="en" class="h-full">
+  <head>
+    <title>Smashup Bases</title>
+    <meta name="description" content="Smashup Bases" />
+  </head>
+  <body>
+    <main>
+        <h1>All Bases</h1>
+        <p>Here are all the bases in Smashup.</p>
+        <div class ="bases flex">
+            {newBaselist.map((base) => (
+                <div class="base_card">
+                    <div class="card_head">
+                        <span class="base_bp">{base.bp}</span>
+                        <span class="base_name">{base.base}</span>
+                        <span class="base_vps">
+                            {base.vps.map((vp) => (
+                                <span class="base_vp">{vp}</span>
+                            ))}
+                        </span>
+                    </div>
+                    <div class="card_body">
+                        <p set:html={base.ability}/>
+                    </div>
+                    <div class="card_bottom">
+                        <span class="base_set">{base.set}</span>
+                        <span class="base_faction">{base.faction}</span>
+                    </div>
+                </div>
+            ))}
+        </div>
+        <Code lang="json" code={JSON.stringify(baselist, null, 2)}/>
+    </main>
+  </body>
+</html>
+
+<style>
+    html {
+        background: linear-gradient(to bottom right, #120021, #3a6073);
+        color: #fff;
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+    }
+    .bases.flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .bases.flex .base_card {
+        /* glassmorphism effect */
+        background: rgba(55, 55, 55, 0.3);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        padding: 1rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        width: 500px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+    .base_card .card_head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 0.5rem;
+    }
+    .base_bp, .base_vps {
+        font-family: monospace;
+        font-size: 1.5rem;
+    }
+    .base_bp {
+        background: rgba(55, 255, 155, 0.2);
+        border-radius: 5px;
+        padding: 0 0.25rem;
+        margin: 0.25rem;
+        font-size: 2rem;
+    }
+    .base_vps .base_vp {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        padding: 0 0.25rem;
+        margin: 0.25rem;
+    }
+    .card_body p {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+    .card_bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.25rem;
+        margin-top: auto;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 0.5rem;
+    }
+    </style>
+<style is:global>
+    span.highlight {
+        background: rgba(255, 255, 255, 0.1);
+        font-weight: bold;
+        padding: 0 0.25rem;
+        border-radius: 5px;
+        margin: 0.25rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.2);
+        text-transform: uppercase;
+    }
+    .highlight.base {
+        background: rgba(255, 50, 50, 0.1);
+        color: #f88;
+        border: 1px solid rgba(255, 0, 0, 0.2);
+    }
+    .highlight.minion, .highlight.character {
+        background: rgba(50, 255, 50, 0.1);
+        color: #8f8;
+        border: 1px solid rgba(0, 255, 0, 0.2);
+    }
+    </style>
+</style>
