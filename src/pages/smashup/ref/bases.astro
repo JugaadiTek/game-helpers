@@ -74,14 +74,16 @@ for (let i = 0; i < newBaselist.length; i++) {
                         <span class="base_name">{base.base}</span>
                         <span class="base_vps">
                             {base.vps.map((vp) => (
-                                <span class="base_vp">{vp}</span>
+                                <span class={"base_vp vp"+vp}>{vp}</span>
                             ))}
                         </span>
                     </div>
                     <div class="card_body">
-                        <p set:html={base.ability}/>
+                        {/* <p set:html={base.ability}/> */}
                         <div class="shorthand">
-                            <span class="base_shorthand" set:html={base.short_abl.condition}/>
+                            <div class="base_condition" set:html={base.short_abl.condition}/>
+                            <div class="base_target" set:html={base.short_abl.target}/>
+                            <div class="base_action" set:html={base.short_abl.action}/>
                         </div>
                     </div>
                     <div class="card_bottom">
@@ -97,6 +99,12 @@ for (let i = 0; i < newBaselist.length; i++) {
 </html>
 
 <style>
+    .base_vps span.base_vp.vp0 {
+        background: rgba(0, 0, 0, 0.0);
+        color: #777;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 12px 2px rgba(0, 0, 0, 1) inset;
+    }
     html {
         background: linear-gradient(to bottom right, #120021, #3a6073);
         color: #fff;
@@ -164,6 +172,19 @@ for (let i = 0; i < newBaselist.length; i++) {
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         padding-top: 0.5rem;
     }
+    .base_condition{
+        font-size: 1.50rem;
+        line-height: 1.5;
+        margin: 0;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .base_condition::after {
+        content: ":";
+        display: inline-block;
+    }
+
     </style>
 <style is:global>
     span.highlight {
@@ -186,5 +207,9 @@ for (let i = 0; i < newBaselist.length; i++) {
         color: #8f8;
         border: 1px solid rgba(0, 255, 0, 0.2);
     }
+    span.highlight > span {
+        text-transform: lowercase;
+        font-size: 0.8rem;
+        font-weight: normal;
+    }
     </style>
-</style>

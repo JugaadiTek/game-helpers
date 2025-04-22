@@ -1,19 +1,5 @@
 {
     "shorthand": {
-        "conditions": [
-            { "key": "After each time a minion is played here", "value": "⬇️🧌" },
-            { "key": "After this base scores", "value": "💯"},
-            { "key": "After each time a minion is destroyed here", "value": "💥" }
-        ],
-        "target": [
-            { "key": "owner", "value": "🫵🏽" },
-            { "key": "the winner", "value": "🏆" },
-            { "key": "all players", "value": "👥" }
-        ],
-        "actions": [
-            { "key": "its owner may play an extra minion of power 'x' or 'more/less'", "value": "🧌'</>x'" },
-            { "key": "the winner may return one of his or her minions of power 'x' or 'more/less'", "value": "👋🏽🧌'</>x'"}
-        ]
     },
     "data": [
         {
@@ -21,9 +7,9 @@
             "bp": 23,                   "vps": [ 4, 2, 1 ],
             "ability": "After each time a minion is played here, its owner may play an extra minion of power 2 or less.",
             "short_abl": {
-                "condition": "🧌->⬇️",
-                "target": "🫵🏽",
-                "action": "+🧌<=2 -> ⬇️"
+                "condition": "Play a Minion here",
+                "target": "",
+                "action": "Play Extra <span class='highlight'>Minion: <span>Power 2 or Less</span></span>"
             }
         },
         {
@@ -31,9 +17,9 @@
             "bp": 20,                   "vps": [ 4, 2, 1 ],
             "ability": "After this base scores, the winner may return one of his or her minions of power 3 or less from here to his or her hand.",
             "short_abl": {
-                "condition": "💯",
-                "target": "🏆",
-                "action": "🧌<=3 -> 👋🏽"
+                "condition": "After this base scores",
+                "target": "The winner",
+                "action": "Minion <=3 to hand"
             }
         },
         {
@@ -47,9 +33,9 @@
             "bp": 16,                   "vps": [ 4, 3, 2 ],
             "ability": "After each time a minion is destroyed here, place it at the bottom of its owner’s deck.",
             "short_abl": {
-                "condition": "🧌->💥",
-                "target": "🫵🏽",
-                "action": "🧌->⤵️🎴"
+                "condition": "Minion Destroyed Here",
+                "target": "Owner",
+                "action": "Bottom of Deck"
             }
         },
         {
