@@ -1,0 +1,116 @@
+---
+const { type, location, condition, compare, value,where } = Astro.props;
+---
+<div class={"card "+type}>
+    <div class="card-inner">
+        <div class="card-type"><span>{type}</span></div>
+        <div class="card-location">{location}</div>
+        <div class="card-icon">
+            {/* switch statement */}
+            {type === "Minion" && <i class="fa-solid fa-spaghetti-monster-flying"></i>}
+            {condition==="Destroy" && <i class="fa-solid fa-skull-crossbones"></i>}
+            {type === "Action" && <i class="fa-solid fa-solid fa-share-from-square"></i>}
+            {type === "Score" && <i class="fa-solid fa-trophy-star"></i>}
+        </div>
+        <div class="card-spec">
+            
+            {condition==="Power" && <i class="fa-solid fa-sword"></i>}
+            {compare==="lte" && <i class="fa-solid fa-less-than-equal"></i>}
+            {compare==="gte" && <i class="fa-solid fa-greater-than-equal"></i>}
+            {value===1 && <i class="fa-solid fa-dice-one"></i>}
+            {value===2 && <i class="fa-solid fa-dice-two"></i>}
+            {value===3 && <i class="fa-solid fa-dice-three"></i>}
+            {value===4 && <i class="fa-solid fa-dice-four"></i>}
+            {value===5 && <i class="fa-solid fa-dice-five"></i>}
+            {value===6 && <i class="fa-solid fa-dice-six"></i>}
+        </div>
+        <div class="card-where">{where}</div>
+    </div>
+</div>
+
+
+
+<style>
+    div {
+        box-sizing: border-box;
+    }
+    .action, .condition, .next-arrows {
+        display: inline-block;
+    }
+    
+    .card {
+        /* playing card */
+        width: 96px;
+        height: 152px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        border: 2px solid rgba(55, 55, 55, 0.2);
+        box-shadow: 0 0 8px 2px rgba(55, 55, 55, 0.2);
+        position: relative;
+        overflow: hidden;
+    }
+    .card.Score > .card-inner > div {
+        background: #407 !important;
+        color: #fff !important;
+    }
+    .card-inner {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 24px 14px 1fr 24px 48px;
+        grid-template-columns: 1fr;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card-type, .card-icon, .card-spec, .card-location,.card-where {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    } 
+    .card-type {
+        background-color: #407;
+    }
+    .card-type span {
+        font-size: 16px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .card-icon, .card-spec {
+        border-left: 4px solid #440077;
+        border-right: 4px solid #440077;
+    }
+    .card-icon {
+        font-size: 2rem;
+        /* color: #fff; */
+    }
+    .card-spec {
+        /* color: #fff; */
+        background-color: #44007730;
+    }
+    .card-spec i {
+        /* font-size: 1.5rem; */
+        margin: 0 0.25rem;
+    }
+    .card-location {
+        background-color: #440077aa;
+        border-left: 4px solid #407;
+        border-right: 4px solid #407;
+        color: #fff;
+        /* font-size: 1.5rem; */
+        text-transform: uppercase;
+        font-size:11px;
+    }
+    .card-where {
+        background-color: #407;
+        color: #fff;
+        /* font-size: 1.5rem; */
+        text-transform: uppercase;
+        font-size:16px;
+        font-weight: bold;
+    }
+</style>

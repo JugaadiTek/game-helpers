@@ -1,0 +1,97 @@
+---
+import SmashupCard from '../../../components/core/Smashup-card.astro';
+---
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthand</title>
+    <script src="https://kit.fontawesome.com/644eeee062.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <i class="fa-solid fa-square-down"></i> <i class="fa-solid fa-square-up"></i> <i class="fa-solid fa-square-right"></i> <i class="fa-solid fa-square-left"></i> <i class="fa-solid fa-rectangle-vertical-history"></i> <i class="fa-solid fa-angles-down"></i> <i class="fa-solid fa-helmet-battle"></i> <i class="fa-solid fa-game-board"></i> <i class="fa-solid fa-game-board-simple"></i> <i class="fa-solid fa-cards-blank"></i> <i class="fa-solid fa-book-sparkles"></i> <i class="fa-solid fa-skull-crossbones"></i> <i class="fa-solid fa-greater-than-equal"></i> <i class="fa-solid fa-less-than-equal"></i> <i class="fa-solid fa-circle-plus"></i> <i class="fa-solid fa-clipboard-list-check"></i> <i class="fa-solid fa-tally"></i> <i class="fa-solid fa-globe"></i> <i class="fa-solid fa-trophy-star"></i> <i class="fa-solid fa-dungeon"></i> <i class="fa-solid fa-share-from-square"></i> <i class="fa-solid fa-up-from-line"></i> <i class="fa-solid fa-up-to-line"></i> <i class="fa-solid fa-shuffle"></i> <i class="fa-solid fa-flag-swallowtail"></i> <i class="fa-solid fa-spaghetti-monster-flying"></i>
+    <h2>Samples</h2>
+    <ul>
+        <li>
+            <div class="ability">After each time a minion is played here, its owner may play an extra minion of power 2 or less.</div>
+            <div class="shorthand">
+                {/* type= "Minion", "Action", "M+A", "Score"
+                    condition= "power"
+                    compare= "lte", "gte"
+                    value= "1", "2", "3", "4", "5", "6" 
+                    location= "deck", "hand", "base", "here", "any base"
+                    where= "to hand", "to deck", "to base" */}
+                <SmashupCard type="Minion" location="hand" where="Here" />
+                <div class="next-arrows"><i class="jt-then fa-solid fa-angles-right"></i><span class="who">Owner</span><i class="jt-then fa-solid fa-angles-right"></i></div>
+                <SmashupCard type="Minion" condition="Power" compare="lte" value={2} location="hand" where="Any Base"  />
+            </div>
+        </li>
+        <li>
+            <div class="ability">After this base scores, the winner may return one of his or her minions of power 3 or less from here to his or her hand.</div>
+            <div class="shorthand">
+                <SmashupCard type="Score" where="Here" />
+                <div class="next-arrows"><i class="jt-then fa-solid fa-angles-right"></i><span class="who">Winner</span><i class="jt-then fa-solid fa-angles-right"></i></div>
+                <SmashupCard type="Minion" condition="Power" compare="lte" value={3} location="Here" where="To Hand" />
+            </div>
+        </li>
+        <li>
+            <div class="ability">After each time a minion is destroyed here, place it at the bottom of its owner’s deck.</div>
+            <div class="shorthand">
+                <SmashupCard type="Minion" condition="Destroy" where="Here" />
+                <div class="next-arrows"><i class="jt-then fa-solid fa-angles-right"></i><span class="who">Owner</span><i class="jt-then fa-solid fa-angles-right"></i></div>
+                <SmashupCard type="Minion" location="Same" where="Deck Bottom" />
+            </div>
+        </li>
+    </ul>
+    <h2>Shorthand</h2>
+    <ul>
+        <li>
+            <i class="fa-solid fa-flag-swallowtail"></i>
+            <span class="description">Base</span>
+        </li>
+        <li>
+            <i class="fa-solid fa-cards"></i>
+            <span class="description">Deck</span>
+        </li>
+    </ul>
+</body>
+</html>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+    .shorthand {
+        display: flex;
+        flex-direction: row;
+    }
+    .next-arrows {
+        display:inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 64px;
+        text-align: center;
+    }
+    .jt-then {
+        color: #f88 !important;
+        margin: 0 0.5rem;
+        animation: slide 1.5s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    @keyframes slide {
+        0% {
+            transform: translateX(-4px) scale(1);
+        }
+        50% {
+            transform: translateX(0) scale(1.2);
+        }
+        100% {
+            transform: translateX(-4px) scale(1);
+        }
+    }
+
+</style>
