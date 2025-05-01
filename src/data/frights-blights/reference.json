@@ -1,0 +1,206 @@
+{ "name": "Frights & Blights",    "desc": "A game of eldritch horror and survival.",    "version": "1.0.0",   "author": "Aditya Subramaniam",   "date": "2025-04-30",
+  "reference": {
+    "character": {
+      "primary-information": {    "desc": "This part governs the main information of the character.",
+        "subitems": {
+          "name": "The name of the character. This part is somewhat influenced by the particular race chosen by the player but can be completely imaginary for playing purposes. Regardless, should ideally be of eldritch/weird nature as much as possible.",
+          "hunger": "The hunger levels of the character. This is affected by some of the perception and bounding abilities.",
+          "personification": {
+            "desc": "The persona taken up by the character. This depends on what they have consumed during the past day. There can be many options to choose from. This is affected by some of the perception and bounding abilities.",
+            "checks": [
+              { "type": "Consumption", "subtype": "Bounded", "desc": "Increases chance of switching to a new persona (from known list of past day) by 10% - governed by rolling a d10 and adding 1 per 10%. If value reaches 10 then it is a 100% success of switching to that persona." }
+            ]
+          },
+          "health": {
+            "desc": "The current health of the character. This is affected by some of the perception and bounding abilities and the current level at which the character starts on.",
+            "formula": {
+              "start": [
+                { "op": "add", "values":[
+                  "2d6", 
+                  { "op": "abs", "value": "Shield['bounded']" }, 
+                  { "op": "abs", "value": "Imagination['unbounded']" },
+                  { "op": "div", "r":"down", "values":[
+                    { "op": "add", "values": [ {"op": "abs", "value": "resistence['Perceived']"}, {"op": "abs", "value": "resistence['Essential']"} ]},
+                    4
+                  ]}    
+                ]}
+              ],
+              "level": [ "..." ]
+            }
+          }
+        }
+      },
+      "ability-groups": {
+        "perception": { "die": "d10", "desc": "This part governs the perception abilities of the character. Each perception ability has a perceived and an essential value.",
+          "perceived": "What the character perceives their ability proficiency to be.",
+          "essential": "The real ability proficiency of the character.",
+          "mechanics": { 
+            "instructions": "If using an Essential part of the ability: Add Lingering space if not filled up. Else replace any one space by that ability. (Roll d6 - for Lingering counter).",
+            "leveling": [
+              "Each level up increases these values range by 10s and similarly a level down decreases them by 10s.", 
+              "Cannot go below 0.",
+              "Any level change, an added d10 roll is done for adding/subtracting that from the absolute total."
+            ],
+            "set-values": "The values are set up by rolling a d20. Value = (d20 - 10). Maxed value at -8 to +8."
+          },
+          "abilities": {
+            "allure":       { "ex": [ "Being deceptive", "charismatic", "intimidating" ],   "desc": "The allure of the character. This part governs how the character behaves with others in an alluring way." },
+            "aural":        { "ex": [ "Listening" ],                                        "desc": "The aural sense of the character. This part governs what the character is able to sense using their auditory awareness." },
+            "feel":         { "ex": [ "Disoriented", "frightened", "ecstatic", "angered" ], "desc": "The feeling sense of the character. This part governs how the character is feeling." },
+            "legerdemain":  { "ex": [ "Stealing" ],                                         "desc": "The legerdemain techniques of the character. This part governs the physical slyness of the character in terms of thievery and such abilities." },
+            "remembrance":  { "ex": [ "History", "Forgetfulness" ],                         "desc": "The remembrance of the character. This part governs the memories of the character and any other historical understanding of the world." },
+            "resistance":   { "ex": [ "Health", "Poisons Handling" ],                       "desc": "The internal resistance of the character. This part governs the resistance of the body for the character against afflictions and how healthy they can be." },
+            "sight":        { "ex": [ "Observation", "Blindedness" ],                       "desc": "The sight sense of the character. This governs what the character can see." },
+            "touch":        { "ex": [ "Pushing someone", "Holding onto a tree" ],           "desc": "The touch sense of the character. This governs what the character touches." }
+          }
+        },
+        "bounding": { "die": "d10", "desc": "This part governs the bounding abilities of the character. Each bounding ability has a bounded and an unbounded value.",
+          "bounded": "What the character perceives their ability proficiency to be.",
+          "unbounded": "The real ability proficiency of the character.",
+          "mechanics": { 
+            "instructions": "",
+            "leveling": [
+              "Each level up increases these values range by 10s and similarly a level down decreases them by 10s.", 
+              "Any level change, an added d10 roll is done for adding/subtracting that from the total."
+            ],
+            "set-values": "The values are set up by rolling a d20. Value = (d20 - 10). Maxed value at -8 to +8."
+          },
+          "abilities": {
+            "consumption":  { "ex": [ "Eating another creature" ],                                  "desc": "The consumption ability of the character. This part governs how well the character is at consuming things." },
+            "focus":        { "ex": [ "Tunnel Visioning", "Hyper Fixation", "Meditating" ],         "desc": "The focus ability of the character. This part governs the focus of the character." },
+            "imagination":  { "ex": [ "Dreaming", "Pondering" ],                                    "desc": "The imagination ability of the character. This part governs how the character imagines things in their brain." },
+            "madness":      { "ex": [ "Frenzied", "Bloodlust", "Frightened" ],                      "desc": "The madness ability of the character. This part governs how the character maddens over time." },
+            "magic":        { "ex": [ "Healing", "Fire Whip", "Invisibility" ],                     "desc": "The magic ability of the character. This part governs what magical things the character can create and use." },
+            "might":        { "ex": [ "Melee attacks",  "carrying a heavy object" ],                "desc": "The might ability of the character. This part governs the pure strength of the character." },
+            "shield":       { "ex": [ "Armoured", "Unarmoured", "Shield" ],                         "desc": "The shield ability of the character. This part governs the armoured parts of the character." },
+            "skill":        { "ex": [ "Stealthing", "Shooting a bow: Ranged attacks", "Tracking" ], "desc": "The skill ability of the character. This part governs various skilled ways the character does things." }
+          }
+        }
+      },
+      "alt-rules": [
+        { 
+          "key": "Rules for Perception & Bounding", 
+          "desc": [
+            "An alternate and simpler rule that can be used for Successful | Failed Check Results is to increase/decrease the particular ability that was checked for by a value of 1. This has been tested thoroughly and works completely fine for play.",
+            "The prior extensive rule is being made into a digital companion app by me for proper playtesting as it requires a certain amount of mathematical analysis and bookkeeping by the players.",
+  "A bit of bookkeeping is still existing in using this newer alternate rule here but to a much lesser extent and easily grasped by the players."
+          ]
+        }
+      ],
+      "mastered-fields": {
+        "desc": "This part governs the mastered fields of the character.",
+        "subitems": {
+          "lingering": [
+            "The lingering effects of an essential perception ability use. This lets the character linger (use additional times) their essential checks for 3 of the abilities. If a 4th new ability needs to be lingered then it needs to replace one of the older ones.",
+            "Lingering itself is done by rolling a d6 dice divided by 2 to determine how long the effects of that ability will linger additionally - 1 to 3 such usage of that ability. Upon finishing the specific amount of usages, the ability needs to be rechecked and the lingering effect for that ability is removed."
+          ],
+          "languages": [
+            "The linguistic repertoire of the character. It informs us what languages the character is fluent with. A character can at maximum know 5 different languages with almost all characters at least being aware of the Ankrulian language. Said to be the language all other ones originated from. If any of the other languages are used for communication, it usually means that a dialect or additive part is being used that is not usually used in the Ankrulian version.",
+            "A character can change their language but for that to happen, fluency in the new one needs to be checked while one of the others is slowly growing stale due to not being conversed with."
+          ]
+        },
+        "mastery": [
+          "The different abilities that a character has mastery over. At maximum, a character can have mastery over 4 types. Every time the character’s level is updated, 2 of the mastered abilities can be changed.",
+          "A mastery of an ability basically grants the character an added boost of 3 to those abilities. This is different from the reliances obtained from your class and race which cannot be changed. Even if the maximum of an ability is reached, this boost is still taken into consideration and does not cap the maximum for that ability. The player has a choice of how to use the mastery, positive | negative."
+        ]
+      }
+    },
+    "societal-information": {
+      "desc": "This part governs the racial and vocational information of the character.",
+      "reliances": {
+        "primary": "The primary reliance means that that particular ability gets a boost of 5.",
+        "secondary": "The secondary reliance means that that particular ability gets a boost of 2."
+      },
+      "class": {
+        "desc": "The class the player is playing the character as. The list of characters are as below:",
+        "classes": [
+          { "key": "brawler",     "rel": { "primary": [ "Might", "Skill" ],         "secondary": [ "Focus", "Madness" ] },    "desc": "These are fistfighters who love to get into a good brawl." },
+          { "key": "devout",      "rel": { "primary": [ "Focus", "Imagination" ],   "secondary": [ "Resistance", "Aural" ] }, "desc": "These are believers of the god. Usually originating from the land they themselves are from but can be different due to species migrating." },
+          { "key": "cultist",     "rel": { "primary": [ "Madness", "Imagination" ], "secondary": [ "Magic", "Allure" ] },     "desc": "These are fervent believers of the teachings. They do not necessarily originate from the same place as from where the god exists." },
+          { "key": "sensor",      "rel": { "primary": [ "Feel", "Focus" ],          "secondary": [ "Allure", "Aural" ] },     "desc": "These are the ones that are usually sensitive in nature. They are very quick witted and able to figure out things by understanding." },
+          { "key": "mage",        "rel": { "primary": [ "Magic", "Resistance" ],    "secondary": [ "Feel", "Focus" ] },    "desc": "These are the magicians that are attuned with magic in many ways." },
+          { "key": "healer",      "rel": { "primary": [ "Magic", "Feel" ],          "secondary": [ "Resistance", "Focus" ] },  "desc": "These are the healers of things. They take life essence from nature and the world and heal." },
+          { "key": "mystic",      "rel": { "primary": [ "Magic", "Imagination" ],   "secondary": [ "Feel", "Allure" ] },     "desc": "These are the ones that are filled with mystery in the world but in a magical form." },
+          { "key": "thief",       "rel": { "primary": [ "Legerdemain", "Allure" ],  "secondary": [ "Focus",  "Skill" ] },    "desc": "These are the ones that roam in the shadows and are able to blend." },
+          { "key": "appeaser",    "rel": { "primary": [ "Allure", "Feel" ],         "secondary": [ "Remembrance", "Imagination" ] },  "desc": "These are the ones that love to calm things down in situations." },
+          { "key": "jester",      "rel": { "primary": [ "Madness", "Imagination" ], "secondary": [ "Feel",  "Allure" ] },     "desc": "These are the volatile bunch who can switch around very easily in demeanors." },
+          { "key": "knight",      "rel": { "primary": [ "Might",  "Shield" ],       "secondary": [ "Resistance",  "Allure" ] },   "desc": "These are the chivalrous fighters with armour and weapons at hand." },
+          { "key": "gorger",      "rel": { "primary": [ "Consumption",  "Feel" ],   "secondary": [ "Might",  "Focus" ] },    "desc": "These are the eaters of the lot. They love to devour more than the rest of the bunch." },
+          { "key": "meditator",   "rel": { "primary": [	"Focus",	"Feel"],		      "secondary": [ "Resistance","Magic"]},		"desc":"These are the calm ones who love to be silent in most situations with heavy focus."},
+          {	"key": "swordsmaster","rel": { "primary": [ "Skill","Focus"],           "secondary": [ "Might","Feel"]},          "desc":"These are the swift slashers who are nimble yet strong."},
+          {	"key": "archer",      "rel": { "primary": [ "Skill","Focus"],           "secondary": [ "Feel","Sight"]},          "desc":"These are the long distance ones who love to scout and keep distance."},
+          {	"key": "peasant",     "rel": { "primary": [ "Remembrance","Imagination"],"secondary":["Resistance","Shield"],     "negative":["Allure","Might","Magic","Skill"]},"desc":"These are the worst of the bunch with no special expertise when looked upon."}
+        ]
+      },
+      "races": {
+        "desc": "There are 7 different races to choose from. Each is associated with the continent that is governed by a god. The various locations of each of the races are also tied with that god’s primal form regardless of the Age they are in.",
+        "races": [
+          { "key": "Garullan",   "rel": { "primary": [ "Might", "Allure" ],         "secondary": [ "Magic", "Remembrance" ] },    "desc": "The Garullans are usually law abiding, ruthless folk but who have many wings forming on their bodies in differing locations. They are usually folks who have immense confidence and religious zeal over their origin considering they live closest to the “true” god’s Vouthlid’s residence and have a lot of influence and pride over religious matters as a whole. They are quite comfortable with taking flight when required and love to float." },
+          { "key": "Dvaraakian",  "rel": { "primary": [ "Imagination", "Touch" ],    "secondary": [ "Feel", "Skill" ] },    "desc": "The Dvaraakians are a flowery folk with munching down things being their focus. Their lands too are filled with various kinds of trees and flowers and is a sight to behold in the floral sense. They are folks that are usually very imaginative in nature with a calming essence to their behaviour. They do not rely much on religious things but have a high regard for their god. They can easily blend into locations with a dense floral aspect and love to be sticky with others." },
+          { "key": "Lithchurnian","rel": { "primary": [ "Allure",  "Madness" ],      "secondary": [ "Consumption",  "Sight" ] },   "desc": "The Lithchurnians were an odd skeletonized bunch or more so that they seemed to be filled with protruding teeth from everywhere. They were definitely a noisy bunch due to their various mouth like formations to converse with. They had a very maddening focus on their god who they protected with a firm fist even though they knew next to nothing of the true one. To them Vouthlid’s existence was more of a thing from the past. Even their lands were decorated with an excess of teeth and skeletonized remains of creatures." },
+          { "key": "Baelican",   "rel": { "primary": [ "Legerdemain", "Madness" ],   "secondary": [ "Imagination", "Skill" ] },    "desc": "The Baelicans were basically twists and turns of tentacles just like their god. They had slimy structures with wet ooze dripping on the lands. They were weak in their minds with a very imaginative way of remembering things and most often terrible with their sight but very prideful in their touching essence but also quite slithery in their grips." },
+          { "key": "Aekronian",  "rel": { "primary": [ "Consumption", "Madness" ],   "secondary": [ "Skill", "Aural" ] },    "desc": "The Aekronians were a bloody kind. More so literally than anything due to them leaving a trial of gushing blood wherever they traversed. A kind too easily influenced and weak in nature due to their own charismatic god. Sometimes their heads looked just like octopuses but with a shrieking nature in their voices unlike any but equally keen hearing. Their reddishness was of a completely different hue which sometimes probably blended in places with a pool due to the excess they left everywhere." },
+          { "key": "Jaimulian",  "rel": { "primary": [ "Sight", "Focus" ],          "secondary": [ "Resistance", "Shield" ] },    "desc": "The Jaimulians were well formations of parts of skulls with hidden eyes focused on things all around. Nothing could leave their sight if they wanted and their hardened skulls had a very resilient form and acted like shells for their bodies. A very in your face kind with a pleasure for decorating their households with literal eyes of varying creatures for protection." },
+          { "key": "Qignorans",   "rel": { "primary": [ "Magic", "Imagination" ],    "secondary": [ "Feel", "Allure" ] },    "desc": "Lastly, the most unique of the lot in terms of races. They had multiple personalities to speak as. Bulbous overflowing heads of theirs and portals literally hidden among their bodies, they were more close to an oddity than any other of their counterparts but also the most imaginative and magical of the kinds. They were the ones that had the most influence over the god and were the ones that were closest to the god in terms of their lands." }
+        ]
+      },
+      "god": {
+        "desc": "each of the 7 continents has a particular god governing them as has been mentioned above. The gods have different names depending on the Age the game will be played on.",
+        "candles": "There are 7 lit candle lights for the god being followed upon by the character if so. If all the 7 candles are burnt out due to various reasons, the character is no longer an ardent follower of the god and would need to either change their god or, if maintaining, be actively against the god itself.",
+        "ages": [
+          { "key": "THE AGE OF FAELUP", "gods": [
+            { "name": "Angborg", "pronouns": "He/him", "continent": "God of Garulla" },
+            { "name": "Kvoita", "pronouns": "She/her", "continent": "God of Dvaraak" },
+            { "name": "Kriksi", "pronouns": "She/her", "continent": "God of Lithchurn" },
+            { "name": "Nimsis", "pronouns": "She/her", "continent": "God of Baelic" },
+            { "name": "Xerzer", "pronouns": "He/him", "continent": "God of Aekron" },
+            { "name": "Viewke", "pronouns": "She/her", "continent": "God of Jaimul" },
+            { "name": "Qinjing", 	"pronouns": 	"They/them", 	"continent": 	"God of Qignor" }
+          ]}
+        ]
+      },
+      "blessed": {
+        "desc": "Sometimes, a blessing or a curse can be put on a character due to certain situations. If that happens, it basically gives the character a double roll choice for some/all of their abilities. If it is a blessing, then the higher value is considered, if it is a curse, then the lower value is considered.",
+        "blessing": "A character can be blessed and cursed but cannot have a secondary blessing/curse. They will have to give up on the blessing/curse being set from before through force of will.",
+        "cursed": "A character can be blessed and cursed but cannot have a secondary blessing/curse. They will have to give up on the blessing/curse being set from before through force of will."
+      },
+      "blight": {
+        "desc": [ 
+          "This part governs the different blights the character can happen to get affected by.",
+          "The negative/positive values being inserted are on the absolute maximum and minimum values and, hence, a value at 0 cannot be decreased further."
+        ],
+        "blights": {
+          "poisoned": "A character that is poisoned will have a constant loss (particular duration) on some of its perception and bounding abilities as it affects its senses.",
+          "burned":   "A character that is burned will have a constant loss (particular duration) on some of its perception and bounding abilities as it affects its senses.",
+          "frozen":   "A character that is frozen will have a constant loss (particular duration) on some of its perception and bounding abilities as it affects its senses.",
+          "clamped":  "A character that is clamped (magic loss) will have a constant loss (particular duration) on some of its perception and bounding abilities as it affects its senses.",
+          "blinded":  "A character that is blinded will have a constant loss (particular duration) on some of its perception and bounding abilities as it affects its senses.",
+          "deafened":  "A character that is deafened will have a constant loss (particular duration) on some of its perception and bounding abilities as it affects its senses.",
+          "mesmerized": "A character that is mesmerised will have a constant loss (particular duration) on some of its perception and bounding abilities as it affects its senses.",
+          "limited":   "A character that is limited will have a constant loss (particular duration) on some of its perception and bounding abilities as it affects its senses."
+        }
+      },
+      "background": {
+        "desc": "This is the character’s background information.",
+        "values": {
+          "size": { 
+            "desc": "The general size of the character. Most characters are about Moderate in size.",
+            "values": ["Mini", "Little", "Normal", "Moderate", "Huge", "Massive", "Aria", "Looming", "Engulfing"]
+          },
+          "gender": { "desc": "The gender of the character. Feel free to choose any gender you are comfortable with." },
+          "attribute": { "desc": "This signifies the general attribute to recognise the character. It is usually associated with its origin location as a character is mutated from the god of its region." },
+          "origin": { "desc": "Where the character originated from. This is from the many locations in aria. See chapter 2 - world section for a full list of locations to choose from." },
+          "arms": { "desc": "This signifies the number of different usable arms the character has. It is usually formed from its attributes but could also be actual hands and legs from real life." },
+          "description": { "desc": "The background description of the character. Where it was born, what it did in its life and how it possibly came upon to exist in the particular scenario." }
+        }
+      }
+    },
+    "weapons-wizardry": {
+      "desc": "This part governs the character’s weapons and wizardry items and abilities.",
+      "subitems": {
+        "weapons": { "desc": "The weapons that the character can equip. Add any kind of weapon you like." },
+        "wizardry": { "desc": "The wizardry abilities the character can utilise. Add any kind of wizardry you like." }
+      }
+    }
+  }
+}
