@@ -1,0 +1,42 @@
+{
+    "name": [ "", "", "" ],  "gender": "", "personificiation": "",
+    "attribute": "",    "size": "",   "origin": "",    "arms": 0,
+    "level": 0,   "hunger": 0,  "health": 0,   "blessed": null,    "cursed": null,
+    "perception": {
+      "allure":      [ 0, 0 ],    "aural":       [ 0, 0 ],
+      "feel":        [ 0, 0 ],    "legerdemain": [ 0, 0 ],
+      "remembrance": [ 0, 0 ],    "resistance":  [ 0, 0 ],
+      "sight":       [ 0, 0 ],    "touch":       [ 0, 0 ]
+    },
+    "bounding": { 
+      "consumption": [ 0, 0 ],    "focus":       [ 0, 0 ],
+      "imagination": [ 0, 0 ],    "madness":     [ 0, 0 ],
+      "magic":       [ 0, 0 ],    "might":       [ 0, 0 ],
+      "shield":      [ 0, 0 ],    "skill":       [ 0, 0 ]
+    },
+    "lingering": [ 
+      { "key": null, "value": null, "uses": [ null, null, null] }
+    ],
+    "languages": [  "", "", "", "", "" ],
+    "mastery":   [  "", "", "", "" ],
+    "class": {
+      "name": "",
+      "reliances": { "primary": [ "", ""], "secondary":  [ "", "" ] }
+    },
+    "race": {
+      "name": "",
+      "reliances": { "primary": [ "", "" ], "secondary": [ "", "" ] }
+    },
+    "god": { "name": "", "candles": 0 },
+    "blights": {
+      "poisoned": false,  "burned": false,    "frozen": false,      "clamped": false,
+      "blinded": false,   "deafened": false,  "mesmerized": false,  "limited": false
+    },
+    "weapons": [
+      { "equip": null, "key": null, "value": null }
+    ],
+    "wizardry": [
+                     { "key": null, "value": null }
+    ],
+    "description": [ "" ]
+  }

@@ -1,0 +1,46 @@
+{
+  "name": [ "Haggy", "Mc", "Bwag" ],  "gender": "female", "personificiation": "wheelchair",
+  "attribute": "Peacock Feathers",    "size": "normal",   "origin": "exahelm",    "arms": 10,
+  "level": 0,   "hunger": 1,  "health": 26,   "blessed": null,    "cursed": null,
+  "perception": { 
+    "allure":      [ -8,  0 ],    "aural":       [  8,  1 ],
+    "feel":        [ -8,  8 ],    "legerdemain": [  8, -3 ],
+    "remembrance": [  2, -7 ],    "resistance":  [  6, -7 ],
+    "sight":       [ -4,  8 ],    "touch":       [ -2,  4 ]
+  },
+  "bounding": { 
+    "consumption": [ -6,  8 ],    "focus":       [ -2, -2 ],
+    "imagination": [ -5, -6 ],    "madness":     [ -6, -1 ],
+    "magic":       [  1, -2 ],    "might":       [ -7, -7 ],
+    "shield":      [  8, -2 ],    "skill":       [ -8,  8 ]
+  },
+  "lingering": [ 
+    { "key": null, "value": null, "uses": [ null, null, null] }
+  ],
+  "languages": [  "Excited Exa", "Formal Iqessi", "Apologetic Iqessi", "Chained Ezuan", "Sneaky Ezuan" ],
+  "mastery":   [  "Madness", "Shield", "Skill", "Aural" ],
+  "class": {
+    "name": "thief",
+    "reliances": { "primary": [ "legerdemain", "allure"], "secondary":  [ "focus", "skill" ] }
+  },
+  "race": {
+    "name": "Garullan",
+    "reliances": { "primary": [ "might", "allure" ], "secondary": [ "magic", "remembrance" ] }
+  },
+  "god": { "name": "Angborg", "candles": 7  },
+  "blights": {
+    "poisoned": false,  "burned": false,    "frozen": false,      "clamped": false,
+    "blinded": false,   "deafened": false,  "mesmerized": false,  "limited": false
+  },
+  "weapons": [
+    { "equip": null, "key": null, "value": null }
+  ],
+  "wizardry": [
+    { "key": null, "value": null }
+  ],
+  "description": [
+    "Haggy Mc Bwag was a knight of Exahelm. A renowned knight who was at the pinnacle of the burg's upper echleon and then it dipped for her, very suddenly, into a spiral so bad that she became a lowly thief in its outskirts barely surviving. A war was called out by Angborg with Exahelm being the bordering area to fight the war against the militia of Lithchurn. Haggy participated to help and met Korb during the fight. Time flew by and the Garullans successfully encroached upon the Lithchurnian lands.. As the fight went on, Haggy was crippled, broken, and unable to move at some point around the graves of millions and then decided to eat a wheelchair to get the movement as that was the only thing she could consume to survive. It became a part of her as she gradually evolved it in many ways further on.",
+    "Eventually, she started to reside and hide, her wings, in the lands of Lithchurn. She specifically resided in the Holy Empire as she grew close to the upper echleons of the Lithchurnian people. She heard through her rumours and connections about a shard of special significance that Kriksi, the goddess of Lithchurn was concerned about. She wanted to help out the Lithchurnians whom she had gotten close to and decided to make sure nothing happens to the shard. Through those connections, she got herself be caught and locked up in the goals of Ezuan and met some people whom she had met before in life, Korb, Sly, and even Gif but bore a certain hate towards another mad one called, Luut whom she stayed as far away from as possible.",
+    "Her goal was to steal the shard and bring it to Kriksi in Iqes but was unsure how it would be done... until she saw the team that got formed. Her connections had also informed her that calmness of the keepers is prime as things could go significantly awry if not careful."
+  ]
+}
