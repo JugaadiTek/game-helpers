@@ -1,0 +1,196 @@
+{
+  "factions": {
+    "ALI": "Aliens",       "DIN": "Dinosaurs",      "NIN": "Ninjas",              "PIR": "Pirates",
+    "BOT": "Robots",       "TRI": "Tricksters",     "WIZ": "Wizards",             "ZOM": "Zombies",
+    "BEAR": "Bear Cavalry", "GHO": "Ghosts",         "KILL": "Killer Plants",     "PUNK": "Steampunks",
+    "ELD": "Elder Things", "INS": "Innsmouth",      "MIN": "Minions of Cthulhu",  "MIS": "Miskatonic University",
+    "CYA": "Cyborg Apes",  "SHA": "Shapeshifters",  "SPI": "Super Spies",         "TIME": "Time Travelers",
+    "ANT": "Giant Ants",   "MAD": "Mad Scientists", "VAM": "Vampires",            "WOLF": "Werewolves",
+    "FAE": "Fairies",      "CAT": "Kitty Cats",     "MyH": "Mythic Horses",       "PRI": "Princesses",
+    "CLE": "Clerics",      "DWA": "Dwarves",        "ELF": "Elves",               "HALF": "Halflings",
+    "MAGE": "Mages",        "ORC": "Orcs",           "THI": "Thieves",             "WAR": "Warriors",
+    "DRA": "Dragons",      "MyG": "Mythic Greeks",  "SHK": "Sharks",              "HERO": "Superheroes",
+    "TOR": "Tornados",
+    "AST": "Astroknights", "CHA": "Changerbots",  "IGN": "Ignobles",           "STRO": "Star Roamers",
+    "EXP": "Explorers",     "GRAN": "Grannies",       "ROCK": "Rock Stars",         "TED": "Teddy Bears",
+    "ITT": "Itty Critters", "KAI": "Kaiju",         "GIRL": "Magical Girls",      "MEGA": "Mega Troopers",
+    "DIS": "Disco Dancers", "KUN": "Kung Fu Fighters", "TRU": "Truckers",           "VIG": "Vigilantes",
+    "GEEK": "Geeks",         "ALL": "Smash Up All Stars",
+    "EGY": "Ancient Egyptians", "COW": "Cowboys",     "SAM": "Samurai",            "VIK": "Vikings",
+    "LUC": "Luchadors",     "MOU": "Mounties",      "MUS": "Musketeers",         "SUMO": "Sumo Wrestlers",
+    "ANAN": "Anansi Tales", "INCA": "Ancient Incas", "GRIM": "Grimms’ Fairy Tales", "POLY": "Polynesian Voyagers",
+    "RUS": "Russian Fairy Tales",
+    "AVG": "Avengers",     "HYD": "Hydra",         "KRE": "Kree",               "EVIL": "Masters of Evil",
+    "SHI": "S.H.I.E.L.D.",  "SIN": "Sinister Six",   "SPID": "Spider-Verse",       "ULT": "Ultimates",
+    "GOB": "Goblins",       
+    "KNG": "Knights of the Round Table",
+    "ALAD": "Aladdin",       "BEA": "Beauty and the Beast", "BH6": "Big Hero 6",         "FRO": "Frozen",
+    "MUL": "Mulan",         "LION": "The Lion King", "TNB": "The Nightmare Before Christmas", "WRE": "Wreck-It Ralph",
+    "DEAD": "Dead Reckoning Promo", "MER": "Mermaids", "SHEEP": "Sheep", "SKEL": "Skeletons",
+    "WC": "World Champs",
+    "ACTH": "Action Heroes", "BACK": "Backtimers", "EXTRA": "Extramorphs", "WRAITH": "Wraithrustlers",
+    "TEEN": "Teens"
+  },
+  "sets": [
+    { 
+      "id": 0,  "own": true, "date": "2012-10-08", "status": "live", "type": "main",    
+      "name": "Core Set",   "desc": "The set that started it all!",
+      "inc": { "factions": [ "Aliens", "Dinosaurs", "Ninjas", "Pirates", "Robots", "Tricksters", "Wizards", "Zombies" ] }
+    },
+    { 
+      "id": 1,  "own": true, "date": "2013-04-08", "status": "live", "type": "main",    
+      "name": "Awesome Level 9000",   "desc": "The first 'mini-set' bringing even more crazy factions to the pool!",
+      "inc": { "factions": [ "Bear Cavalry", "Ghosts", "Killer Plants", "Steampunks" ] }
+    },
+    { 
+      "id": 2,  "own": true, "date": "2013-09-16", "status": "live", "type": "main",    
+      "name": "The Obligatory Cthulhu Set",   "desc": "A Madness-infused set with Cthulhu-themed factions!",
+      "inc": { "factions": [ "Elder Things", "Innsmouth", "Minions of Cthulhu", "Miskatonic University" ] }
+    },
+    { 
+      "id": 3,  "own": true, "date": "2014-03-17", "status": "live", "type": "main",    
+      "name": "Science Fiction Double Feature",   "desc": "A mix of factions with a sci-fi feel!",
+      "inc": { "factions": [ "Cyborg Apes", "Shapeshifters", "Super Spies", "Time Travelers" ] }
+    },
+    { 
+      "id": 4,  "own": null, "date": "2014-08-15", "status": "past", "type": "box",     
+      "name": "The Geeky Box",    "desc": "The first massive storage solution for the Smash Up sets.",
+      "inc": { "factions": [ "Geeks" ] }
+    },
+    { 
+      "id": 5,  "own": null, "date": "2014-09-15", "status": "live", "type": "main",    
+      "name": "Monster Smash",    "desc": "A set with factions based on well-known scary monsters!",
+      "inc": { "factions": [ "Giant Ants", "Mad Scientists", "Vampires", "Werewolves" ] }
+    },
+    { 
+      "id": 6,  "own": true, "date": "2015-03-09", "status": "live", "type": "main",    
+      "name": "Pretty Pretty Smash Up",   "desc": "A cute and girly-themed set!",
+      "inc": { "factions": [ "Fairies", "Kitty Cats", "Mythic Horses", "Princesses" ] }
+    },
+    { 
+      "id": 7,  "own": true, "date": "2015-09-28", "status": "past", "type": "main",    
+      "name": "Smash Up: Munchkin",   "desc": "A crossover with the Munchkin universe.",
+      "inc": { "factions": [ "Clerics", "Dwarves", "Elves", "Halflings", "Mages", "Orcs", "Thieves", "Warriors" ] }
+    },
+    { 
+      "id": 8,  "own": true, "date": "2016-03-07", "status": "live", "type": "main",    
+      "name": "It’s Your Fault!",   "desc": "The first set with fan-voted factions.",
+      "inc": { "factions": [ "Dragons", "Mythic Greeks", "Sharks", "Superheroes", "Tornados" ] }
+    },
+    { 
+      "id": 9,  "own": true, "date": "2016-09-15", "status": "live", "type": "main",    
+      "name": "Cease and Desist",   "desc": "A set with factions based on popular franchises.",
+      "inc": { "factions": [ "Astroknights", "Changerbots", "Ignobles", "Star Roamers" ] }
+    },
+    { 
+      "id": 10, "own": true, "date": "2017-03-29", "status": "live", "type": "main",    
+      "name": "What Were We Thinking?",   "desc": "A mix of surprising choices for factions.",
+      "inc": { "factions": [ "Explorers", "Grannies", "Rock Stars", "Teddy Bears" ] }
+    },
+    { 
+      "id": 11,"own": null, "date": "2017-07-12", "status": "past", "type": "event",   
+      "name": "All Stars Event Kit",   "desc": "The first kit for Smash Up tournaments.",
+      "inc": { "factions": [ "Smash Up All Stars" ] }
+    },
+    { 
+      "id": 12, "own": true, "date": "2017-09-06", "status": "live", "type": "main",    
+      "name": "Big in Japan",   "desc": "A set with factions based on popular Japanese franchises.",
+      "inc": { "factions": [ "Itty Critters", "Kaiju", "Magical Girls", "Mega Troopers" ] }
+    },
+    { 
+      "id": 13, "own": false,"date": "2017-12-20", "status": "live", "type": "booster", 
+      "name": "Smash Up Sheep Promo",   "desc": "(Promotional pack) A free faction for all Smash Up followers.",
+      "inc": { "factions": [ "Sheep" ] }
+    },
+    { 
+      "id": 14, "own": null, "date": "2018-03-21", "status": "live", "type": "main",    
+      "name": "That ’70s Expansion",    "desc": "A set with factions coming straight from the '70s.",
+      "inc": { "factions": [ "Disco Dancers", "Kung Fu Fighters", "Truckers", "Vigilantes" ] }
+    },
+    { 
+      "id": 15, "own": null, "date": "2018-06-13", "status": "past", "type": "event",   
+      "name": "TITANS Event Kit",   "desc": "The second kit for Smash Up tournaments.",
+      "inc": { "factions": [], "titans": 16 }
+    },
+    { 
+      "id": 16, "own": true, "date": "2018-08-15", "status": "live", "type": "box",     
+      "name": "The Bigger Geekier Box",   "desc": "The even bigger storage solution for the Smash Up sets.",
+      "inc": { "factions": [ "Geeks", "Smash Up All Stars" ] }
+    },
+    { 
+      "id": 17, "own": null, "date": "2018-09-05", "status": "live", "type": "main",    
+      "name": "Oops, You Did It Again",   "desc": "The second set with fan-chosen factions.",
+      "inc": { "factions": [ "Ancient Egyptians", "Cowboys", "Samurai", "Vikings" ] }
+    },
+    { 
+      "id": 18, "own": null, "date": "2019-03-22", "status": "live", "type": "main",    
+      "name": "World Tour: International Incident",   "desc": "A set featuring famous fighters from around the world. Also the first set in the World Tour series.",
+      "inc": { "factions": [ "Luchadors", "Mounties", "Musketeers", "Sumo Wrestlers" ] }
+    },
+    { 
+      "id": 19, "own": null, "date": "2019-07-26", "status": "axed", "type": "event",   
+      "name": "World Tour Event Kit",   "desc": "The third kit for Smash Up tournaments. Also the second set in the World Tour series.",
+      "inc": { "factions": [ "Penguins" ] }
+    },
+    { 
+      "id": 20, "own": null, "date": "2019-08",    "status": "live", "type": "booster", 
+      "name": "Smash Up Penguins",    "desc": "(Booster pack) The single-faction pack that was supposed to be included in the World Tour Event Kit.",
+      "inc": { "factions": [ "Penguins" ] }
+    },
+    { 
+      "id": 21, "own": null, "date": "2019-08",    "status": "live", "type": "booster", 
+      "name": "Smash Up TITANS",    "desc": "(Booster pack) The pack that was included in the TITANS Event Kit.",
+      "inc": { "factions": [], "titans": 16 }
+    },
+    { 
+      "id": 22, "own": null, "date": "2019-09-06", "status": "live", "type": "main",    
+      "name": "World Tour: Culture Shock",    "desc": "A set featuring tales and legends from around the world. Also the final set in the World Tour series, covering the last of the continents.",
+      "inc": { "factions": [ "Anansi Tales", "Ancient Incas", "Grimms’ Fairy Tales", "Polynesian Voyagers", "Russian Fairy Tales" ] }
+    },
+    { 
+      "id": 23, "own": null, "date": "2020-07",    "status": "live", "type": "pnp",     
+      "name": "Dead Reckoning Promo",   "desc": "A print-and-play card to promote AEG's Dead Reckoning game.",
+      "inc": { "factions": [], "bases": 1 }
+    },
+    { 
+      "id": 24, "own": null, "date": "2021-02-02", "status": "live", "type": "main",    
+      "name": "Smash Up: Marvel",   "desc": "A crossover with the Marvel universe.",
+      "inc": { "factions": [ "Avengers", "Hydra", "Kree", "Masters of Evil", "S.H.I.E.L.D.", "Sinister Six", "Spider-Verse", "Ultimates" ] }
+    },
+    { 
+      "id": 25, "own": null, "date": "2021-05-10", "status": "live", "type": "booster", 
+      "name": "Smash Up Goblins",   "desc": "(Booster pack) A pack to be purchased directly on AEG's online store.",
+      "inc": { "factions": [ "Goblins" ] }
+    },
+    { 
+      "id": 26, "own": null, "date": "2021-09-17", "status": "live", "type": "booster", 
+      "name": "Smash Up Knights of the Round Table",    "desc": "(Booster pack) A pack to be purchased directly on AEG's online store.",
+      "inc": { "factions": [ "Knights of the Round Table" ] }
+    },
+    { 
+      "id": 27, "own": true, "date": "2022-06-21", "status": "live", "type": "main",    
+      "name": "Smash Up: Disney Edition",   "desc": "A crossover with the Disney universe.",
+      "inc": { "factions": [ "Aladdin", "Beauty and the Beast", "Big Hero 6", "Frozen", "Mulan", "The Lion King", "The Nightmare Before Christmas", "Wreck-It Ralph" ] }
+    },
+    { 
+      "id": 28, "own": null, "date": "2022-10-28", "status": "live", "type": "main",    
+      "name": "10th Anniversary",   "desc": "A limited-release box full of goodies to celebrate the 10th anniversary of the franchise.",
+      "inc": { "factions": [ "Mermaids", "Sheep", "Skeletons", "World Champs", "Titans for 11 factions" ] }
+    },
+    { 
+      "id": 29, "own": null, "date": "2023-08-18", "status": "live", "type": "main",    
+      "name": "Excellent Movies, Dudes!",   "desc": "A set that celebrates the iconic movies of the 80s.",
+      "inc": { "factions": [ "Action Heroes", "Backtimers", "Extramorphs", "Wraithrustlers" ] }
+    },
+    { 
+      "id": 30, "own": null, "date": "2023-08-25", "status": "live", "type": "booster", 
+      "name": "Smash Teens",    "desc": "(Booster pack) A pack to be purchased directly on AEG's online store.",
+      "inc": { "factions": [ "Teens" ] }
+    },
+    { 
+      "id": 31, "own": null, "date": null,         "status": "soon", "type": "booster", 
+      "name": "Half Battle",    "desc": "A set that spoofs various child cartoon from the 80s.",
+      "inc": { "factions": [ "Adolescent Epic Geckos" ] }
+    }
+  ]
+}

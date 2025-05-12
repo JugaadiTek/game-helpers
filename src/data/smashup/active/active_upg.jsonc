@@ -33,45 +33,20 @@
   "game_log": [              // an array of rounds
     [                        // an array of turns 
       [                      // an array of turn events
-        {
-          "type": "score",                // event type: score, destroy, card
-          "data": {                       // event data
-            "base": "The Great Library",  // base name
-            "bp": 0,                      // base final breakpoint
-            "pow": [ 
-              [0,0,0],                    // minion power before scoring
-              [0,0,0]                     // final power after scoring
-            ],
-            "vps": [
-              [0,0,0],                    // victory points
-              [0,0,0]                     // victory point modifiers (card effects)
-            ],
-            "new": "The Great Library"    // new base name
+        { // triggering card type: B=base, M=minion, A=action 
+          "type": "B", "name": "The Great Library",   // base or card name
+          "data": {                                   // event data
+            "bp": 0,                                  // base final breakpoint
+            "pow": [ [0,0,0], [0,0,0] ],              // [ [power before scoring], [power after scoring] ]
+            "vps": [ [0,0,0], [0,0,0] ],              // [ [victory points], [vp modifiers] ]
+            "new": "The Great Library"                // new base name
           }
         },
         {
-          "type": "card",                // when a card does something noteworthy
-          "data": {
-            "event": "score",            // event type: score, destroy
-            "name": "👽 Invader",       // card name
-            "cat": "minion",           // card category (minion, action, etc.)
-            "data": {
-              "vps": [0,0,0]             // victory points
-            }
-          }
+          "type": "A", "name": "Nuke That Shit",                                        // Action card that destroys a base
+          "data": { "event": "destroy", "bases": [ "The Great Library", "The Pond" ] }  // 1st base destroyed, 2nd base replaces it
         },
-        {
-          "type": "card",                     // when a card does something noteworthy
-          "data": {
-            "event": "destroy",               // event type: score, destroy
-            "name": "Nuke that shit",         // card name
-            "cat": "actiom",                  // card category (minion, action, etc.)
-            "data": {
-              "base": "The Great Library",    // base name
-              "new_base": "The Great Library" // new base name
-            }
-          }
-        }
+        { "type": "M", "name": "Invader", "data": { "event": "score", "vps": [ 0, 0, 1 ] } } // card that scores 1 VP 
       ], [], [] 
     ],
     [ [], [], [] ], // turn 1
@@ -80,15 +55,15 @@
     [ [], [], [ { "type": "M", "name": "Invader",        "data": { "type": "score",                     "vps":   [0,0,1] } } ] ],
     [ [], [], [] ], // turn 5
     [ 
-      [ {         "type": "S", "name": "The Greenhouse", "data": { "bp": 0,  "pow": [ [2,0,0], [2,0,0] ], "vps": [ [4,0,0], [       ] ], "new": "" }} ], 
-      [ {         "type": "S", "name": "The House of Nine Lives", "data": { "bp": 20, "pow": [ [8,3,9], [8,3,9] ], "vps": [ [2,1,4], [-1,0,-1] ], "new": "" }} ], []
+      [ {         "type": "B", "name": "The Greenhouse", "data": { "bp": 0,  "pow": [ [2,0,0], [2,0,0] ], "vps": [ [4,0,0], [       ] ], "new": "" }} ], 
+      [ {         "type": "B", "name": "The House of Nine Lives", "data": { "bp": 20, "pow": [ [8,3,9], [8,3,9] ], "vps": [ [2,1,4], [-1,0,-1] ], "new": "" }} ], []
     ],
     [
-      [ {         "type": "S", "name": "Secret Grove",   "data": { "bp": 21, "pow": [ [20,1,1], [20,1,1] ], "vps": [ [3,2,2], [-1,0,-1] ], "new": "" }} ], [],
+      [ {         "type": "B", "name": "Secret Grove",   "data": { "bp": 21, "pow": [ [20,1,1], [20,1,1] ], "vps": [ [3,2,2], [-1,0,-1] ], "new": "" }} ], [],
       [ {         "type": "M", "name": "Invader",        "data": { "type": "score",                       "vps":   [0,0,1] } } ]
     ],
     [ [], [], [ { "type": "M", "name": "Invader",        "data": { "type": "score",                     "vps":   [0,0,1] } } ] ],
-    [ [ {         "type": "S", "name": "The Homeworld",  "data": { "bp": 23, "pow": [ [14,4,5], [14,6,5] ], "vps": [ [4,2,1], [] ], "new": "" }} ], [], [] ],
+    [ [ {         "type": "B", "name": "The Homeworld",  "data": { "bp": 23, "pow": [ [14,4,5], [14,6,5] ], "vps": [ [4,2,1], [] ], "new": "" }} ], [], [] ],
     []
   ]
 }
