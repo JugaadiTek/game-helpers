@@ -1,0 +1,130 @@
+{
+  "game": "everyone-is-aditya", "date": "2025-05-04",
+  "players": {
+    "william": {
+      "Abilties": [ "Good People Skills", "Dancing", "Airplane Piloting"],
+      "Goals": {
+        "easy": { "done": true, "desc": "Dance at crowded event"},
+        "medium": { "done": false, "desc": "Purchase a Vineyard"},
+        "Impossible": { "done": false, "desc": "Hijack a plane and crash it into an important national landmark"}
+      }
+    },
+    "Ethyl": {
+        "Abilities": [ ],
+        "Goals": {
+            "easy": { "done": true, "desc": "secure a rifle" },
+            "medium": { "done": false, "desc": "" },
+            "Impossible": { "done": false, "desc": "" }
+        }
+    },
+    "Oodita": {
+        "Abilities": [ ],
+        "Goals": {
+            "easy": { "done": true, "desc": "bleed" },
+            "medium": { "done": false, "desc": "" },
+            "Impossible": { "done": false, "desc": "" }
+        }
+    },
+    "Papri": {
+        "Abilities": [ ],
+        "Goals": {
+            "easy": { "done": true, "desc": "Put on a hairtie" },
+            "medium": { "done": true, "desc": "buy a swimsuit" },
+            "Impossible": { "done": false, "desc": "" }
+        }
+    }
+  },
+  "game_log": [
+    { "round": 0, "player": "Everyone Else",
+      "log": [
+        "In a room with neon flashing lights",
+        "walks out door and sees a lake, with a train track running next to it."
+      ]
+    },
+    {
+      "round": 1, "player": "Oodita", 
+      "obj": { "type": "easy", "action": "bleed" },
+      "log": [ "inspects the door",  "punches a glass window, suceeds" ]
+    },
+    {
+      "round": 2, "player": "Papri",
+      "obj": { "type": "easy", "action": "find a hair scrunchy" },
+      "log": [
+        "goes into house",
+        "opens fridge, hit by cold air",
+        "searches a bunch of dressers",
+        "finds scrunchy"
+      ]
+    },
+    {
+      "round": 3, "player": "Ethyl",
+      "obj": { "type": "easy", "action": "secure a rifle" },
+      "log": [ "finds rifle in the house" ]
+    },
+    {
+      "round": 4, "player": "Ethyl",  "obj": null,
+      "log": [
+        "gets in rocket defense wheelchair",
+        "hides rockets with button.",
+        "puts gun in wheel chair"
+      ]
+    },
+    {
+      "round": 5, "player": "Papri",  "obj": null,
+      "log": [
+        "gets out of wheel chair",
+        "checks lake",
+        "dropped rifle",
+        "checks map for a mall, it is in the dome on an island of the lake",
+        "starts heading towards the dome.",
+        "starts passing out on the tracks."
+      ]
+    },
+    {
+      "round": 6, "player": "Oodita",
+      "obj": null,
+      "log": [
+        "checks how far to swim to dome:2h",
+        "checks distance back to house:30m",
+        "walks down the tracks leaving behind the wheel chair",
+        "finds a sting, smells strong, passes out"
+      ]
+    },
+    {
+      "round": 7, "player": "William",
+      "obj": { "type": "easy", "action": "dance at event" },
+      "log": [
+        "I check my pockets: thousands of dollars, scrunchy, paper with word lane on it",
+        "I throw everything but the money into the water",
+        "Walk towards dome",
+        "Walk through town near dome",
+        "Give racist bouncer my ticket",
+        "dance on dance floor shaking my booty and hitting a bunch of other people"
+      ]
+    },
+    {
+      "round": 8, "player": "Papri",
+      "obj": { "type": "medium", "action": "buy a swimsuit" },
+      "log": [
+        "exit dance event",
+        "goes to mall, gun store, liquor store, toy store",
+        "there is 2nd mall adjacent",
+        "asks where to buy lingere",
+        "other mall does not allow colored people",
+        "goes to toy store, to buy white face paint",
+        "puts on white face paint",
+        "goes to other mall, robot says white people you good!",
+        "robot sees black arms and asks you doing cosplay?",
+        "buys a swimsuit"
+      ]
+    },
+    {
+      "round": 9, "player": "Ethyl", "obj": null,
+      "log": []
+    },
+    {
+      "round": 10, "player": "Oodita", "obj": null,
+      "log": [ "wakes up bleeding from nose, with person fuming at them, with a bottle opener through their jaw" ]
+    }
+  ]
+}
