@@ -1,52 +1,49 @@
 {
-  "name": [ "Haggy", "Mc", "Bwag" ],    // [first, middle, last]
-  "personificiation": "wheelchair",     
-  "level": 0,                           // 0-5
-  "hunger": 1,
-  "health": 26,                         // 2d6 + ( abs(resistance[0]) + abs(resistance[1]) ) / 4) + shield[0] + imagination[1]
-  "health-alt": { "value": 0, "formula": { 
-    "op": "sum", "values": [
-      { "op": "div", "values": [
-        { "op": "sum" , "values": [
-          { "op": "abs", "value": "resistance[0]" }, 
-          { "op": "abs", "value": "resistance[1]" }
-        ]},
-        4
-      ]},
-      "shield[0]",
-      "imagination[1]",
-      "2d6"
-    ]
-  }},
-  "perception": {   // [ perceived, essential ]
-    "allure":       [ -8,  0 ], // -10 to 10 (starts -8 to 8)
-    "aural":        [  8,  1 ],
-    "feel":         [ -8,  8 ],
-    "legerdemain":  [  8, -3 ],
-    "remembrance":  [  2, -7 ],
-    "resistance":   [  6, -7 ],
-    "sight":        [ -4,  8 ],
-    "touch":        [ -2,  4 ]
-  },
+    "player": "",
+    "name": [ "Haggy", "Mc", "Bwag" ],
+    "personificiation": "wheelchair",
+    "level": 0, // 0-5
+    "hunger": 1,
+    "health": 26, // 2d6 + (abs(resistance)/4) + shield[0] + imagination[1]
+    "perception": { // [ perceived, essential ]
+      "allure":      [ -8, 0 ], // -10 to 10 (starts -8 to 8)
+      "aural":       [ 8, 1 ],
+      "feel":        [ -8, 8 ],
+      "legerdemain": [ 8, -3 ],
+      "remembrance": [ 2, -7 ],
+      "resistance":  [ 6, -7 ],
+      "sight":       [ -4, 8 ],
+      "touch":       [ -2, 4 ]
+    },
     "bounding": { // [ bounded, unbounded ]
-      "consumption": [ -6,  8 ],
+      "consumption": [ -6, 8 ],
       "focus":       [ -2, -2 ],
       "imagination": [ -5, -6 ],
       "madness":     [ -6, -1 ],
-      "magic":       [  1, -2 ],
+      "magic":       [ 1, -2 ],
       "might":       [ -7, -7 ],
-      "shield":      [  8, -2 ],
-      "skill":       [ -8,  8 ]
+      "shield":      [ 8, -2 ],
+      "skill":       [ -8, 8 ]
     },
-    "lingering": [ // max:3
-      { 
-        "key": "allure",              // perception.['$key'][1]
-        "value": 8,                   // value stored from the roll,
-        "uses": [ true, true, false ] // 1-3 boolean values, based on d6 roll as d3 (1,1,2,2,3,3)
-      }                               // every use convert 1 false to true, when all true REMOVE
+    "lingering": [ // max length 3
+      { "key": null, "value": null, "uses": [ false, false, true ] },
+      {
+        "key": "allure", // perception.['$key'][1]
+        "value": 8, // value stored from the roll,
+        "uses": [ true, true, false
+          // roll d6, 1&2 = [false], 
+          //          3&4 = [false,false],
+          //          5&6 = [false,false,false]
+          // everytime you use it convert a false to true, when all true, remove it
+        ]
+      }
     ],
-    "languages":  [ "Excited Exa", "Formal Iqessi", "Apologetic Iqessi", "Chained Ezuan", "Sneaky Ezuan" ], // max:5
-    "mastery":    [ "Madness", "Shield", "Skill", "Aural" ], // max:4
+    "languages": [ // max length 5
+      "Excited Exa", "Formal Iqessi", "Apologetic Iqessi", "Chained Ezuan", "Sneaky Ezuan"
+    ],
+    "mastery": [ // +/- 3 to rolls, max length 4
+      "Madness", "Shield", "Skill", "Aural"
+    ],
     "class": {
       "name": "thief",
       "reliances": [ /* +/- 5 */ [ "legerdemain", "allure" ], /* +/- 2 */ [ "focus", "skill" ] ]
@@ -62,22 +59,28 @@
       "candles": 7 // 0-7, fracking GOD 0
     },
     "blights": {
-      "poisoned": false,    "burned": false,    "frozen": false,      "clamped": false,
-      "blinded": false,     "deafened": false,  "mesmerized": false,  "limited": false
+      "poisoned": false,
+      "burned": false,
+      "frozen": false,
+      "clamped": false,
+      "blinded": false,
+      "deafened": false,
+      "mesmerized": false,
+      "limited": false
     },
     "size": "normal", // mini, little, normal, moderate, huge, massive, aria, looming, engulfing, gargantuan
     "gender": "female",
     "attribute": "Peacock Feathers",
     "origin": "exahelm",
     "arms": 10,     // arbitrary integer
-    "weapons": [    // max:14
+    "weapons": [    // max length 14
       [
         false,      // is it equipped?
         "sword",    // weapon type
         "dice type" // d4, d6, d8, d10, d12, d20
       ]
     ],
-    "wizardry": [   // max:14
+    "wizardry": [   // max length 14
       [
         "spell",    // spell type
         "dice type" // d4, d6, d8, d10, d12, d20
