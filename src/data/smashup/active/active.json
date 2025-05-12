@@ -1,91 +1,53 @@
 {
-  "date": "2025-04-06",
+  "date": "2025-05-11",
   "players": [
-    { "id": 1, "nick": "Adu",   "name": "👨🏽‍💻 Aditya",  "factions": [ "Elder Things",   "Steampunks"      ] },
-    { "id": 3, "nick": "K2",    "name": "⚠️ Kowsik",  "factions": [ "Mythic Greeks",  "Wreck-It Ralph"  ] },
-    { "id": 0, "nick": "S!nn",  "name": "💃🏼 Papri",   "factions": [ "Kitty Cats",     "Mad Scientists"  ] },
-    { "id": 2, "nick": "K1",    "name": "🎨",         "factions": [ "Robots",         "Shapeshifters"   ] }
+    { "id": 0, "nick": "JT",  "name": "👨🏽‍💻 Trash",   "factions": [ "Innsmouth",   "Killer Plants" ] },
+    { "id": 1, "nick": "S!n", "name": "💃🏼 S!nn",    "factions": [ "Dragons",     "Wizards"       ] },
+    { "id": 2, "nick": "Avi", "name": "🕴🏽 Avinash", "factions": [ "Kitty Cats",  "Aliens"        ] }
   ],
   "gamedata": {
     "mechanics": { "madness": true, "monsters": false, "treasures": false, "titans": false },
     "bases": [ ],
     "active_bases": [
-      "Antarctic Base",
-      "The Dump",
-      "Faceless City",
-      "The Power Strip"
+      "The Great Library",
+      "Innsmouth",
+      "Dragon’s Lair"
     ],
     "discarded_bases": [
-      "Golem Schloß",
-      "Oracle at Delphi",
-      "Laboratorium",
-      "Workshop",
-      "Inventor’s Salon",
-      "Plateau of Leng"
+      "The Great Library",
+      "The House of Nine Lives",
+      "The Greenhouse",
+      "Secret Grove",
+      "The Homeworld",
+      "The Mothership",
+      "School of Wizardry",
+      "Wyrm’s Desolation",
+      "Cool Cats’ Alley",
+      "Ritual Site",
+      "Secret Grove"
     ]
   },
   "scrap": [ ],
   "score": {
-    "current": [ 12, 10, 19, 11 ],
+    "current": [ 13, 11, 15 ],
+    "DNU": {},
     "log": [
-      [ ],
-      [ ],
-      [ ],
-      [
-        { "scoring": [ 
-            { "base": "Golem Schloß", "bp": 22,  "pow": [ [ 7, 14, 3, 2 ], [ 0, 15, 5, 2 ] ], "vps": [ [ 0, 3, 3, 2 ], [ ] ] }
-        ] },
-        { },
-        { "scoring": [
-            { "base": "Oracle at Delphi", "bp": 18, "pow": [ [ 0, 0, 16, 3 ], [ 0, 0, 16, 3 ] ], "vps": [ [ 0, 0, 4, 2 ], [ ] ] }
-        ] },
-        { }
-      ],
-      [
-        { },
-        { },
-        {
-          "scoring": [
-            { "base": "Laboratorium", "bp": 25, "pow": [ [ 10, 0, 14, 5 ], [ 10, 0, 14, 5 ] ], "vps": [ [ 3, 0, 5, 3 ], [ ] ] }
-          ]
-        },
-        { }
-      ],
-      [
-        { "scoring": [
-          { "base": "Workshop", "bp": 20, "pow": [ [ 9, 0, 0, 13 ], [ 9, 0, 0, 13 ] ], "vps": [ [ 2, 0, 0, 4 ], [ ] ] }
-        ] },
-        { },
-        { },
-        { }
-      ],
-      [ ],
-      [
-        { "scoring": [
-          { "base": "Inventor's Salon", "bp": 22, "pow": [ [ 8, 7, 4, 3 ], [ 8, 7, 4, 3 ] ], "vps": [ [ 4, 2, 1, 0 ], [ ] ] }
-        ] },
-        { },
-        { },
-        { }
-      ],
-      [
-        { },
-        { "scoring": [
-          { "base": "Plateau of Leng", "bp": 18,  "pow": [ [ 0, 10, 0, 0 ], [ 0, 10, 0, 0 ] ], "vps": [ [ 0, 3, 0, 0 ], [ ] ] }
-        ] },
-        { },
-        { }
-      ],
-      [ ],
-      [ ],
-      [
-        { },
-        { },
-        { "scoring": [
-          { "base": "Antartic Base", "bp": 24,  "pow": [ [ 11, 2, 17, 0 ], [ 11, 2, 17, 0 ] ], "vps": [ [ 3, 2, 5, 0 ], [ ] ] }
-        ] },
-        { }
-      ]
+      [ {}, {}, {} ],
+      [ {}, {}, {} ],
+      [ {}, {}, {"scoring": [{ "base": "👽 Invader",                                                   "vps": [ [0,0,1], [ 0,0, 0] ] }] } ],
+      [ {}, {}, {"scoring": [{ "base": "👽 Invader",                                                   "vps": [ [0,0,1], [ 0,0, 0] ] }] } ],
+      [ {}, {}, {} ],
+      [         {"scoring": [{ "base": "The Greenhouse",          "bp": 0,  "pow":[[ 2,0,0],[ 2,0,0]],  "vps": [ [4,0,0], [ 0,0, 0] ] }] },
+                {"scoring": [{ "base": "THe House of Nine Lives", "bp": 20, "pow":[[ 8,3,9],[ 8,3,9]],  "vps": [ [2,1,4], [-1,0,-1] ] }] }, {} ],
+      [         {"scoring": [{ "base": "Secret Grove",            "bp": 21, "pow":[[20,1,1],[20,1,1]],  "vps": [ [3,2,2], [-1,0,-1] ] }] }, {}, 
+                {"scoring": [{ "base": "👽 Invader",                                                   "vps": [ [0,0,1], [ 0,0, 0] ] }] }],
+      [ {}, {}, {"scoring": [{ "base": "👽 Invader",                                                   "vps": [ [0,0,1], [ 0,0, 0] ] }] }],
+      [         {"scoring": [{ "base": "The Homeworld",           "bp": 23, "pow":[[14,4,5],[14,6,5]],  "vps": [ [4,2,1], [ 0,0, 0] ] }] }, {}, {} ],
+      [ {}, {}, {"scoring": [{ "base": "The Mothership",          "bp": 17, "pow":[[0,6,11],[0,6,11]],  "vps": [ [0,2,4], [ 0,0,-1] ] }] } ],
+      [ {}, {}, {} ],
+      [ {},     {"scoring": [{ "base": "The School Wizardry",     "bp": 20, "pow":[[18,3,0],[18,3,0]],  "vps": [ [3,2,0], [-1,0, 0] ] }] }, {} ],
+      [ {}, {}, {}],
+      [ {}, {}, {"scoring": [{ "base": "Secret Grove",            "bp": 21, "pow":[[0,0,20],[0,0,20]],  "vps": [ [0,2,3], [ 0,0, 0] ] }] } ]
     ]
   }
 }

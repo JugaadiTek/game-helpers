@@ -1,0 +1,461 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "players": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "nick": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4
+          },
+          "name": {
+            "type": "string"
+          },
+          "factions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "Aliens",
+                "Dinosaurs",
+                "Ninjas",
+                "Pirates",
+                "Robots",
+                "Tricksters",
+                "Wizards",
+                "Zombies",
+                "Bear Cavalry",
+                "Ghosts",
+                "Killer Plants",
+                "Steampunks",
+                "Elder Things",
+                "Innsmouth",
+                "Minions of Cthulhu",
+                "Miskatonic University",
+                "Cyborg Apes",
+                "Shapeshifters",
+                "Super Spies",
+                "Time Travelers",
+                "Giant Ants",
+                "Mad Scientists",
+                "Vampires",
+                "Werewolves",
+                "Fairies",
+                "Kitty Cats",
+                "Mythic Horses",
+                "Princesses",
+                "Clerics",
+                "Dwarves",
+                "Elves",
+                "Halflings",
+                "Mages",
+                "Orcs",
+                "Thieves",
+                "Warriors",
+                "Dragons",
+                "Mythic Greeks",
+                "Sharks",
+                "Superheroes",
+                "Tornados",
+                "Astroknights",
+                "Changerbots",
+                "Ignobles",
+                "Star Roamers",
+                "Explorers",
+                "Grannies",
+                "Rock Stars",
+                "Teddy Bears",
+                "Itty Critters",
+                "Kaiju",
+                "Magical Girls",
+                "Mega Troopers",
+                "Disco Dancers",
+                "Kung Fu Fighters",
+                "Truckers",
+                "Vigilantes",
+                "Geeks",
+                "Smash Up All Stars",
+                "Ancient Egyptians",
+                "Cowboys",
+                "Samurai",
+                "Vikings",
+                "Luchadors",
+                "Mounties",
+                "Musketeers",
+                "Sumo Wrestlers",
+                "Penguins",
+                "Anansi Tales",
+                "Ancient Incas",
+                "Grimms’ Fairy Tales",
+                "Polynesian Voyagers",
+                "Russian Fairy Tales",
+                "Avengers",
+                "Hydra",
+                "Kree",
+                "Masters of Evil",
+                "S.H.I.E.L.D.",
+                "Sinister Six",
+                "Spider-Verse",
+                "Ultimates",
+                "Goblins",
+                "Knights of the Round Table",
+                "Aladdin",
+                "Beauty and the Beast",
+                "Big Hero 6",
+                "Frozen",
+                "Mulan",
+                "The Lion King",
+                "The Nightmare Before Christmas",
+                "Wreck-It Ralph",
+                "Dead Reckoning Promo",
+                "Mermaids",
+                "Sheep",
+                "Skeletons",
+                "World Champs",
+                "Action Heroes",
+                "Backtimers",
+                "Extramorphs",
+                "Wraithrustlers",
+                "Teens"
+              ]
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "required": [
+          "id",
+          "nick",
+          "name",
+          "factions"
+        ]
+      }
+    },
+    "gamedata": {
+      "type": "object",
+      "properties": {
+        "mechanics": {
+          "type": "object",
+          "properties": {
+            "madness": {
+              "type": "boolean"
+            },
+            "monsters": {
+              "type": "boolean"
+            },
+            "treasures": {
+              "type": "boolean"
+            },
+            "titans": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "madness",
+            "monsters",
+            "treasures",
+            "titans"
+          ]
+        },
+        "bases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "The Homeworld",
+              "The Mothership",
+              "Jungle Oasis",
+              "Tar Pits",
+              "Ninja Dojo",
+              "Temple of Goju",
+              "The Grey Opal",
+              "Tortuga",
+              "Factory 436-1337",
+              "The Central Brain",
+              "Cave of Shinies",
+              "Mushroom Kin gdom",
+              "School of Wizardry",
+              "The Great Library",
+              "Evans City Cemetery",
+              "Rhodes Plaza Mall",
+              "Field of Honor",
+              "Tsar’s Palace",
+              "Haunted House",
+              "The Dread Gazebo",
+              "Secret Grove",
+              "The Greenhouse",
+              "Inventor’s Salon",
+              "Workshop",
+              "Antarctic Base",
+              "Plateau of Leng",
+              "Innsmouth",
+              "Ritual Site",
+              "Mountains of Madness",
+              "R’lyeh",
+              "Asylum",
+              "Miskatonic University",
+              "Monkey Lab",
+              "Primate Park",
+              "Faceless City",
+              "The Vats",
+              "ISI’s Swingin’ Pad",
+              "Secret Volcano Headquarters",
+              "Portal Room",
+              "The Nexus",
+              "Egg Chamber",
+              "The Hill",
+              "Golem Schloß",
+              "Laboratorium",
+              "Castle Blood",
+              "Crypt",
+              "Moot Site",
+              "Standing Stones",
+              "Enchanted Glen",
+              "Fairy Circle",
+              "Cool Cats’ Alley",
+              "The House of Nine Lives",
+              "Equaria",
+              "Pony Land",
+              "Beautiful Castle",
+              "Ice Castle",
+              "Hotel of Holiness",
+              "Whack-A-Ghoul",
+              "The Mines",
+              "Treasure Bath",
+              "Helper’s Hollow",
+              "Treehouse",
+              "Birthday Party",
+              "Subterranean Lair",
+              "Dimension Doors",
+              "Mage’s Tower",
+              "Garrison",
+              "The Pits",
+              "The Coffers",
+              "Thieves’ Guild",
+              "Bastion",
+              "The Gauntlet",
+              "Dragon’s Lair",
+              "Wyrm’s Desolation",
+              "Oracle at Delphi",
+              "Wooden Horse",
+              "Shark Reef",
+              "The Deep",
+              "Converted Cave",
+              "Crystal Fortress",
+              "Tornado Alley",
+              "Trailer Park",
+              "Hive of Scum and Villainy",
+              "No-Moon™",
+              "Changing Room",
+              "Unicrave",
+              "Spikey Chair Room",
+              "Wintersquashed",
+              "Neutral Space",
+              "USS Undertaking",
+              "Ancient Temple",
+              "City of Gold",
+              "Grandma’s House",
+              "Retirement Community",
+              "Lake Minnetonka",
+              "Palooza",
+              "Out in the Woods",
+              "Under the Bed",
+              "Critter Combat Club",
+              "Itty City",
+              "Kaiju Island",
+              "Tokyo",
+              "Akihabara High",
+              "Q Point",
+              "Juice Bar",
+              "Moon Dumpster",
+              "Boogie Wonderland",
+              "Funky Town",
+              "Ancient Dojo",
+              "Tournament Site",
+              "The Greasy Spoon",
+              "Truck Stop",
+              "Hideout",
+              "The Mean Streets",
+              "TableTop",
+              "The Con",
+              "Locker Room",
+              "Stadium",
+              "Pyramids",
+              "Star Portal",
+              "Saloon",
+              "So-So Corral",
+              "Sakura Garden",
+              "Shogun’s Palace",
+              "Drakkar",
+              "Longhouse",
+              "Ringside",
+              "The Squared Circle",
+              "Great White North, Eh?",
+              "Strategic Syrup Reserve",
+              "Bastion Saint-Gervais",
+              "The Golden Lily",
+              "Heya Training Stable",
+              "The Dohyo",
+              "Ice Floe",
+              "The Colony",
+              "Anansi’s Web",
+              "Storyteller’s Hut",
+              "Cuzcu",
+              "Machu Picchu",
+              "Gingerbread House",
+              "Woodland Cottage",
+              "Island Chain",
+              "Island Peak",
+              "Tropical Paradise",
+              "Giant Turnip",
+              "Transformation Spring",
+              "Avengers Tower",
+              "Stark’s Lab",
+              "Hydra Lab",
+              "Ichor Base",
+              "Hala",
+              "Kree-Lar",
+              "Castle Zemo",
+              "Symkaria",
+              "Helicarrier",
+              "S.H.I.E.L.D. Base",
+              "Downtown",
+              "New York Landmark",
+              "Manhattan",
+              "The Daily Bugle",
+              "Exo-Space",
+              "The Triskelion",
+              "Goblin Caves",
+              "Goblin Town",
+              "Camelot",
+              "Round Table",
+              "Agrabah Bazaar",
+              "Sultan’s Palace",
+              "Enchanted Castle",
+              "Gaston’s Tavern",
+              "Krei Tech",
+              "SFIT Robotics Lab",
+              "Arendelle",
+              "Ice Palace",
+              "Forbidden City",
+              "Training Camp",
+              "Jungle Paradise",
+              "Pride Rock",
+              "Halloween Town",
+              "Spiral Hill",
+              "The Dump",
+              "The Power Strip",
+              "Deepreef Crag",
+              "Mermaid Pool",
+              "Mermaid Reef",
+              "Sheep Shrine",
+              "The Pasture",
+              "Boneyard",
+              "Ossuary",
+              "Arena",
+              "Hall of Fame",
+              "Building Rooftop",
+              "Jungle Camp",
+              "Alternate Present",
+              "Time-Traveling Car",
+              "Ancient Crashed Ship",
+              "Brood Hive",
+              "Rooftop Portal",
+              "Wraithrustlers HQ",
+              "Cabin in the Woods",
+              "Montridge High"
+            ]
+          }
+        },
+        "active_bases": {
+          "$ref": "#/properties/gamedata/properties/bases"
+        },
+        "discarded_bases": {
+          "$ref": "#/properties/gamedata/properties/bases"
+        }
+      },
+      "required": [
+        "mechanics",
+        "bases",
+        "active_bases",
+        "discarded_bases"
+      ]
+    },
+    "current_score": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "game_log": {
+      "type": "array",
+      "items": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "scoring": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "base": {
+                    "type": "string",
+                    "$ref": "#/properties/gamedata/properties/bases/items"
+                  },
+                  "bp": {
+                    "type": "integer"
+                  },
+                  "pow": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "integer"
+                      }
+                    }
+                  },
+                  "vps": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                },
+                "required": [
+                  "base",
+                  "vps"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 100 
+    }
+  }
+  },
+  "required": [
+    "date",
+    "players",
+    "gamedata",
+    "game_log"
+  ]
+}

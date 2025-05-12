@@ -1,0 +1,53 @@
+{
+    "date": "2025-05-11",
+    "players": [
+      { "id": 0, "nick": "JT",  "name": "👨🏽‍💻 Trash",   "factions": [ "Innsmouth",   "Killer Plants" ] },
+      { "id": 1, "nick": "S!n", "name": "💃🏼 S!nn",    "factions": [ "Dragons",     "Wizards"       ] },
+      { "id": 2, "nick": "Avi", "name": "🕴🏽 Avinash", "factions": [ "Kitty Cats",  "Aliens"        ] }
+    ],
+    "gamedata": {
+      "mechanics": { "madness": true, "monsters": false, "treasures": false, "titans": false },
+      "bases": [ ],
+      "active_bases": [
+        "The Great Library",
+        "Innsmouth",
+        "Dragon’s Lair"
+      ],
+      "discarded_bases": [
+        "The Great Library",
+        "The House of Nine Lives",
+        "The Greenhouse",
+        "Secret Grove",
+        "The Homeworld",
+        "The Mothership",
+        "School of Wizardry",
+        "Wyrm’s Desolation",
+        "Cool Cats’ Alley",
+        "Ritual Site",
+        "Secret Grove"
+      ]
+    },
+    "scrap": [ ],
+    "score": {
+      "current": [ 13, 11, 15 ],
+      "DNU": {},
+      "log": [
+        [ {}, {}, {} ],
+        [ {}, {}, {} ],
+        [ {}, {}, {"scoring": [{ "base": "👽 Invader",                                                   "vps": [ [0,0,1], [ 0,0, 0] ] }] } ],
+        [ {}, {}, {"scoring": [{ "base": "👽 Invader",                                                   "vps": [ [0,0,1], [ 0,0, 0] ] }] } ],
+        [ {}, {}, {} ],
+        [         {"scoring": [{ "base": "The Greenhouse",          "bp": 0,  "pow":[[ 2,0,0],[ 2,0,0]],  "vps": [ [4,0,0], [ 0,0, 0] ] }] },
+                  {"scoring": [{ "base": "THe House of Nine Lives", "bp": 20, "pow":[[ 8,3,9],[ 8,3,9]],  "vps": [ [2,1,4], [-1,0,-1] ] }] }, {} ],
+        [         {"scoring": [{ "base": "Secret Grove",            "bp": 21, "pow":[[20,1,1],[20,1,1]],  "vps": [ [3,2,2], [-1,0,-1] ] }] }, {}, 
+                  {"scoring": [{ "base": "👽 Invader",                                                   "vps": [ [0,0,1], [ 0,0, 0] ] }] }],
+        [ {}, {}, {"scoring": [{ "base": "👽 Invader",                                                   "vps": [ [0,0,1], [ 0,0, 0] ] }] }],
+        [         {"scoring": [{ "base": "The Homeworld",           "bp": 23, "pow":[[14,4,5],[14,6,5]],  "vps": [ [4,2,1], [ 0,0, 0] ] }] }, {}, {} ],
+        [ {}, {}, {"scoring": [{ "base": "The Mothership",          "bp": 17, "pow":[[0,6,11],[0,6,11]],  "vps": [ [0,2,4], [ 0,0,-1] ] }] } ],
+        [ {}, {}, {} ],
+        [ {},     {"scoring": [{ "base": "The School Wizardry",     "bp": 20, "pow":[[18,3,0],[18,3,0]],  "vps": [ [3,2,0], [-1,0, 0] ] }] }, {} ],
+        [ {}, {}, {}],
+        [ {}, {}, {"scoring": [{ "base": "Secret Grove",            "bp": 21, "pow":[[0,0,20],[0,0,20]],  "vps": [ [0,2,3], [ 0,0, 0] ] }] } ]
+      ]
+    }
+  }
