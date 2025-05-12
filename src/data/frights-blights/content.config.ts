@@ -1,7 +1,6 @@
 import { defineCollection, z } from 'astro:content';
 import { glob, file } from 'astro/loaders'; 
 
-
 const jt = {
   z: {                                   // enums, re-used objects, etc.
     stats: z.tuple([                    // [ perceived, essential ] or [ bounded, unbounded ]
@@ -36,7 +35,7 @@ const character = defineCollection({
     name: z.array(z.string()).length(3),    // [first, middle, last]
     personificiation: z.string(),
     level: z.number().int().min(0).max(5),   
-    hunger: z.number().int(),                // min? max?
+    hunger: z.number().int().min(1).max(10),                // min? max?
     health: z.number().int().positive(),
     perception: z.object({
       allure:       jt.z.stats,
@@ -72,7 +71,7 @@ const character = defineCollection({
     blessed: z.boolean(),
     cursed: z.boolean(),
     race: z.object({
-      name: z.enum(["Garullan", "Dvaraakian", "Lithchurnian", "Baelican", "Aekronian", "Jaimulian", "Qignorans"]),
+      name: z.enum(["Garullan", "Dvaraakian", "Lithchurnian", "Baelican", "Aekronian", "Jaimulian", "Qignoran"]),
       reliances: jt.z.reliances
     }),
     god: z.object({
